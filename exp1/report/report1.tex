@@ -28,7 +28,7 @@
 
 %-------------------------------Galton Box-----------------------------------%
 \chapter{Statistical Toolbox}
-For all experiments we uses the following formulae to calculate statistical properties of our measurements
+For all experiments we used the following universally applicable formulae to calculate the statistical properties of our measurements
 \begin{center}
     \begin{tabular}{lcl}
     $x_i$ & : & Samples\\
@@ -47,7 +47,7 @@ For all experiments we uses the following formulae to calculate statistical prop
 s_x:=\sqrt{\frac{1}{N-1}\sum_{i=1}^N{(x_i-\overline{x})^2}}
 \end{equation}
 
-\paragraph*{Standard error of mean}
+\paragraph*{Standard error of the mean}
 \begin{equation}
 s_{\overline{x}}:= \frac{1}{\sqrt{N}} s_x
 \end{equation}
@@ -92,17 +92,17 @@ k^2 \cdot \binom{n}{k} &= k \cdot n \cdot \binom{n-1}{k-1} \notag \\
 \paragraph*{Task 4}
 \begin{align}
 \sum\limits_{x=0}^{n} P_n(x) &= \sum\limits_{x=0}^{n} \binom{n}{x} p^x \cdot q^{n-x} \notag\\
-&=(p+q)^n = 1^n = \uuline{1}
+&=(p+q)^n = 1^n = 1
 \end{align}
 
 \paragraph*{Task 5}
 \begin{equation}
-p = (\frac{2}{3})^{3} \cdot \frac{1}{3} \binom{4}{3} = 4 \cdot \frac{8}{27} \cdot \frac{1}{3} = \uuline{\frac{32}{81}}
+p = (\frac{2}{3})^{3} \cdot \frac{1}{3} \binom{4}{3} = 4 \cdot \frac{8}{27} \cdot \frac{1}{3} = \frac{32}{81}
 \end{equation}
 
 \paragraph*{Task 6}
 \begin{equation}
-\binom{8}{5} = \uuline{56}
+\binom{8}{5} = 56
 \end{equation}
 \begin{equation}
 F(x) = N \cdot P(x) = N \cdot \binom{14}{x} \cdot 0.5^x \cdot 0.5^{14-x} = N \cdot \binom{14}{x}\cdot 0.5^{14}
@@ -453,7 +453,7 @@ g = 9.80616 - 0.025928 \cdot \cos(2\Phi) + 0 .000069 \cdot \cos^{2} \Phi - 3.086
 which yields a value of $g = 9.80783\unit{ms^{-2}}$ for Bern ($H = 550\unit{m}, \Phi = \ang{47}$). This value is very close to the value $g = 9.80919\unit{\frac{m}{s^{2}}}$ calculated by WolframAlpha based on the EGM2008 12th order model.\\
 
 \paragraph*{Finding $\mathbf{g}$}
-Given a fall time $t_{\text{fall}}$ of an object dropped from a height $h$, it is very easy to calculate $g$ in terms of $t_{\text{fall}}$ and $t_{\text{fall}}$:
+Given a fall time $t_{\text{fall}}$ of an object dropped from a height $h$, it is very easy to calculate $g$ in terms of $t_{\text{fall}}$ and $h$:
 
 \begin{equation} \label{eq:find}
 g=\frac{2h}{t_{\text{fall}}^2}
@@ -498,7 +498,7 @@ g = \bar{g} \pm s_{\bar{g}} = 12.063\unit{m s^{-2}} \pm 0.223\unit{m s^{-2}}
 We expected to measure a value of $g = 9.808\unit{ms^{-2}}$, but instead we found the value of $g$ to be $12.063\unit{m s^{-2}} \pm 0.223\unit{m s^{-2}}$ which is about $22.99\%$ higher.\\
 Apparently our way of measuring the ball's fall time had some serious flaws.\\
 Firstly, we set the height of the unipod too low, so the deviations from the ideal value have a much higher significance. We should have set the unipod as high as possible.\\
-Secondly, measuring time with a handheld stopwatch is inherently inaccurate. We tried to synchronize the peeping sound of the watch to the ball's impact sound. After recognizing that our values for the fall times were too low, we analyzed the peeping behaviour of the stopwatch by looking at a video of the watch being started and stoped frame by frame. We measured the duration of the beep to be about $0.1$s. Assuming we did not synchronize the ball's impact sound to the beginning of the stop beep but about $0.03$s into the beep sound, the resulting value for $g$ would be a much better fit.
+Secondly, measuring time with a handheld stopwatch is inherently inaccurate. We tried to synchronize the peeping sound of the watch to the ball's impact sound. After recognizing that our values for the fall times were too low, we analyzed the peeping behaviour of the stopwatch by looking at a video of the watch being started and stopped frame by frame. We measured the duration of the beep to be about $0.1$s. Assuming we did not synchronize the ball's impact sound to the beginning of the stop beep but about $0.03$s into the beep sound, the resulting value for $g$ would be a much better fit.
 
 \begin{thebibliography}{9}
 
