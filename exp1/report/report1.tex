@@ -318,6 +318,13 @@ with an arithmetic mean of $\mu = 7$ with variance $\sigma^2 = 5.915$ for each d
 
 \paragraph{Quadruple Dice}
 For the following calculations, every 4 consecutive throws are conculded into one measurement. The classes for the thusly obtained measurements are quite clear, as the results are presented in descrete steps. We choose 21 classes, from 4 to 24.
+The probability of such a class is described by the following formula\cite{dicewiki}, where s is the number of sides of a die and n the number of dice.
+
+\begin{equation}
+F_{s,n}(k)= \frac{1}{s^n}\cdot\sum_{i=0}^{\lfloor\frac{k-n}{s} \rfloor}(-i)^i\binom{n}{k}\cdot\binom{l-si-1}{n-1}
+\end{equation}
+
+Which yields an average value of $\bar{x}=14$ and a variance of $\sigma^2=11.667$
 
 \section[The Experiment]{Experiment Assembly and Execution}
 Instead of being hardworking, we were clever, and used a box to speed up the whole experiment. We took the box and threw the dice in, six at a time. Once they were at rest, we carefully tilted the box in order to align them at an edge. This gave us the possibility to read 6 Dice at a time without perturbing the order of the throws. In order to obtain 144 throws, we repeated the procedure 24 times.
@@ -516,6 +523,11 @@ Secondly, measuring time with a handheld stopwatch is inherently inaccurate. We 
   Peter Wurz,
   \emph{Anleitung zum Physikpraktikum}
   FS2013
+  
+\bibitem{dicewiki}
+	Dice on Wikipedia
+	\emph{http://en.wikipedia.org/wiki/Dice\#Probability}
+	11.03.2013
 
 \end{thebibliography}
 
