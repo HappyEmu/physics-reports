@@ -16,8 +16,8 @@
 \author{Urs Gerber\\09-921-156 \and Gian-Luca Mateo\\11-113-545}
 \date{28th of February 2013}
 
-\title{Practical course report}
-\subtitle{Introductory experiments}
+\title{Galton Box $\cdot$ Dice $\cdot$ Fall Time}
+\subtitle{Practical course report}
 
 \begin{document}
 \maketitle
@@ -307,11 +307,11 @@ For one die thrown 144 times, the expected distribution is really boring, being 
     \hline
     \end{tabular}
 \end{center}
-and an arithmetic mean of $\mu = 3.5$ with variance $\sigma^2 = 2.937$ for each die throw\\
-
+and an arithmetic mean of $\mu = 3.5$ with variance $\sigma^2 = 2.937$ for each die throw.
+\linebreak
 Things get more interesting for two or four dice.
 
-\paragraph{Double Dice}
+\paragraph{Double Die}
 The expected occurences of the various eye counts for two ideal dice are
 \begin{center}
     \begin{tabular}{|c|ccccccccccc|}
@@ -325,13 +325,7 @@ The expected occurences of the various eye counts for two ideal dice are
 
 with an arithmetic mean of $\mu = 7$ with variance $\sigma^2 = 5.915$ for each dice throw.
 
-\begin{figure}[H]
-    \center   
-        \includegraphics[width=0.8\textwidth]{img/double_dice_combo.pdf}
-        \caption{Expected and measured values for $N=72$ consequtive double dice throws}
-\end{figure}
-
-\paragraph{Quadruple Dice}
+\paragraph{Quadruple Die}
 For the following calculations, every 4 consecutive throws are conculded into one measurement. The classes for the thusly obtained measurements are quite clear, as the results are presented in descrete steps. We choose 21 classes, from 4 to 24.
 The probability of such a class is described by the following formula\cite{dicewiki}, where s is the number of sides of a die and n the number of dice.
 
@@ -400,7 +394,13 @@ We measured the following aggregate distribution for $N=72$ consequtive double d
     \hline
     \end{tabular}
 \end{center}
-which yields an empirical arithmetic mean for the eye count sum of $\bar{x} = 3.479$ with variance $\sigma^2 = 2.909$
+which yields an empirical arithmetic mean for the eye count sum of $\bar{x} = 6.958$ with variance $\sigma^2 = 6.717$
+
+\begin{figure}[H]
+    \center   
+        \includegraphics[width=1\textwidth]{img/double_dice_combo.pdf}
+        \caption{Expected and measured values for $N=72$ consequtive double die throws}
+\end{figure}
 
 \subsection{Quadruple Die}
 
@@ -421,7 +421,7 @@ which yields an empirical arithmetic mean for the eye count sum of $\bar{x} = 3.
 which yields an arithmetic mean for the eye count sum of $\bar{x} = 13.917$ with variance $\sigma^2 = 13.793$ for each throw\\
 
 \section{Discussion}
-It appears that our dice throwing skills are questionable at best. 
+It appears that our dice throwing skills are questionable at best. As there are no obvious error sources, we can assume this to be within the statistical frame of normality.
 
 %-------------------------------Grav Constant-----------------------------------%
 \chapter[Gravitational Acceleration]{Determining the local Gravitational Acceleration}
