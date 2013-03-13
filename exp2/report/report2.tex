@@ -7,7 +7,7 @@
 \usepackage{siunitx} %For unit handling%
 \renewcommand{\familydefault}{\sfdefault}
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
-\usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx}
+\usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
 \usepackage{amsmath}
 
 \setcounter{secnumdepth}{5}
@@ -26,7 +26,7 @@
 \tableofcontents
 \newpage
 
-\chapter{Experiment: asdasdffsfdTransverse oscillation of a string}
+\chapter{Experiment: Transverse oscillation of a string}
 \section{Introduction}
 
 \subsection{Goal of the experiment}
@@ -36,6 +36,25 @@
 \section{Experiment setup and execution}
 
 \section{Measurements and Analysis}
+
+\subsection[Frequency]{Frequency $\bm{f}$}
+
+\begin{table}[H]
+	\center
+	\begin{tabular}{|c|c|cccccc|}
+	\cline{2-8}
+	 \multicolumn{1}{c|}{}& $n=$ & 1 & 2 & 3 & 4 & 5 & 6\\  \hline
+	\multirow{2}{*}{$l=1\unit{m}$} & $F_1=14.7\unit{N}$ & 63.8 & 125.1 & 186.9 & 248.4 & 311.0 & 371.6\\
+	& $F_2=29.4\unit{N}$ & 87.23 & 172.0 & 258.5 & 344.0 & 430.4 & 514.6\\
+	\hline
+	\end{tabular}
+	\caption{String frequency in Hertz [Hz] at highest oscillation amplitude under distinct tensile forces $F_1, F_2$ and in oscillation modes $n=1,...,6$ with string length $l=1\unit{m}$}
+\end{table}
+
+\subsection[Mass per length]{Mass per length $\bm{\mu}$}
+
+\subsection[Transervse propagation speed]{Transverse propagation speed $\bm{v}$}
+
 
 \section{Discussion}
 
