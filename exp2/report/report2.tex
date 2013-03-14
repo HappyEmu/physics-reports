@@ -44,11 +44,11 @@
 	\begin{tabular}{|c|c|cccccc|}
 	\cline{2-8}
 	 \multicolumn{1}{c|}{}& $n=$ & 1 & 2 & 3 & 4 & 5 & 6\\  \hline
-	\multirow{2}{*}{$l=1\unit{m}$} & $F_1=14.7\unit{N}$ & 63.8 & 125.1 & 186.9 & 248.4 & 311.0 & 371.6\\
-	& $F_2=29.4\unit{N}$ & 87.23 & 172.0 & 258.5 & 344.0 & 430.4 & 514.6\\
+	\multirow{2}{*}{$l=1\unit{m}$} & $K_1=14.7\unit{N}$ & 63.8 & 125.1 & 186.9 & 248.4 & 311.0 & 371.6\\
+	& $K_2=29.4\unit{N}$ & 87.23 & 172.0 & 258.5 & 344.0 & 430.4 & 514.6\\
 	\hline
 	\end{tabular}
-	\caption{String frequency in Hertz [Hz] at highest oscillation amplitude under distinct tensile forces $F_1, F_2$ and in oscillation modes $n=1,...,6$ with string length $l=1\unit{m}$}
+	\caption{String frequency $f$ in Hertz [Hz] at highest oscillation amplitude under distinct tensile forces $F_1, F_2$ and in oscillation modes $n=1,...,6$ with string length $l=1\unit{m}$}
 \end{table}
 
 \subsection[Mass per length]{Mass per length $\bm{\mu}$}
@@ -62,11 +62,22 @@ v=\sqrt{\frac{K}{\mu}}=\lambda_n f_n \Rightarrow \mu = \frac{K}{\lambda_n^2 f_n^
 	\begin{tabular}{|c|c|cccccc|}
 	\cline{2-8}
 	 \multicolumn{1}{c|}{}& $n=$ & 1 & 2 & 3 & 4 & 5 & 6\\  \hline
-	\multirow{2}{*}{$l=1\unit{m}$} & $F_1=14.7\unit{N}$ & 63.8 & 125.1 & 186.9 & 248.4 & 311.0 & 371.6\\
-	& $F_2=29.4\unit{N}$ & 87.23 & 172.0 & 258.5 & 344.0 & 430.4 & 514.6\\
+	\multirow{2}{*}{$l=1\unit{m}$} & $K_1$ & 9.029e-4 & 9.393e-4 & 9.469e-4 & 9.530e-4 & 9.499e-4 & 9.581e-4\\
+	& $K_2$ & 9.660e-4 & 9.938e-4 & 9.899e-4 & 9.938e-4 & 9.919e-4 & 9.992e-4\\
 	\hline
 	\end{tabular}
-	\caption{String frequency in Hertz [Hz] at highest oscillation amplitude under distinct tensile forces $F_1, F_2$ and in oscillation modes $n=1,...,6$ with string length $l=1\unit{m}$}
+	\caption{Calculated mass per length $\mu$ [$\frac{\unit{kg}}{\unit{m}}$]}
+\end{table}
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|ccc|}
+\cline{2-4}
+\multicolumn{1}{c|}{}& $\bar{\mu}$ & $s_{\mu}$ & $s_{\bar{\mu}}$\\ \hline
+$F_1$ & 9.417e-4 & 2.002e-5 & 8.954e-6 \\ \hline
+$F_2$ & 9.891e-4 & 1.175e-5 & 5.255e-6\\ \hline
+\end{tabular}
+\caption{Mean $\bar{\mu}$, standard deviation $s_{\mu}$ and standard error of mean $s_{\bar{\mu}}$} of mass per length $\mu$ in [$\unit{\frac{kg}{m}}$]
 \end{table}
 
 \subsection[Transervse propagation speed]{Transverse propagation speed $\bm{v}$}
@@ -80,11 +91,22 @@ v=\lambda_n f_n
 	\begin{tabular}{|c|c|cccccc|}
 	\cline{2-8}
 	 \multicolumn{1}{c|}{}& $n=$ & 1 & 2 & 3 & 4 & 5 & 6\\  \hline
-	\multirow{2}{*}{$l=1\unit{m}$} & $F_1=14.7\unit{N}$ & 63.8 & 125.1 & 186.9 & 248.4 & 311.0 & 371.6\\
-	& $F_2=29.4\unit{N}$ & 87.23 & 172.0 & 258.5 & 344.0 & 430.4 & 514.6\\
+	\multirow{2}{*}{$l=1\unit{m}$} & $K_1$ & 127.6 & 125.1 & 124.6 & 124.2 & 124.4 & 123.867\\
+	& $K_2$ & 174.46 & 172.0 & 172.333 & 172.0 & 172.16 & 171.533\\
 	\hline
 	\end{tabular}
-	\caption{String frequency in Hertz [Hz] at highest oscillation amplitude under distinct tensile forces $F_1, F_2$ and in oscillation modes $n=1,...,6$ with string length $l=1\unit{m}$}
+	\caption{Calculated transverse propagation speed $v$ in [$\unit{\frac{m}{s}}]$}
+\end{table}
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|ccc|}
+\cline{2-4}
+\multicolumn{1}{c|}{}& $\bar{v}$ & $s_{v}$ & $s_{\bar{v}}$\\ \hline
+$K_1$ & 124.961 & 1.357 & 0.607 \\ \hline
+$K_2$ & 172.414 & 1.037 & 0.464\\ \hline
+\end{tabular}
+\caption{Mean $\bar{\mu}$, standard deviation $s_{\mu}$ and standard error of mean $s_{\bar{\mu}}$} of mass per length $\mu$ in [$\unit{\frac{kg}{m}}$]
 \end{table}
 
 \section{Discussion}
