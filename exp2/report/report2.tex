@@ -32,6 +32,15 @@
 \subsection{Goal of the experiment}
 The goal of this experiment is to experimentally verify the stationary solutions of the wave equation. In order to do this, we are going to look for resonance frequencies of a string with two fixed ends.
 \subsection{Theory}
+Throughout the report, you will encounter the following symbols worth explaining:
+\begin{itemize}
+\item $\mu$ : the longitudinal mass density $[\unit{\frac{kg}{m}}]$
+\item $\lambda$: The wavelength $[\unit{m}]$
+\item $\omega$: The oscillating frequency $[\unit{Hz}]$
+\item $A$: The amplitude $[\unit{m}]$
+\item $L$: The length of the string $[\unit{m}]$
+\item $v$: The transverse propagation speed $\unit{[\frac{m}{s}}]$
+\end{itemize}
 
 \paragraph*{Task 4}
 The total energy $E$ of the oscillating string in ground state $n=1$ is:
@@ -178,9 +187,20 @@ $K_2$ & 172.414 & 1.037 & 0.464\\ \hline
 
 \begin{figure}[H]
 \center
-\includegraphics[width=1.0\textwidth]{img/Resonance\space Frequencies.pdf}
+\includegraphics[width=1.0\textwidth]{img/ResonanceFrequencies.pdf}
 \caption{Experiment analysis}
 \end{figure}
+
+The formula for the expected values is obtained as follows:
+\begin{align}
+\mu &= \frac{K}{\lambda^2 \cdot f^2}\\
+f^2 &= \frac{K}{\lambda^2\cdot\mu}\\
+f &= \frac{1}{\lambda}\cdot\sqrt{\frac{K}{\mu}}\\
+log(f) &= log\left(\frac{1}{\lambda}\cdot\sqrt{\frac{K}{\mu}}\right)\\
+&=log\left(\frac{1}{\lambda}\right) + log\frac{K}{\mu}\\
+&=\left(log(1) - log(\lambda)\right) + log\frac{K}{\mu}\\
+\Rightarrow log(f) &=-log(\lambda) + log\frac{K}{\mu}
+\end{align}
 
 \paragraph*{Error bar calculation} In order to calculate the error bars we used equation \ref{eq:relerror} and the estimated error for the string's tensile force $s_{\overline{K}}=0.2 \unit{kp} = 1.96 \unit{N}$:
 
