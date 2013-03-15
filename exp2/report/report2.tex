@@ -33,7 +33,7 @@
 The goal of this experiment is to experimentally verify the stationary solutions of the wave equation. In order to do this, we are going to look for resonance frequencies of a string with two fixed ends.
 \subsection{Theory}
 
-\paragraph{Task 4}
+\paragraph*{Task 4}
 The total energy $E$ of the oscillating string in ground state $n=1$ is:
 \begin{equation}
 E=\frac{1}{4} \mu \lambda \omega^2 A^2
@@ -71,7 +71,7 @@ We found the spring balance's measurements to be the most problematic. The marks
 v = \sqrt{\frac{K}{\mu}} = \lambda_n f_n \Rightarrow f_n = \frac{1}{\lambda} \sqrt{\frac{K}{\mu}} 
 \end{equation}
 
-\begin{equation}
+\begin{equation} \label{eq:relerror}
 \Rightarrow \frac{s_{\bar{f}}}{\bar{f}} = \frac{1}{2} \frac{s_{\overline{K}}}{\overline{K}}
 \end{equation}
 
@@ -173,7 +173,7 @@ v=\lambda_n f_n
 $K_1$ & 124.961 & 1.357 & 0.607 \\ \hline
 $K_2$ & 172.414 & 1.037 & 0.464\\ \hline
 \end{tabular}
-\caption{Mean $\bar{v}$, standard deviation $s_{v}$ and standard error of mean $s_{\bar{v}}$} of transverse propagation speed $v$ in [$\unit{\frac{m}{s}}$]
+\caption{Mean $\bar{v}$, standard deviation $s_{v}$ and standard error of mean $s_{\bar{v}}$ of transverse propagation speed $v$ in [$\unit{\frac{m}{s}}$]}
 \end{table}
 
 \begin{figure}[H]
@@ -181,6 +181,20 @@ $K_2$ & 172.414 & 1.037 & 0.464\\ \hline
 \includegraphics[width=1.0\textwidth]{img/Resonance\space Frequencies.pdf}
 \caption{Experiment analysis}
 \end{figure}
+
+\paragraph*{Error bar calculation} In order to calculate the error bars we used equation \ref{eq:relerror} and the estimated error for the string's tensile force $s_{\overline{K}}=0.2 \unit{kp} = 1.96 \unit{N}$:
+
+\begin{table}[H]
+\center
+\begin{tabular}{|c|cc|}
+\cline{2-3}
+\multicolumn{1}{c|}{}& \tiny $\frac{s_{\overline{K}}}{\overline{K}}$ & \tiny$\frac{s_{\bar{f}}}{\bar{f}}$\\ \hline
+$K_1$ & \small$\frac{2}{15}$ & \small$\frac{1}{15}$ \\ \hline
+$K_2$ & \small$\frac{1}{15}$ & \small$\frac{1}{30}$\\ \hline
+\end{tabular}
+\caption{Error bar calculation}
+\end{table}
+
 
 \section{Discussion}
 
