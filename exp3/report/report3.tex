@@ -129,6 +129,20 @@ Measurement & $\frac{Q}{T_1} =$ & $1-(1+A)\frac{a_2^2}{a_1^2}$ \\
 \end{tabular}
 \end{center}
 
+\subsection{Uncertainty analysis}
+\begin{equation}
+\frac{T_2'}{T_1}=A\frac{a_2^2}{a_1^2}\doteq f(a_1,a_2)
+\end{equation}
+\begin{align}
+f(x,y) \doteq A\frac{y^2}{x^2} \Longrightarrow
+s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\partial f}{\partial y}\right)^2 s_y^2\\
+&= 4 A^2 \left( \frac{y^4}{x^6} s_x^2 + \frac{y^2}{x^4} s_y^2 \right)
+\end{align}
+\begin{equation}
+\Longrightarrow s_{\bar{f}}^2 = 4 A^2 \left(\frac{\overline{a_2}^4}{\overline{a_1}^6} s_{\overline{a_1}}^2 + \frac{\overline{a_2}^2}{\overline{a_1}^4} s_{\overline{a_2}}^2 \right)
+\end{equation}
+
+
 \section{Experiment setup and execution}
 
 \subsection{Used materials}
@@ -193,7 +207,7 @@ Measurement & $\frac{Q}{T_1} =$ & $1-(1+A)\frac{a_2^2}{a_1^2}$ \\
      72.5 &         109.5 &            &            &            &            &            &            \\
      72.5 &         108.5 &            &            &            &            &            &            \\
 \end{tabular}  
-\caption{Measured defecletions in [$\unit{mm}$]} for all \emph{elastic} collisions. Projectile 'P' hits target 'T'.   
+\caption{Measured defecletions in [$\unit{mm}$]} for all \emph{elastic} collisions. Initially deflected projectile 'P' hits resting target 'T'.   
 \end{table}
 
 \subsection{Inelastic Collision}
@@ -202,46 +216,46 @@ Measurement & $\frac{Q}{T_1} =$ & $1-(1+A)\frac{a_2^2}{a_1^2}$ \\
 	\begin{tabular}{ccp{1.5cm}ccp{1.5cm}cc}
  P: 1 &   T: 2 &            &  P: 1 &   T: 3 &            &  P: 2 &   T: 1 \\\cline{1-2}\cline{4-5}\cline{7-8}
 
-     159 &         93 &            &      158 &         56 &            &         86 &         114 \\
-     159 &         93 &            &      158 &         56 &            &         86 &         115 \\
-     159 &         94 &            &      158 &         55 &            &         86 &         115 \\
-     159 &         94 &            &      158 &         55.5 &          &         86 &         114.5 \\
-     159 &         95 &            &      158 &         55.5 &          &         86 &         114 \\
-     159 &         93 &            &      158 &         55.5 &          &         86 &         114 \\
-     159 &         93 &            &      158 &         55 &            &         86 &         114.5 \\
-     159 &         93 &            &      158 &         54.5 &          &         86 &         114.5 \\
-     159 &         93 &            &      158 &         56 &            &         86 &         115 \\
-     159 &         93 &            &      158 &         56 &            &         86 &         115 \\
+     159 &         45 &            &      158 &         28 &            &         86 &         56 \\
+     159 &         47 &            &      158 &         27 &            &         86 &         56.5 \\
+     159 &         49 &            &      158 &         26 &            &         86 &         56.5 \\
+     159 &         45 &            &      158 &         26 &          &         86 &         56 \\
+     159 &         46 &            &      158 &         26.5 &          &         86 &         56 \\
+     159 &         45 &            &      158 &         26 &          &         86 &         59 \\
+     159 &         44 &            &      158 &         27 &            &         86 &         59 \\
+     159 &         44 &            &      158 &         26.5 &          &         86 &         57.5 \\
+     159 &         45 &            &      158 &         27 &            &         86 &         59 \\
+     159 &         45 &            &      158 &         26 &            &         86 &         58 \\
          &            &            &            &            &            &            &            \\
 
  P: 2 &   T: 2 &            &  P: 2 &   T: 3 &            &  P: 3 &   T: 2 \\\cline{1-2}\cline{4-5}\cline{7-8}
 
-     95 &         92 &            &      146 &         96.5 &            &         72.5 &         89.5 \\
-     95 &         93 &            &      146 &         97.5 &            &         72.5 &         89.5 \\
-     95 &         93 &            &      146 &         97.5 &            &         72.5 &         89.5 \\
-     95 &         93 &            &      146 &         97 &              &         72.5 &         89.5 \\
-     95 &         93 &            &      146 &         96.5 &            &         72.5 &         89.5 \\
-     95 &         92.5 &          &      146 &         96.5 &            &         72.5 &         89.5 \\
-     95 &         92 &            &      146 &         96.5 &            &         72.5 &         90 \\
-     95 &         92 &            &      146 &         95 &              &         72.5 &         89.5 \\
-     95 &         92.5 &          &      146 &         95.5 &            &         72.5 &         90 \\
-     95 &         92 &            &      146 &         96.5 &            &         72.5 &         89.5 \\
+     95 &         45 &            &      146 &         45.5 &            &         72.5 &         44.5 \\
+     95 &         46 &            &      146 &         45.5 &            &         72.5 &         45 \\
+     95 &         46 &            &      146 &         46.5 &            &         72.5 &         43.5 \\
+     95 &         45 &            &      146 &         48 &              &         72.5 &         43.5 \\
+     95 &         44 &            &      146 &         45.5 &            &         72.5 &         43.5 \\
+     95 &         47.5 &          &      146 &         44.5 &            &         72.5 &         43.5 \\
+     95 &         44 &            &      146 &         48 &            &         72.5 &         42.5 \\
+     95 &         44 &            &      146 &         47 &              &         72.5 &        43.5 \\
+     95 &         44.5 &          &      146 &         46.5 &            &         72.5 &         42.5 \\
+     95 &         46.5 &            &      146 &         47 &            &         72.5 &         44 \\
            &         &            &            &            &            &            &            \\
 
  P: 3 &   T: 1 &            &            &            &            &            &            \\\cline{1-2}
 
-     72.5 &         107.5 &            &            &            &            &            &            \\
-     72.5 &         108.5 &            &            &            &            &            &            \\
-     72.5 &         108 &            &            &            &            &            &            \\
-     72.5 &         109.5 &            &            &            &            &            &            \\
-     72.5 &         109.5 &            &            &            &            &            &            \\
-     72.5 &         109.5 &            &            &            &            &            &            \\
-     72.5 &         110.5 &            &            &            &            &            &            \\
-     72.5 &         107.5 &            &            &            &            &            &            \\
-     72.5 &         109.5 &            &            &            &            &            &            \\
-     72.5 &         108.5 &            &            &            &            &            &            \\
+     72.5 &         56.5 &            &            &            &            &            &            \\
+     72.5 &         57.5 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
+     72.5 &         57.5 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
+     72.5 &         56.5 &            &            &            &            &            &            \\
+     72.5 &         57 &            &            &            &            &            &            \\
 \end{tabular}  
-\caption{Measured defecletions in [$\unit{mm}$]} for all \emph{inelastic} collisions. Projectile 'P' hits target 'T'.   
+\caption{Measured defecletions in [$\unit{mm}$]} for all \emph{inelastic} collisions. Initially deflected projectile 'P' hits resting target 'T'.   
 \end{table}
 
 \section{Analysis and Discussion}
