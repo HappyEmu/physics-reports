@@ -23,3 +23,4 @@
 *.synctex.gz
 *.pdf
 !exp*/report/img/*.pdf
+!exp*/report/diag/*.pdf
