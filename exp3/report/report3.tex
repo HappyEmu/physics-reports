@@ -35,8 +35,51 @@ In an ideal \emph{elastic} collision no energy is lost during the course of the 
 In the inelastic case both bodies will stick to each other after the collision and travel at a common terminal velocity. Only momentum is conserved as energy is lost to deformation.
  
 \subsection{Goal of the experiment}
-
+With this experiment we want to answer the question whether the forumlae derived from the conservation of momentum and energy hold in both elastic and inelastic collisions. Furthermore, we want to quantize and measure the amount of energy lost during an inelastic collision and compare the measured values with the precomputed ones.
 \subsection{Theory}
+In this experiment we focus on two body collisions. We name our parameters as follows:
+
+\begin{table}[H]
+\center
+\begin{tabular}{|r|cc|cc|}
+\hline
+
+ & \multicolumn{2}{c|}{before Collision} &  \multicolumn{2}{c|}{after Collision}\\
+ & 1st body & 2nd body & 1st body & 2nd body\\ \hline\hline
+ Mass & $m_1$ & $m_2$ & $m_1'=m_1$ & $m_2'=m_2$\\
+ Velocity & $\vec{v_1}$ & $\vec{v_2}$ & $\vec{v_1}'$ & $\vec{v_2}'$\\
+ Deflection & $a_1$ & 0 & 0 & $a_2$ \\
+ $E_{\text{kin}}$ & $T_1$ & $T_2$ & $T_1'$ & $T_2'$\\
+
+\hline
+\end{tabular}
+\end{table}
+
+Throughout the report we will use parameter $\displaystyle A\doteq \frac{m_2}{m_1}$
+
+\paragraph*{Conservation of momentum}
+Momentum is conserved in both elastic and inelastic collisions:
+\begin{equation}
+m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
+\end{equation}
+
+\paragraph*{Translational Energy}
+A body $i$ with mass $m_i$ and traveling at velocity $v_i$ has a translational energy $T_i$:
+\begin{equation}
+T_i = \frac{1}{2} m_i v_i^2
+\end{equation}
+
+\paragraph*{Conservation of Energy}
+Total translational energy $T$ is conserved only in the elastic collision:
+\subparagraph*{Elastic collision}
+\begin{equation}
+T':=T_1'+T_2'=T_1
+\end{equation}
+\subparagraph*{Inelastic collision}
+\begin{equation}
+T':=T_1'+T_2'<T_1
+\end{equation}
+
 \subsubsection{Preliminary exercises}
 Using $A:=\frac{m_2}{m_1}$
 
@@ -130,7 +173,7 @@ Measurement & $\frac{Q}{T_1} =$ & $1-(1+A)\frac{a_2^2}{a_1^2}$ \\
 \end{center}
 
 \subsection{Uncertainty analysis}
-\subsubsection{Kinetic Energy}
+\subsubsection{Translational Energy}
 \begin{equation}
 \frac{T_2'}{T_1}=A\frac{a_2^2}{a_1^2}\doteq t(a_1,a_2)
 \end{equation}
