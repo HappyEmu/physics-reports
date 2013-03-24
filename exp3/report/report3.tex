@@ -9,6 +9,9 @@
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
 \usepackage{amsmath}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -202,6 +205,27 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \section{Experiment setup and execution}
 
 \subsection{Used materials}
+
+\begin{itemize}
+\item 3 slightly magnetic metal balls
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|r|ccc|}
+\hline
+\rule{0pt}{2.5ex} 
+& Ball \circled{1} & Ball \circled{2} & Ball \circled{3}\\
+\hline\hline
+Quantity & 1 & 2 & 1\\\hline
+Mass [kg] & 0.233 & 0.540 & 1.049\\\hline
+Diameter [mm] & 38 & 52 & 65\\\hline
+\end{tabular}
+\end{table}
+
+\item collision rig (No. 11) with a string lenght of $(606.2\pm 1.0) \unit{mm}$ and adjustable distance between balls
+\item displacable sliders with ruler to measure initial deflection $a_1$ and $a_2$, the latter being measured with a drinking straw on a dedicated ruler 
+\end{itemize}
+
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{img/topview.jpg}
@@ -210,10 +234,13 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \end{figure}
 
 \subsection{Assembly}
+
+To be written by GLM!
+
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{img/assembly.jpg}
-	\caption{Final experiment assembly}
+	\caption{Final experiment assembly with set initial deflection for the projectile}
 	\label{fig:assembly}
 \end{figure}
 
@@ -222,7 +249,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ccp{1.5cm}ccp{1.5cm}cc}
- P: 1 &   T: 2 &            &  P: 1 &   T: 3 &            &  P: 2 &   T: 1 \\\cline{1-2}\cline{4-5}\cline{7-8}
+ P: \circled{1} &   T: \circled{2} &            &  P: \circled{1} &   T: \circled{3} &            &  P: \circled{2} &   T: \circled{1} \\\cline{1-2}\cline{4-5}\cline{7-8}
 
      159 &         93 &            &      158 &         56 &            &         86 &         114 \\
      159 &         93 &            &      158 &         56 &            &         86 &         115 \\
@@ -236,7 +263,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
      159 &         93 &            &      158 &         56 &            &         86 &         115 \\
          &            &            &            &            &            &            &            \\
 
- P: 2 &   T: 2 &            &  P: 2 &   T: 3 &            &  P: 3 &   T: 2 \\\cline{1-2}\cline{4-5}\cline{7-8}
+ P: \circled{2} &   T: \circled{2} &            &  P: \circled{2} &   T: \circled{3} &            &  P: \circled{3} &   T: \circled{2} \\\cline{1-2}\cline{4-5}\cline{7-8}
 
      95 &         92 &            &      146 &         96.5 &            &         72.5 &         89.5 \\
      95 &         93 &            &      146 &         97.5 &            &         72.5 &         89.5 \\
@@ -250,7 +277,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
      95 &         92 &            &      146 &         96.5 &            &         72.5 &         89.5 \\
            &         &            &            &            &            &            &            \\
 
- P: 3 &   T: 1 &            &            &            &            &            &            \\\cline{1-2}
+ P: \circled{3} &   T: \circled{1} &            &            &            &            &            &            \\\cline{1-2}
 
      72.5 &         107.5 &            &            &            &            &            &            \\
      72.5 &         108.5 &            &            &            &            &            &            \\
@@ -270,7 +297,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ccp{1.5cm}ccp{1.5cm}cc}
- P: 1 &   T: 2 &            &  P: 1 &   T: 3 &            &  P: 2 &   T: 1 \\\cline{1-2}\cline{4-5}\cline{7-8}
+ P: \circled{1} &   T: \circled{2} &            &  P: \circled{1} &   T: \circled{3} &            &  P: \circled{2} &   T: \circled{1} \\\cline{1-2}\cline{4-5}\cline{7-8}
 
      159 &         45 &            &      158 &         28 &            &         86 &         56 \\
      159 &         47 &            &      158 &         27 &            &         86 &         56.5 \\
@@ -284,7 +311,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
      159 &         45 &            &      158 &         26 &            &         86 &         58 \\
          &            &            &            &            &            &            &            \\
 
- P: 2 &   T: 2 &            &  P: 2 &   T: 3 &            &  P: 3 &   T: 2 \\\cline{1-2}\cline{4-5}\cline{7-8}
+ P: \circled{2} &   T: \circled{2} &            &  P: \circled{2} &   T: \circled{3} &            &  P: \circled{3} &   T: \circled{2} \\\cline{1-2}\cline{4-5}\cline{7-8}
 
      95 &         45 &            &      146 &         45.5 &            &         72.5 &         44.5 \\
      95 &         46 &            &      146 &         45.5 &            &         72.5 &         45 \\
@@ -298,7 +325,7 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
      95 &         46.5 &            &      146 &         47 &            &         72.5 &         44 \\
            &         &            &            &            &            &            &            \\
 
- P: 3 &   T: 1 &            &            &            &            &            &            \\\cline{1-2}
+ P: \circled{3} &   T: \circled{1} &            &            &            &            &            &            \\\cline{1-2}
 
      72.5 &         56.5 &            &            &            &            &            &            \\
      72.5 &         57.5 &            &            &            &            &            &            \\
@@ -318,16 +345,17 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \subsection{Elastic Collision}
 \begin{table}[H]
 \centering
-\begin{tabular}{r||rrrrrrr}
- \emph{elastic} &    1 on 2 &    1 on 3 &    2 on 1 &    2 on 2 &    2 on 3 &    3 on 2 &    3 on 1 \\\hline\hline
+\begin{tabular}{r||r|r|r|r|r|r|r}
+ \emph{elastic} &    \circled{1} on \circled{2} &    \circled{1} on \circled{3} &    \circled{2} on \circled{1} &    \circled{2} on \circled{2} &    \circled{2} on \circled{3}&    \circled{3} on \circled{2} &    \circled{3} on \circled{1} \\\hline\hline
 $m_1$ [kg] &      0.233 &      0.233 &      0.540 &      0.540 &      0.540 &      1.049 &      1.049 \\
 $m_2$ [kg] &      0.540 &      1.049 &      0.233 &      0.540 &      1.049 &      0.540 &      0.233 \\
 $A=\frac{m_2}{m_1}$ &      2.318 &      4.502 &      0.431 &      1.000 &      1.943 &      0.515 &      0.222 \\\hline
 $\overline{a_1}$ [mm] &     159.000 &     158.000 &     86.000 &     95.000 &     146.000 &     72.500 &     72.500 \\
 $\overline{a_2}$ [mm] &     93.400 &     55.500 &     114.550 &     92.500 &     96.500 &     89.600 &     108.850 \\
 $s_{\overline{a_2}}$ &      0.221 &      0.167 &      0.138 &      0.149 &      0.247 &      0.067 &      0.317 \\\hline
-$T_2'/T_1$ Theory &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
-$\overline{t}=T_2'/T_1$ Meas. &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
+\rule{0pt}{3ex}   
+$\frac{T_2'}{T_1}$ exp. &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
+$\overline{t}=\frac{T_2'}{T_1}$ &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
 $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      0.0237 &      0.0434 &      0.0278 \\
 \end{tabular}  
 \caption{Analysis for elastic collision}
@@ -338,16 +366,17 @@ $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      
 
 \begin{table}[H]
 \centering
-\begin{tabular}{r||rrrrrrr}
- \emph{inelastic} &    1 on 2 &    1 on 3 &    2 on 1 &    2 on 2 &    2 on 3 &    3 on 2 &    3 on 1 \\\hline\hline
+\begin{tabular}{r||r|r|r|r|r|r|r}
+ \emph{inelastic} &    \circled{1} on \circled{2} &    \circled{1} on \circled{3} &    \circled{2} on \circled{1} &    \circled{2} on \circled{2} &    \circled{2} on \circled{3}&    \circled{3} on \circled{2} &    \circled{3} on \circled{1} \\\hline\hline
 $m_1$ [kg] &      0.233 &      0.233 &      0.540 &      0.540 &      0.540 &      1.049 &      1.049 \\
 $m_2$ [kg] &      0.540 &      1.049 &      0.233 &      0.540 &      1.049 &      0.540 &      0.233 \\
 $A=\frac{m_2}{m_1}$ &      2.318 &      4.502 &      0.431 &      1.000 &      1.943 &      0.515 &      0.222 \\\hline
 $\overline{a_1}$ [mm] &     159.000 &     158.000 &     86.000 &     95.000 &     146.000 &     72.500 &     72.500 \\
 $\overline{a_2}$ [mm] &     93.400 &     55.500 &     114.550 &     92.500 &     96.500 &     89.600 &     108.850 \\
 $s_{\overline{a_2}}$ &      0.221 &      0.167 &      0.138 &      0.149 &      0.247 &      0.067 &      0.317 \\\hline
-$T_2'/T_1$ Theory &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
-$\overline{t}=T_2'/T_1$ Meas. &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
+\rule{0pt}{3ex}   
+$\frac{T_2'}{T_1}$ exp. &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
+$\overline{t}=\frac{T_2'}{T_1}$ &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
 $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      0.0237 &      0.0434 &      0.0278 \\
 \end{tabular}  
 \caption{Results for inelastic collision}
@@ -360,8 +389,11 @@ $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      
 	\caption{Consolidated analysis of both elastic and inelastic measurements}
 	\label{fig:analysis}
 \end{figure}
-\begin{thebibliography}{9}
 
+\section{Conclusion}
+We are proud of our measurements and error estimations. We did not experience any significant deviations from the theoretical precomputations and can therefore decidedly conclude that our expectations derived from the theory were marvelously met. 
+
+\begin{thebibliography}{9}
 \bibitem{physcript13}
   Peter Wurz,
   \emph{Anleitung zum Physikpraktikum}
