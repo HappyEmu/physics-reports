@@ -21,7 +21,7 @@
 \author{Urs Gerber\\09-921-156 \and Gian-Luca Mateo\\11-113-545}
 \date{14th of March 2013}
 
-\title{Collision Experiment}
+\title{Conservation of Momentum}
 \subtitle{Practical course report}
 
 \begin{document}
@@ -31,7 +31,7 @@
 \tableofcontents
 \newpage
 
-\chapter{Experiment: Momentum Conservation}
+\chapter{Experiment: Conservation of Momentum}
 \section{Introduction}
 A collision is a short-time interaction between two or more objects. In essence there are two types of collisions: the \emph{elastic} collision and the \emph{inelastic} collision.\\
 In an ideal \emph{elastic} collision no energy is lost during the course of the interaction, meaning no energy is lost due to heat or deformation. In this type of collision both energy and momentum are conserved.\\
@@ -137,7 +137,7 @@ v_1'=v_1\frac{m_1}{m_1+m_2}
 \begin{equation}
 \Rightarrow \frac{Q}{T_1}=1-\frac{T_1'}{T_1}=1-\frac{1}{1+A}=\frac{A}{1+A}
 \end{equation}
-Q is the fraction of the energy of $T_1$ lost in the collision. Q is composed of thermic energy, deformation energy and sound.
+$Q$ is the fraction of the energy of $T_1$ lost in the collision. $Q$ is composed of thermic energy, deformation energy and sound.
 
 \paragraph*{Task 3}
 \begin{equation}
@@ -194,12 +194,12 @@ s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\parti
 \frac{Q}{T_1}= 1-(1+A) \frac{a_2^2}{a_1^2} \doteq q(a_1,a_2)
 \end{equation}
 \begin{align}
-f(x,y) \doteq A\frac{y^2}{x^2} \Longrightarrow
+f(x,y) \doteq 1-(1+A)\frac{y^2}{x^2} \Longrightarrow
 s_f^2 &= \left(\frac{\partial f}{\partial x}\right)^2 s_x^2 + \left(\frac{\partial f}{\partial y}\right)^2 s_y^2\\
-&= 4 A^2 \left( \frac{y^4}{x^6} s_x^2 + \frac{y^2}{x^4} s_y^2 \right)
+&= 4 (A+1)^2 \left( \frac{y^4}{x^6} s_x^2 + \frac{y^2}{x^4} s_y^2 \right)
 \end{align}
 \begin{equation}
-\Longrightarrow s_{\bar{q}}^2 = 4 A^2 \left(\frac{\overline{a_2}^4}{\overline{a_1}^6} s_{\overline{a_1}}^2 + \frac{\overline{a_2}^2}{\overline{a_1}^4} s_{\overline{a_2}}^2 \right)
+\Longrightarrow s_{\bar{q}}^2 = 4 (A+1)^2 \left(\frac{\overline{a_2}^4}{\overline{a_1}^6} s_{\overline{a_1}}^2 + \frac{\overline{a_2}^2}{\overline{a_1}^4} s_{\overline{a_2}}^2 \right)
 \end{equation}
 
 \section{Experiment setup and execution}
@@ -349,14 +349,16 @@ In conclusion we can claim our results generally prove the momentum and energy c
 \centering
 \begin{tabular}{r||r|r|r|r|r|r|r}
  \emph{elastic} &    \circled{1} on \circled{2} &    \circled{1} on \circled{3} &    \circled{2} on \circled{1} &    \circled{2} on \circled{2} &    \circled{2} on \circled{3}&    \circled{3} on \circled{2} &    \circled{3} on \circled{1} \\\hline\hline
+ \rule{0pt}{3ex}  
 $m_1$ [kg] &      0.233 &      0.233 &      0.540 &      0.540 &      0.540 &      1.049 &      1.049 \\
 $m_2$ [kg] &      0.540 &      1.049 &      0.233 &      0.540 &      1.049 &      0.540 &      0.233 \\
 $A=\frac{m_2}{m_1}$ &      2.318 &      4.502 &      0.431 &      1.000 &      1.943 &      0.515 &      0.222 \\\hline
+\rule{0pt}{3ex}  
 $\overline{a_1}$ [mm] &     159.000 &     158.000 &     86.000 &     95.000 &     146.000 &     72.500 &     72.500 \\
 $\overline{a_2}$ [mm] &     93.400 &     55.500 &     114.550 &     92.500 &     96.500 &     89.600 &     108.850 \\
 $s_{\overline{a_2}}$ &      0.221 &      0.167 &      0.138 &      0.149 &      0.247 &      0.067 &      0.317 \\\hline
 \rule{0pt}{3ex}   
-$\frac{T_2'}{T_1}$ exp. &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
+${\frac{T_2'}{T_1}}_{\text{\tiny Theory}}$  &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
 $\overline{t}=\frac{T_2'}{T_1}$ &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
 $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      0.0237 &      0.0434 &      0.0278 \\
 \end{tabular}  
@@ -375,16 +377,21 @@ In conclusion we can state that our results generally prove the momentum conserv
 \centering
 \begin{tabular}{r||r|r|r|r|r|r|r}
  \emph{inelastic} &    \circled{1} on \circled{2} &    \circled{1} on \circled{3} &    \circled{2} on \circled{1} &    \circled{2} on \circled{2} &    \circled{2} on \circled{3}&    \circled{3} on \circled{2} &    \circled{3} on \circled{1} \\\hline\hline
+ \rule{0pt}{3ex}  
 $m_1$ [kg] &      0.233 &      0.233 &      0.540 &      0.540 &      0.540 &      1.049 &      1.049 \\
 $m_2$ [kg] &      0.540 &      1.049 &      0.233 &      0.540 &      1.049 &      0.540 &      0.233 \\
 $A=\frac{m_2}{m_1}$ &      2.318 &      4.502 &      0.431 &      1.000 &      1.943 &      0.515 &      0.222 \\\hline
+\rule{0pt}{3ex}  
 $\overline{a_1}$ [mm] &     159.000 &     158.000 &     86.000 &     95.000 &     146.000 &     72.500 &     72.500 \\
-$\overline{a_2}$ [mm] &     93.400 &     55.500 &     114.550 &     92.500 &     96.500 &     89.600 &     108.850 \\
-$s_{\overline{a_2}}$ &      0.221 &      0.167 &      0.138 &      0.149 &      0.247 &      0.067 &      0.317 \\\hline
+$\overline{a_2}$ [mm] &     45.500 &     26.700 &     57.350 &     45.250 &     46.450 &     43.600 &     57.050 \\
+$s_{\overline{a_2}}$ &      0.477 &      0.200 &      0.415 &      0.382 &      0.391 &      0.245 &      0.117 \\\hline
 \rule{0pt}{3ex}   
-$\frac{T_2'}{T_1}$ exp. &      0.842 &      0.595 &      0.842 &      1.000 &      0.897 &      0.897 &      0.595 \\
-$\overline{t}=\frac{T_2'}{T_1}$ &      0.800 &      0.556 &      0.766 &      0.948 &      0.849 &      0.786 &      0.501 \\
+${\frac{T_2'}{T_1}}_{\text{\tiny Theory}}$  &      0.211 &      0.149 &      0.211 &      0.250 &      0.224 &      0.224 &      0.149 \\
+$\overline{t}=\frac{T_2'}{T_1}$ &      0.190 &      0.129 &      0.766 &      0.192 &      0.227 &      0.197 &      0.138 \\ \hline
 $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      0.0237 &      0.0434 &      0.0278 \\
+\rule{0pt}{3ex}
+$\frac{Q}{T_1}_\text{Theory}$ &&&&&&&\\
+$\overline{q}=\frac{Q}{T_1}$ &&&&&&&\\
 \end{tabular}  
 \caption{Results for inelastic collision}
 \label{tab:resultat2}
@@ -392,7 +399,7 @@ $s_{\overline{t}}$ &     0.0205 &     0.0145 &      0.0357 &      0.0400 &      
 
 \begin{figure}[H]
 	\centering
-  \includegraphics[width=1.0\textwidth]{diag/analysis.pdf}
+  \includegraphics[width=1.0\textwidth]{diag/error.pdf}
 	\caption{Consolidated analysis of both elastic and inelastic measurements}
 	\label{fig:analysis}
 \end{figure}
