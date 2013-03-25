@@ -1,0 +1,179 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5799,        169]
+NotebookOptionsPosition[      5302,        150]
+NotebookOutlinePosition[      5789,        167]
+CellTagsIndexPosition[      5746,        164]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"foil", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "5"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "8"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"39.5", ",", "20"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"60", ",", "29"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"79", ",", "33"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"90", ",", "31"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"100", ",", "25"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"102", ",", "16"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"100", ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"91", ",", "4"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"85", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"67.5", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"42.5", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19.5", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", "5"}]}], "}"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5732163848011923`*^9, 3.573216389481615*^9}, {
+  3.573216433636157*^9, 3.573216601237463*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"foil", ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "5"}], ",", "110"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "10"}], ",", "40"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotMarkers", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.573216567557663*^9, 3.573216577917171*^9}, {
+  3.573216615497678*^9, 3.57321662053883*^9}, {3.573216683362187*^9, 
+  3.5732166867265997`*^9}, {3.5732167344619923`*^9, 3.573216738785117*^9}, {
+  3.5732168301801777`*^9, 3.573216889168599*^9}, {3.573216936498955*^9, 
+  3.573217010038066*^9}, {3.573217090295075*^9, 3.5732170947676697`*^9}, {
+  3.573217201860067*^9, 3.573217207858616*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   GraphicsComplexBox[{{0., -5.}, {18., 8.}, {39.5, 20.}, {60., 29.}, {79., 
+    33.}, {90., 31.}, {100., 25.}, {102., 16.}, {100., 10.}, {91., 4.}, {85., 
+    3.}, {67.5, 3.}, {42.5, 2.}, {19.5, -1.}, {0., -5.}}, {{{}, {}, 
+      {RGBColor[0.24720000000000014`, 0.24, 0.6], 
+       LineBox[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}]}}, {
+      {RGBColor[0.24720000000000014`, 0.24, 0.6], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 1], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 2], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 3], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 4], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 5], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 6], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 7], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 8], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 9], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 10], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 11], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 12], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 13], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 14], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 15]}, {}}}], {}},
+  Axes->True,
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  ImageSize->{775., Automatic},
+  Method->{},
+  PlotRange->{{-5, 110}, {-10, 40}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.57321688141514*^9, 3.573216889505035*^9}, {
+   3.573216942066012*^9, 3.5732169913841333`*^9}, 3.573217208256524*^9}]
+}, Open  ]]
+},
+WindowSize->{915, 741},
+WindowMargins->{{172, Automatic}, {Automatic, 44}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
+   ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1261, 39, 57, "Input"],
+Cell[CellGroupData[{
+Cell[1843, 63, 912, 20, 57, "Input"],
+Cell[2758, 85, 2528, 62, 399, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
