@@ -60,8 +60,58 @@ Next, we rearrange the assembly as shown in figure \ref{fig:assembly2} and measu
 	\caption{The Experiment Assembly}
 	\label{fig:assembly1}
 \end{figure}
-\section{Measurements and analysis}
-\section{Discussion}
+
+\section{Measurements}
+
+\subsection{Airfoil Profile}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/wing_profile.pdf}
+	\caption{Digital representation of the airfoil profile used during the experiment}
+	\label{fig:profile}
+\end{figure}
+
+\subsection{\boldmath$\lvert F_l\rvert$ and \boldmath$\lvert F_r\rvert$}
+In order to calculate $\lvert F_l\rvert$ and $\lvert F_r\rvert$ we used the following masses $m_v$ and $m_h$ to counterbalance the airfoil's air resistance force $\lvert F_r\rvert$ and boyant force $\lvert F_l\rvert$ respectively. Some measurements were taken repeatedly after some time for uncertainty analysis.
+
+\begin{table}[H]
+\center
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|c|}
+\hline
+Angle & \ang{-20} & \ang{-15} & \ang{-10} & \ang{-5} & \ang{0} & \ang{5} & \ang{10} & \ang{15} & \ang{20}\\
+\hline\hline
+$m_v$ [g] & 22 & 16.5 & 13 & 12 & 12 & 14 & 16 & 20 & 25\\ 
+          & 22 &      &    &    & 12 &    &    &    & 24.5\\ 
+          & 22 &      &    &    &    &    &    &    & \\  
+\hline\hline
+$m_h$ [g] & 4 & 10 & 16.5 & 23 & 30 & 37 & 42 & 52 & 43\\
+&  &  &  &  &  & 35 &  &  & \\
+&  &  &  &  &  & 36 &  &  & \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Air pressure around wing profile}
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/pressure_points.pdf}
+	\caption{Locations at which the pressure was measured. Green points belong to upper data series, red points to lower data series. Rightmost pressure point is used for both data series}
+	\label{fig:prespoints}
+\end{figure}
+
+\section{Analysis and Discussion}
+\subsection{Polar diagram}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/polar_diag.pdf}
+	\caption{The polar diagram obtained by our measurements. $\lvert F_r\rvert$ is indicated along the horizontal axis and $\lvert F_l\rvert$ along the vertical axis at different angles of attack, measured in Newtons [N]}
+	\label{fig:poldiag}
+\end{figure}
+
+
+\section{Conclusion}
 
 \begin{thebibliography}{9}
 
