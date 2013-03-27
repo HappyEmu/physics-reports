@@ -38,6 +38,30 @@ The goal of this experiment is to determine the angle of attack where for a give
 
 \subsection{Theory}
 
+\subsubsection{Bernoulli's Principle}
+Bernoulli's Principle is a direct consequence of the \textbf{conservation of energy} and the \textbf{continuity equation}
+
+\begin{equation}
+\forall A : \rho \lvert \vec{v}\rvert A = p \dot{V} = const. \Longleftrightarrow \dot{V} = const.
+\end{equation}
+where $A$ is the cross section traversed by the fluid, $\vec{v}$ the fluid's velocity and $\dot{V}$ the volumetric flow rate through cross section $A$. Combining these two principles will yield Bernoulli's Principle:
+
+\begin{equation}
+\underbrace{\underbrace{p}_{\text{operating pressure}} + \underbrace{\rho g h}_{\text{geodesic pressure}}}_{\text{static pressure}} + \underbrace{\frac{1}{2} \rho \vec{v}^2}_{\text{dynamic pressure}} = const.
+\end{equation}
+
+\subsection{Circulation}
+The \textbf{circulation} $\Gamma$ of a fluid around the profile of i.e. an air foil is defined as follows:
+\begin{equation}
+\Gamma = \oint_{\text{Profile}}\vec{v}\cdot\vec{dl}
+\end{equation}
+
+\subsection{Kutta–Joukowski theorem}
+The magnitude of the boyant force $\vec{F_l}$ can be found using the \textbf{Kutta–Joukowski theorem} 
+\begin{equation}
+\lvert \vec{F_l}\rvert = b \rho \Gamma \lvert \vec{v}_\infty \rvert
+\end{equation}
+
 \subsection{Uncertainty analysis}
 \paragraph*{Polar diagram}
 \begin{equation}
