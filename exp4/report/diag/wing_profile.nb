@@ -10,14 +10,39 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     10989,        321]
-NotebookOptionsPosition[     10348,        299]
-NotebookOutlinePosition[     10835,        316]
-CellTagsIndexPosition[     10792,        313]
+NotebookDataLength[     20819,        589]
+NotebookOptionsPosition[     20031,        562]
+NotebookOutlinePosition[     20516,        579]
+CellTagsIndexPosition[     20473,        576]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetOptions", "[", 
+   RowBox[{"ListPlot", ",", 
+    RowBox[{"BaseStyle", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"FontFamily", "\[Rule]", "\"\<Verdana\>\""}], ",", 
+       RowBox[{"FontSize", "\[Rule]", "12"}]}], "}"}]}]}], "]"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.5732163848011923`*^9, 3.573216389481615*^9}, {
+   3.573216433636157*^9, 3.573216601237463*^9}, {3.5733162165981913`*^9, 
+   3.5733162380097647`*^9}, {3.573316287811635*^9, 3.573316381392243*^9}, {
+   3.573316424587599*^9, 3.573316444704142*^9}, {3.5733164778639917`*^9, 
+   3.57331652876611*^9}, {3.573316577680529*^9, 3.573316631630991*^9}, {
+   3.573316705516963*^9, 3.573316713215617*^9}, {3.573316751849271*^9, 
+   3.5733167998096867`*^9}, {3.573316861598751*^9, 3.573316945196417*^9}, {
+   3.573317008026815*^9, 3.573317025446368*^9}, {3.573317210686741*^9, 
+   3.573317312972075*^9}, {3.573317348586008*^9, 3.5733173524312*^9}, {
+   3.573317421819915*^9, 3.57331746601608*^9}, {3.573317547530616*^9, 
+   3.5733175564107027`*^9}, {3.5733176081026373`*^9, 3.573317650045731*^9}, {
+   3.573317760220573*^9, 3.573317899531204*^9}, {3.573318397056982*^9, 
+   3.5733184013251762`*^9}, 3.573374013711083*^9, {3.573374071156*^9, 
+   3.573374074745048*^9}, {3.5733741172251377`*^9, 3.573374117799356*^9}}],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"foilex", "=", 
@@ -92,18 +117,19 @@ Cell[BoxData[
       RowBox[{"0", ",", 
        RowBox[{"-", "5"}]}], "}"}]}], "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.5732163848011923`*^9, 3.573216389481615*^9}, {
-  3.573216433636157*^9, 3.573216601237463*^9}, {3.5733162165981913`*^9, 
-  3.5733162380097647`*^9}, {3.573316287811635*^9, 3.573316381392243*^9}, {
-  3.573316424587599*^9, 3.573316444704142*^9}, {3.5733164778639917`*^9, 
-  3.57331652876611*^9}, {3.573316577680529*^9, 3.573316631630991*^9}, {
-  3.573316705516963*^9, 3.573316713215617*^9}, {3.573316751849271*^9, 
-  3.5733167998096867`*^9}, {3.573316861598751*^9, 3.573316945196417*^9}, {
-  3.573317008026815*^9, 3.573317025446368*^9}, {3.573317210686741*^9, 
-  3.573317312972075*^9}, {3.573317348586008*^9, 3.5733173524312*^9}, {
-  3.573317421819915*^9, 3.57331746601608*^9}, {3.573317547530616*^9, 
-  3.5733175564107027`*^9}, {3.5733176081026373`*^9, 3.573317650045731*^9}, {
-  3.573317760220573*^9, 3.573317899531204*^9}, {3.573318397056982*^9, 
-  3.5733184013251762`*^9}}],
+   3.573216433636157*^9, 3.573216601237463*^9}, {3.5733162165981913`*^9, 
+   3.5733162380097647`*^9}, {3.573316287811635*^9, 3.573316381392243*^9}, {
+   3.573316424587599*^9, 3.573316444704142*^9}, {3.5733164778639917`*^9, 
+   3.57331652876611*^9}, {3.573316577680529*^9, 3.573316631630991*^9}, {
+   3.573316705516963*^9, 3.573316713215617*^9}, {3.573316751849271*^9, 
+   3.5733167998096867`*^9}, {3.573316861598751*^9, 3.573316945196417*^9}, {
+   3.573317008026815*^9, 3.573317025446368*^9}, {3.573317210686741*^9, 
+   3.573317312972075*^9}, {3.573317348586008*^9, 3.5733173524312*^9}, {
+   3.573317421819915*^9, 3.57331746601608*^9}, {3.573317547530616*^9, 
+   3.5733175564107027`*^9}, {3.5733176081026373`*^9, 3.573317650045731*^9}, {
+   3.573317760220573*^9, 3.573317899531204*^9}, {3.573318397056982*^9, 
+   3.5733184013251762`*^9}, 3.573374013711083*^9, {3.573374071156*^9, 
+   3.573374074745048*^9}}],
 
 Cell[CellGroupData[{
 
@@ -153,6 +179,7 @@ E2I+2wEGFCByAAC9TjrD
     FormBox["\"x [mm]\"", TraditionalForm], 
     FormBox["\"y [mm]\"", TraditionalForm]},
   AxesOrigin->{0, 0},
+  BaseStyle->{FontFamily -> "Verdana", FontSize -> 12},
   ImageSize->{757., Automatic},
   Method->{},
   PlotRange->{{-5, 110}, {-10, 40}},
@@ -160,7 +187,8 @@ E2I+2wEGFCByAAC9TjrD
   PlotRangePadding->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
   3.573318173479299*^9, 3.573318430539464*^9, {3.573318666352069*^9, 
-   3.573318704231592*^9}, 3.573318741587944*^9}]
+   3.573318704231592*^9}, 3.573318741587944*^9, 3.573374081137718*^9, 
+   3.5733741224052763`*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -284,6 +312,210 @@ E2I+2wEGFCByAAC9TjrD
        100., 25.}, {102., 16.}}]}, 
      {RGBColor[1, 0, 0], PointSize[Large], 
       PointBox[{{102., 16.}, {100., 10.}, {91., 4.}, {85., 3.}, {67.5, 3.}, {
+       42.5, 2.}, {19.5, -1.}}]}}, {}}, InsetBox[
+    StyleBox[Cell[TextData[StyleBox["1",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {16.017543859649127`, 10.08771929842225}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["2",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {36.76315790590951, 21.570175441408075`}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["3",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {58.9561403586642, 31.6052631591754}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["4",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {78.06140351364434, 35.46491228139361}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["5",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {90.60526316085353, 32.57017543972996}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["6",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {101.99122807139723`, 26.008771931958997`}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["7",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {103.92105263250633`, 15.201754389748025`}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["8",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {102.57017543972997`, 7.6754386014225275`}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["9",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {89.94073063543637, 6.165813015369004}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["10",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {81.8650064310867, 5.218017766231341}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["11",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {66.13072529760166, 5.04215234153731}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["12",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {40.65704109096148, 3.9184916677056165`}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[StyleBox["13",
+      FontFamily->"Bitstream Vera Sans",
+      FontSize->14]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     TextAlignment->Center,
+     FontFamily->"Times",
+     FontSize->10,
+     Background->GrayLevel[1.]], {15.79184320496263, -5.483265887637025}, {
+    Left, Baseline},
+    Alignment->{Left, Top}]},
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x [mm]\"", TraditionalForm], 
+    FormBox["\"y [mm]\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  BaseStyle->{FontFamily -> "Verdana", FontSize -> 12},
+  ImagePadding->{{5.090909, 61.}, {9., 22.}},
+  ImageSize->{720., Automatic},
+  Method->{},
+  PlotRange->{{-5., 110.}, {-10., 40.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->Automatic]], "Input",
+ CellChangeTimes->{{3.573374226604724*^9, 3.573374227483618*^9}, {
+  3.573374273737604*^9, 3.573374419630294*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {{}, {}, 
+     {RGBColor[0.24720000000000014`, 0.24, 0.6], Thickness[Large], 
+      LineBox[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQjQpEDkBoJQeoAJQ2gtIKUNoWSutC6APOUL4JlPaE
+0pZQ2g9NXxCUdoDqD4bQDVC+Q6gD1DqoujCovD2UDnM4ewYE7KD8cFTzCyKg
+5lpBxSNR3eMA45tD9cP4Jmh8A6h5kQ6zZoKAJtRdMHkVqHqofQwyaO4RgboD
+6n4GAah+qP8YOKDuCXZIAwMmCP9BAKp8gw+aelcoHxY/sHD6YA9Rbwzj74e5
+E2I+2wEGFCByAAC9TjrD
+       "]]}}, {}}, {{}, {
+     {RGBColor[0, 
+       NCache[
+        Rational[2, 3], 0.6666666666666666], 0], PointSize[Large], 
+      PointBox[{{18., 8.}, {39.5, 20.}, {60., 29.}, {79., 33.}, {90., 31.}, {
+       100., 25.}, {102., 16.}}]}, 
+     {RGBColor[1, 0, 0], PointSize[Large], 
+      PointBox[{{102., 16.}, {100., 10.}, {91., 4.}, {85., 3.}, {67.5, 3.}, {
        42.5, 2.}, {19.5, -1.}}]}}, {}}},
   Axes->True,
   AxesLabel->{
@@ -295,10 +527,41 @@ E2I+2wEGFCByAAC9TjrD
   PlotRange->{{-5, 110}, {-10, 40}},
   PlotRangeClipping->True,
   PlotRangePadding->{Automatic, Automatic}]], "Input",
- CellChangeTimes->{{3.573318751601626*^9, 3.573318752824563*^9}}]
+ CellChangeTimes->{{3.573318751601626*^9, 3.573318752824563*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {{}, {}, 
+     {RGBColor[0.24720000000000014`, 0.24, 0.6], Thickness[Large], 
+      LineBox[CompressedData["
+1:eJxTTMoPSmViYGBQAGIQjQpEDkBoJQeoAJQ2gtIKUNoWSutC6APOUL4JlPaE
+0pZQ2g9NXxCUdoDqD4bQDVC+Q6gD1DqoujCovD2UDnM4ewYE7KD8cFTzCyKg
+5lpBxSNR3eMA45tD9cP4Jmh8A6h5kQ6zZoKAJtRdMHkVqHqofQwyaO4RgboD
+6n4GAah+qP8YOKDuCXZIAwMmCP9BAKp8gw+aelcoHxY/sHD6YA9Rbwzj74e5
+E2I+2wEGFCByAAC9TjrD
+       "]]}}, {}}, {{}, {
+     {RGBColor[0, 
+       NCache[
+        Rational[2, 3], 0.6666666666666666], 0], PointSize[Large], 
+      PointBox[{{18., 8.}, {39.5, 20.}, {60., 29.}, {79., 33.}, {90., 31.}, {
+       100., 25.}, {102., 16.}}]}, 
+     {RGBColor[1, 0, 0], PointSize[Large], 
+      PointBox[{{102., 16.}, {100., 10.}, {91., 4.}, {85., 3.}, {67.5, 3.}, {
+       42.5, 2.}, {19.5, -1.}}]}}, {}}},
+  Axes->True,
+  AxesLabel->{
+    FormBox["\"x [mm]\"", TraditionalForm], 
+    FormBox["\"y [mm]\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  ImageSize->{710., Automatic},
+  Method->{},
+  PlotRange->{{-5, 110}, {-10, 40}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.5733740812012033`*^9, 3.573374122485735*^9}]
+}, Open  ]]
 },
 WindowSize->{915, 741},
-WindowMargins->{{171, Automatic}, {Automatic, 17}},
+WindowMargins->{{Automatic, 51}, {2, Automatic}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -315,14 +578,19 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 3194, 85, 126, "Input"],
+Cell[557, 20, 1331, 23, 33, "Input"],
+Cell[1891, 45, 3275, 86, 126, "Input"],
 Cell[CellGroupData[{
-Cell[3776, 109, 1154, 29, 80, "Input"],
-Cell[4933, 140, 869, 22, 350, "Output"]
+Cell[5191, 135, 1154, 29, 80, "Input"],
+Cell[6348, 166, 975, 24, 348, "Output"]
 }, Open  ]],
-Cell[5817, 165, 2513, 78, 103, InheritFromParent],
-Cell[8333, 245, 823, 22, 80, "Input"],
-Cell[9159, 269, 1185, 28, 329, InheritFromParent]
+Cell[7338, 193, 2513, 78, 103, "Input"],
+Cell[9854, 273, 823, 22, 80, "Input"],
+Cell[10680, 297, 6936, 200, 330, InheritFromParent],
+Cell[CellGroupData[{
+Cell[17641, 501, 1185, 28, 329, "Input"],
+Cell[18829, 531, 1186, 28, 329, "Output"]
+}, Open  ]]
 }
 ]
 *)
