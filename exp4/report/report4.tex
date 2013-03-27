@@ -34,9 +34,14 @@
 \chapter{Experiment: Airfoil in a wind channel}
 \section{Introduction}
 \subsection{Goal of the experiment}
-The goal of this experiment is to determine the angle of attack where for a given airfoil the ratio of air drag to lift is optimal. Furthermore, the lift is to be calculated by measuring the pressure conditions on the surface of the airfoil.
+The goal of this experiment is to determine the angle of attack where for a given airfoil the ratio of air drag to lift is optimal. Furthermore, the lift is to be calculated by measuring the pressure conditions on the surface of the airfoil.\\
+
+Firstly, we want to create a so called polar diagram, where the boyant force $F_l$ is plotted agains the drag force $F_r$. From this diagram we are able to gain a whole set of useful properties of the airfoild model. For instance we can deduct the angle of attack at which the ratio of air drag to lift is optimal, or at which maximum travelling speed can be achieved.\\
+
+In the second part of the experiment we want to examine the airfoil's surface behaviour even further. At a fixed angle of attack, we will measure the air pressure around the foil's profile and calculate the boyant force directly from these measurements using a computer's nummerical integration capabilites. Furthermore, as an additional way of measuring the boyant force, we are going to use the \textbf{Kutta–Joukowski theorem} which involves measuring the airfoil's \textbf{circulation}.
 
 \subsection{Theory}
+To be able to carry out all the necessary calculations we need a whole set of handy equations and principles. We therefore only list the most important and profound ones:
 
 \subsubsection{Bernoulli's Principle}
 Bernoulli's Principle is a direct consequence of the \textbf{conservation of energy} and the \textbf{continuity equation}
@@ -55,12 +60,14 @@ The \textbf{circulation} $\Gamma$ of a fluid around the profile of i.e. an air f
 \begin{equation}
 \Gamma = \oint_{\text{Profile}}\vec{v}\cdot\vec{dl}
 \end{equation}
+where $\vec{v}$ is the speed of the fluid at the contact area of the profile.
 
 \subsection{Kutta–Joukowski theorem}
 The magnitude of the boyant force $\vec{F_l}$ can be found using the \textbf{Kutta–Joukowski theorem} 
 \begin{equation}
 \lvert \vec{F_l}\rvert = b \rho \Gamma \lvert \vec{v}_\infty \rvert
 \end{equation}
+where $b$ is the width of the surface traversed by the fluid stream and $\rho$ the fluid's density.
 
 \subsection{Uncertainty analysis}
 \paragraph*{Polar diagram}
@@ -117,7 +124,7 @@ The materials used in this experiment are the following:
 
 \subsection{Assembly}
 For this experiment we have to measure three things. And for both of them, we need the wind speed, which is measured using the prandtl tube and left at that value for the whole experiment. Then, we need to measure the air drag of the airfoil at different angles of attack. We do this by arranging the assembly as shown in figure \ref{fig:assembly1}. Now, for every angle between $\ang{-20}$ and $\ang{+20}$ (in $\ang{5}$ steps) the drag is measured using the balance.
-Next, we rearrange the assembly as shown in figure \ref{fig:assembly2} and measure the lift for the same angles as before. Last, without modifying the assembly, we proceed to measure the pressure conditions on the surface of the airfoil by attaching a manometer to the foil's holes.
+Next, we rearrange the assembly as shown in figure \ref{fig:assembly2} and measure the lift for the same angles as before. Last, without modifying the assembly, we proceed to measure the pressure conditions on the surface of the airfoil by attaching a manometer to the foil's premounted pressure measuring points.
 
 \begin{figure}[H]
 	\centering
@@ -134,8 +141,29 @@ Next, we rearrange the assembly as shown in figure \ref{fig:assembly2} and measu
 \end{figure}
 
 \section{Measurements}
+\subsection{Environment variables}
+First of all we measured all the environment variables necessary for our calculations:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|r|}
+\hline
+Temperature: & \ang{22}C\\
+\hline
+Air pressure: & 951 mbar\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Airspeed}
+As suggested in the script we chose the highest air speed possible. At this stage, we measured the airspeed to be 
+
+\[\overline{v_{\text{air}}}\pm s_{\overline{v_{\text{air}}}} = (14.76 \pm 0.055)\unit{\frac{m}{s}}\]
+
+after several speed readings using the prandtl tube.
 
 \subsection{Airfoil Profile}
+To comfortably carry out our calculations, we needed a true scale digital replica of the airfoil's profile. After drawing the outline of the airfoil using a metal template we continued to measure the coordinates of a few points along the profile.
 
 \begin{figure}[H]
 	\centering
@@ -143,6 +171,8 @@ Next, we rearrange the assembly as shown in figure \ref{fig:assembly2} and measu
 	\caption{Digital representation of the airfoil profile used during the experiment}
 	\label{fig:profile}
 \end{figure}
+
+We can see that the length $l$ of the chord projection is $l=0.102m$. We will use this quantity throughout this report.
 
 \subsection{\boldmath$\lvert F_l\rvert$ and \boldmath$\lvert F_r\rvert$}
 In order to calculate $\lvert F_l\rvert$ and $\lvert F_r\rvert$ we used the following masses $m_v$ and $m_h$ to counterbalance the airfoil's air resistance force $F_r$ and boyant force $F_l$ respectively. Some measurements were taken repeatedly after some time for uncertainty analysis.
@@ -203,9 +233,9 @@ No. &  \multicolumn{2}{c|}{[mmWs]} \\
 
 \section{Analysis and Discussion}
 \subsection{Polar diagram}
-In order to calculate $\lvert F_l\rvert$ and $\lvert F_r\rvert$ we use our measurements in table \ref{tab:polarmes} and the following formulae:
+In order to calculate $\lvert \vec{F_l}\rvert$ and $\lvert \vec{F_r}\rvert$ we use our measurements in table \ref{tab:polarmes} and the following formulae:
 \begin{align}
-F_l &= \Delta F_g = m_v \cdot g\\
+F_l &= \Delta F_g = m_v \cdot g\label{eq:liftweighing}\\
 F_r &= m_h \cdot g
 \end{align}
 and we can draw the polar diagram accordingly:
@@ -213,21 +243,52 @@ and we can draw the polar diagram accordingly:
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/polar_diag.pdf}
-	\caption{The polar diagram obtained by our measurements. $\lvert F_r\rvert$ is indicated along the horizontal axis and $\lvert F_l\rvert$ along the vertical axis at different angles of attack, measured in Newtons [N]}
+	\caption{The polar diagram obtained by our measurements. $F_r$ is indicated along the horizontal axis and $F_l$ along the vertical axis at different angles of attack, measured in Newton [N]}
 	\label{fig:poldiag}
 \end{figure}
 
+From this diagram we can deduct the following properties:
+\begin{itemize}
+\item Maximum travelling speed can be achieved at an angle between \ang{0} and \ang{-5}
+\item Optimal glide ratio at about \ang{10}
+\item Maximum lift occurs at \ang{15}
 
+\end{itemize}
 
 \subsection{Calculating the foil's boyant force $\lvert F_l\rvert$}
+For this series of experiments the airfoil was set to a constant angle of attack of \ang{5}.
+
 \subsubsection{By weighing}
 Calculating the foil's boyant force by weighing is very easy. We can just use the values we obtained in table \ref{tab:polarmes}
+
+As stated in \ref{eq:liftweighing} we can directly calculate the boyant force $F_l$:
+\begin{equation}
+F_l = \Delta F_g = m_v \cdot g = 0.353 \unit{N} \pm 0.0057 \unit{N}
+\end{equation}
+
+\subsubsection{By measuring pressure distribution}
+For the second way of measuring $F_l$ we plot the measured air pressure differences at each point against the projection of the point's x-coordinate onto the airfoil's chord. Green points correspond to the measuring locations on top of the airfoil, red points to the locations along the airfoil's bottom. 
+
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/meas_pressure.pdf}
 	\caption{Measured air pressure at predefined measuring points around the airfoil's profile}
 	\label{fig:pressure}
 \end{figure}
+
+In order to find $F_l$ we need to integrate the shaded area between the two (linearly) interpolated curves (Figure \ref{fig:pressure}) since the pressure difference between top and bottom plane correlates to the difference between these two curves. If we then integrate said difference along the chord projection and multiply the result by the width of the surface creating the lift we get the boyant force:
+
+\begin{equation}
+F_l = b \cdot \int_0^l{p_{upper}(x)-p_{lower}(x)dx}
+\end{equation}
+
+Instead of performing said integration graphically we used our digital representation of the airfoil with the positions of the measured pressure points. The integration was then carried out in Mathematica 9.0 and we found the value $F_l$ to be:
+\[F_l = (0.395 \pm 0.0439) \unit{N}\]
+We estimated $b=(0.09 \pm 0.01)\unit{m}$ since the opening of the wind turbine was only 0.07m wide and not the whole width of the airfoil's surface was overflowed.
+
+
+\subsubsection{Using the Kutta-Joukowski theorem}
+
 
 \section{Conclusion}
 
