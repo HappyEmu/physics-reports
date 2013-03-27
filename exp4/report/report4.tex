@@ -9,6 +9,8 @@
 \newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
 \usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
 \usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -42,6 +44,40 @@ The materials used in this experiment are the following:
 \item A prandtl tube
 \item A manometer
 \end{itemize}
+
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/balance.jpg}
+                \caption{Airfoil balance}
+                \label{fig:balance}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/weights.jpg}
+                \caption{Weights}
+                \label{fig:weights}
+        \end{subfigure}
+          
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/airfoil.jpg}
+                \caption{Airfoil}
+                \label{fig:airfoil}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{img/manometer.jpg}
+                \caption{Manometer}
+                \label{fig:manometer}
+        \end{subfigure}
+        \caption{Materials used in the experiment}\label{fig:materials}
+\end{figure}
 
 \subsection{Assembly}
 For this experiment we have to measure three things. And for both of them, we need the wind speed, which is measured using the prandtl tube and left at that value for the whole experiment. Then, we need to measure the air drag of the airfoil at different angles of attack. We do this by arranging the assembly as shown in figure \ref{fig:assembly1}. Now, for every angle between $\ang{-20}$ and $\ang{+20}$ (in $\ang{5}$ steps) the drag is measured using the balance.
@@ -82,12 +118,12 @@ In order to calculate $\lvert F_l\rvert$ and $\lvert F_r\rvert$ we used the foll
 Angle & \ang{-20} & \ang{-15} & \ang{-10} & \ang{-5} & \ang{0} & \ang{5} & \ang{10} & \ang{15} & \ang{20}\\
 \hline\hline
 $m_v$ [g] & 22 & 16.5 & 13 & 12 & 12 & 14 & 16 & 20 & 25\\ 
-          & 22 &      &    &    & 12 &    &    &    & 24.5\\ 
-          & 22 &      &    &    &    &    &    &    & \\  
+          & 22 &   -   &  -  &  -  & 12 &  -  &  -  &  -  & 24.5\\ 
+          & 22 &   -   &  -  &  -  &  -  & -   & -   &  -  & -\\  
 \hline\hline
 $m_h$ [g] & 4 & 10 & 16.5 & 23 & 30 & 37 & 42 & 52 & 43\\
-&  &  &  &  &  & 35 &  &  & \\
-&  &  &  &  &  & 36 &  &  & \\
+& - & - & - & - & - & 35 & - & - & -\\
+& - & - & - & - & - & 36 & - & - & -\\
 \hline
 \end{tabular}
 \end{table}
@@ -110,6 +146,14 @@ $m_h$ [g] & 4 & 10 & 16.5 & 23 & 30 & 37 & 42 & 52 & 43\\
 	\label{fig:poldiag}
 \end{figure}
 
+\subsection{Air pressure around wing profile}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/meas_pressure.pdf}
+	\caption{Measured air pressure at predefined measuring points around the airfoil's profile}
+	\label{fig:pressure}
+\end{figure}
 
 \section{Conclusion}
 
