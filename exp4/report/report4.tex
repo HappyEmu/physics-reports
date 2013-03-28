@@ -77,6 +77,12 @@ where $b$ is the width of the surface traversed by the fluid stream and $\rho$ t
 \begin{equation}
 \Longrightarrow s_q^2 = \frac{s_{\overline{m_h}}^2}{m_v^2} + \frac{s_{\overline{m_v}}^2 \cdot m_h^2}{m_v^4}
 \end{equation}
+We chose to omit this errors in the polar diagram since they turned out to be too small to be visible.
+\paragraph*{Weighing}
+The error of $F_l$ is obtained by considering the standard error of the mean of the weighings at an angle of \ang{5}.
+
+\paragraph*{Pressure and Kutta-Joukowski}
+In both of these methods the main source of error is the measurement of the width $b$ of the overflowed surface of the airfoil. This impact is stated in the analysis and discussion section of this report.
 
 \section{Experiment setup and execution}
 \subsection{Used materials}
@@ -326,11 +332,15 @@ As expected the airspeed along the top side of the foil is larger compared to th
 \end{equation}
 considering the sign change of $dl$.
 
+To avoid complications and because it has no impact on the lift force, the point on the front of the airfoil has been neglected in the calculations executed in this section.
+
 We can now find the lift $F_l$:
 
 \begin{equation}
 F_l = b \rho \Gamma \lvert \vec{v}_\infty \rvert = (0.330 \pm 0.037) \unit{N}
 \end{equation}
+
+which falls in line with the results obtained by the previous methods.
 
 \subsubsection{Comparison of results}
 
