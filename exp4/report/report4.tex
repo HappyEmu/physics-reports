@@ -36,7 +36,7 @@
 \subsection{Goal of the experiment}
 The goal of this experiment is to determine the angle of attack where for a given airfoil the ratio of air drag to lift is optimal. Furthermore, the lift is to be calculated by measuring the pressure conditions on the surface of the airfoil.\\
 
-Firstly, we want to create a so called polar diagram, where the boyant force $F_l$ is plotted agains the drag force $F_r$. From this diagram we are able to gain a whole set of useful properties of the airfoild model. For instance we can deduct the angle of attack at which the ratio of air drag to lift is optimal, or at which maximum travelling speed can be achieved.\\
+Firstly, we want to create a so called polar diagram, where the boyant force $F_l$ is plotted agains the drag force $F_r$. From this diagram we are able to gain a whole set of useful properties of the airfoil model. For instance we can deduct the angle of attack at which the ratio of air drag to lift is optimal, or at which maximum travelling speed can be achieved.\\
 
 In the second part of the experiment we want to examine the airfoil's surface behaviour even further. At a fixed angle of attack, we will measure the air pressure around the foil's profile and calculate the boyant force directly from these measurements using a computer's nummerical integration capabilites. Furthermore, as an additional way of measuring the boyant force, we are going to use the \textbf{Kutta–Joukowski theorem} which involves measuring the airfoil's \textbf{circulation}.
 
@@ -284,7 +284,7 @@ F_l = b \cdot \int_0^l{p_{upper}(x)-p_{lower}(x)dx}
 
 Instead of performing said integration graphically we used our digital representation of the airfoil with the positions of the measured pressure points. The integration was then carried out in Mathematica 9.0 and we found the value $F_l$ to be:
 \[F_l = (0.395 \pm 0.0439) \unit{N}\]
-We estimated $b=(0.09 \pm 0.01)\unit{m}$ since the opening of the wind turbine was only 0.07m wide and not the whole width of the airfoil's surface was overflowed.
+We estimated $b=(0.09 \pm 0.01)\unit{m}$. This is because since the opening of the wind turbine was only 0.07m wide, not the whole width of the airfoil's surface was overflowed. However, choosing $b$ too close to 0.07m would assume the dispersion of the wind column to be zero, which we could refute measuring using a wire with some threads attached to it. Hence, $b=(0.09 \pm 0.01)\unit{m}$ appeared to be close to actual conditions.
 
 
 \subsubsection{Using the Kutta-Joukowski theorem}
@@ -297,6 +297,7 @@ We estimated $b=(0.09 \pm 0.01)\unit{m}$ since the opening of the wind turbine w
 \end{figure}
 
 \section{Conclusion}
+In conclusion of this experiment, we are happy with our results. Both theoretical methods, one using the Kutta-Joukowski theorem and the other by measuring the pressure distribution, yielded very similar results to our direct measurements of the airfoil's generated lift. The small deviances obtained can be explained by approximations made in the calculations (such as assuming the wind speeds are perfectly aligned to the airfoil's surface, or assuming that the pressure conditions are the same for the whole width of the airfoil at a certain distance from the front) and imperfections in the experiment assembly such as the holes for pressure measurement not being aligned.
 
 \begin{thebibliography}{9}
 
