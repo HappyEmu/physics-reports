@@ -158,7 +158,7 @@ Air pressure: & 951 mbar\\
 \subsection{Airspeed}
 As suggested in the script we chose the highest air speed possible. At this stage, we measured the airspeed to be 
 
-\[\overline{v_{\text{air}}}\pm s_{\overline{v_{\text{air}}}} = (14.76 \pm 0.055)\unit{\frac{m}{s}}\]
+\[\overline{v_{\infty}}\pm s_{\overline{v_{\infty}}} = (14.76 \pm 0.055)\unit{\frac{m}{s}}\]
 
 after several speed readings using the prandtl tube.
 
@@ -286,15 +286,68 @@ Instead of performing said integration graphically we used our digital represent
 \[F_l = (0.395 \pm 0.0439) \unit{N}\]
 We estimated $b=(0.09 \pm 0.01)\unit{m}$ since the opening of the wind turbine was only 0.07m wide and not the whole width of the airfoil's surface was overflowed.
 
-
 \subsubsection{Using the Kutta-Joukowski theorem}
+
+As stated in the theory section, the boyant force $F_l$ can also be found using the Kutta-Joukowski theorem.
+
+\begin{equation}
+\lvert \vec{F_l}\rvert = b \rho \Gamma \lvert \vec{v}_\infty \rvert
+\end{equation}
+with $\Gamma$ being the circulation
+
+\begin{equation}
+\Gamma = \oint\limits_{\text{Profile}}\!\vec{v}\cdot\vec{\mathrm{d} l}\label{eq:integral}
+\end{equation}
+
+Thanks to Bernoulli's theorem we can calculate the airspeeds along the foil's profile using the measured pressure readings and the total pressure in the undisturbed stream, which we measured to be $p_s= 15.2 \unit{mmWs}$.
+
+\begin{equation}
+p_s - p(x) = \frac{1}{2} \rho v(x)^2
+\end{equation}
+
+
+\begin{equation}
+\Longrightarrow v^2 = \frac{2\left(p_s-p(x)\right)}{\rho}
+\end{equation}
+
+This will yield the following graph:
 
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/kutta-joukowsky.pdf}
-	\caption{Measured air pressure at predefined measuring points around the airfoil's profile}
+	\caption{Calculated air speeds at different points along the airfoil's profile. Green curve corresponds to top side, red to bottom side of the foil.}
 	\label{fig:kutta}
 \end{figure}
+
+As expected the airspeed along the top side of the foil is larger compared to the airspeed at the bottom side. To find $\Gamma$ we now need to do the integral \ref{eq:integral}.
+
+\begin{equation}
+\Gamma = \int_l^0 v_{\text{top}}(x) dl + \int_0^l v_{\text{bottom}}(x) dl
+\end{equation}
+considering the sign change of $dl$.
+
+We can now find the lift $F_l$:
+
+\begin{equation}
+F_l = b \rho \Gamma \lvert \vec{v}_\infty \rvert = (0.330 \pm 0.037) \unit{N}
+\end{equation}
+
+\subsubsection{Comparison of results}
+
+We now proceed to compare the results of our different ways of measuring $F_l$
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+Method & $F_l$\\
+\hline\hline
+weighing: & $0.353 \unit{N} \pm 0.0057 \unit{N}$\\ 
+pressure difference: & $0.395 \unit{N} \pm 0.0439 \unit{N}$\\
+Kutta-Joukowski: & $0.330 \unit{N} \pm 0.0370 \unit{N}$\\
+\hline
+\end{tabular}
+\end{table}
+
 
 \section{Conclusion}
 
