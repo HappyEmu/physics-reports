@@ -14,6 +14,7 @@
 \usepackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\renewcommand{\phi}{\varphi}
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -36,7 +37,20 @@
 \subsection{Goal of the experiment}
 
 \subsection{Theory}
-
+\begin{equation}
+J\cdot \ddot{\phi} = \sum_i M_i
+\end{equation}
+\subsubsection{Free damped oscillation}
+\begin{equation}
+M_R=-R\dot{\phi}
+\end{equation}
+\begin{equation}
+J\ddot{\phi} + r \dot{\phi} + D \phi = 0
+\end{equation}
+The solution in case of weak damping is
+\begin{equation}
+\phi(t) = A e^{-\alpha t} \cos{\left(\omega t - \phi_0\right)}
+\end{equation}
 
 \section{Experiment setup and execution}
 \subsection{Used materials}
