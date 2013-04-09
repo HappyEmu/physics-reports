@@ -158,6 +158,8 @@ Temperature: & \ang{22}C\\
 \hline
 Air pressure: & 951 mbar\\
 \hline
+Air density: & 1.204 $\tiny\frac{\unit{kg}}{\unit{m^3}}$\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -290,7 +292,7 @@ F_l = b \cdot \int_0^l{p_{upper}(x)-p_{lower}(x)dx}
 
 Instead of performing said integration graphically we used our digital representation of the airfoil with the positions of the measured pressure points. The integration was then carried out in Mathematica 9.0 and we found the value $F_l$ to be:
 \[F_l = (0.395 \pm 0.0439) \unit{N}\]
-We estimated $b=(0.09 \pm 0.01)\unit{m}$. This is because since the opening of the wind turbine was only 0.07m wide, not the whole width of the airfoil's surface was overflowed. However, choosing $b$ too close to 0.07m would assume the dispersion of the wind column to be zero, which we could refute measuring using a wire with some threads attached to it. Hence, $b=(0.09 \pm 0.01)\unit{m}$ appeared to be close to actual conditions.
+We estimated $b=(0.09 \pm 0.01)\unit{m}$. This is because, since the opening of the wind turbine was only 0.07m wide, not the whole width of the airfoil's surface was overflowed. However, choosing $b$ too close to 0.07m would assume the dispersion of the wind column to be zero, which we could refute measuring using a wire with some threads attached to it. Hence, taking our measurements with the threaded wire into consideration, $b=(0.09 \pm 0.01)\unit{m}$ appeared to be close to actual conditions.
 
 \subsubsection{Using the Kutta-Joukowski theorem}
 
@@ -334,7 +336,7 @@ considering the sign change of $dl$.
 
 To avoid complications and because it has no impact on the lift force, the point on the front of the airfoil has been neglected in the calculations executed in this section.
 
-We can now find the lift $F_l$:
+Using Mathematica 9.0 we can now find the lift $F_l$:
 
 \begin{equation}
 F_l = b \rho \Gamma \lvert \vec{v}_\infty \rvert = (0.330 \pm 0.037) \unit{N}
@@ -344,16 +346,16 @@ which falls in line with the results obtained by the previous methods.
 
 \subsubsection{Comparison of results}
 
-We now proceed to compare the results of our different ways of measuring $F_l$
+We now proceed to compare the results of our different ways of measuring $F_l$. As a reference for the relative error we've chosen the weighing method.
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|c|}
+\begin{tabular}{|l|c|c|}
 \hline
-Method & $F_l$\\
+Method & $F_l$ & Relative error\\
 \hline\hline
-weighing: & $0.353 \unit{N} \pm 0.0057 \unit{N}$\\ 
-pressure difference: & $0.395 \unit{N} \pm 0.0439 \unit{N}$\\
-Kutta-Joukowski: & $0.330 \unit{N} \pm 0.0370 \unit{N}$\\
+weighing: & $0.353 \unit{N} \pm 0.0057 \unit{N}$&0\%\\ 
+pressure difference: & $0.395 \unit{N} \pm 0.0439 \unit{N}$&+11.9\%\\
+Kutta-Joukowski: & $0.330 \unit{N} \pm 0.0370 \unit{N}$&-7.5\%\\
 \hline
 \end{tabular}
 \end{table}
