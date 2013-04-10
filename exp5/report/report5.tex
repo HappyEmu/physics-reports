@@ -49,12 +49,18 @@ Equation of motion:
 \begin{equation}
 J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{Friction}} + \underbrace{D \phi}_{\text{Spring}} = 0
 \end{equation}
-where $R$ is the damping coefficent, and $D$ is the spring constant.
+where $R$ is the damping coefficent, and $D$ is the spring constant. Additionally, we define
+\begin{equation}
+\omega_0^2 \doteq \frac{D}{J}, \quad \alpha \doteq \frac{R}{2J}
+\end{equation}
 
 The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
 \begin{equation}
 \phi(t) = A e^{-\alpha t} \cos{\left(\omega t - \beta\right)} \label{eq:freedampedsolution}
 \end{equation}
+with 
+\[\omega \doteq \sqrt{\omega_0^2-\alpha^2}\]
+where $A$ and $\beta$ are integration constants determined by initial conditions.
 
 \subsubsection{Paranthesis: Preliminary Exercises}
 By assumption: $\varphi(t) = (A_1e^{\omega t} + A_2e^{-\omega t})e^{-\alpha t}$\\
@@ -159,11 +165,11 @@ TODO: insert Frequency measurements!
 
 
 \section{Analysis and Discussion}
-We used two methods for determining the damping coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is 1 $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
+We used two methods for determining the damping coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is $1$ $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
 \begin{equation}
 y = Ae^{- \alpha \cdot t}
 \end{equation}
-Where $A$ is the initial deflection
+where $A$ is the initial deflection.
 We can now read $\alpha$ directly from the fit formulae:
 
 \begin{table}[h]
@@ -176,7 +182,12 @@ $I = 0.8 \unit{A}$ &:& $\alpha = 0.380\unit{Hz}$
 \end{tabular}
 \end{table}
 
-If we now proceed to calculating the resonant angular frequency of the undampened system, we need to use the formula !!!reference!!! to get the values:
+If we now proceed to calculating the resonant angular frequency of the undampened system, we deduce
+
+\begin{equation}
+\omega_0 = \sqrt{\omega^2+\alpha^2}, \quad \omega = \frac{2 \pi}{T} \quad \Longrightarrow \quad \omega_0 = \sqrt{\frac{4\pi^2}{T^2} + \alpha} 
+\end{equation}
+and get the following values:
 
 \begin{table}[h]
 \center
@@ -190,7 +201,7 @@ $I = 0.8 \unit{A}$ &:& $\omega_0 = 3.0649\unit{Hz}$
 
 Which yields:
 \begin{equation}
-\omega_0 = 3.080175 \pm 0.0054320615 \unit{Hz}
+\omega_0 = 3.0802 \pm 0.005432 \unit{Hz}
 \end{equation}
 
 The second method uses the measurements depicted in \ref{fig:forcedoscillation} and formulae !!!makeref!!!.
