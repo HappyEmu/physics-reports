@@ -58,8 +58,11 @@ The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
 \begin{equation}
 \phi(t) = A e^{-\alpha t} \cos{\left(\omega t - \beta\right)} \label{eq:freedampedsolution}
 \end{equation}
-with 
-\[\omega \doteq \sqrt{\omega_0^2-\alpha^2}\]
+with
+\begin{equation} 
+\omega \doteq \sqrt{\omega_0^2-\alpha^2}
+\label{omega0}
+\end{equation}
 where $A$ and $\beta$ are integration constants determined by initial conditions.
 
 \subsubsection{Paranthesis: Preliminary Exercises}
@@ -165,7 +168,7 @@ TODO: insert Frequency measurements!
 
 
 \section{Analysis and Discussion}
-We used two methods for determining the damping coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is $1$ $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
+We used two methods for determining the decay coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is $1$ $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
 \begin{equation}
 y = Ae^{- \alpha \cdot t}
 \end{equation}
@@ -185,7 +188,7 @@ $I = 0.8 \unit{A}$ &:& $\alpha = 0.380\unit{Hz}$
 If we now proceed to calculating the resonant angular frequency of the undampened system, we deduce
 
 \begin{equation}
-\omega_0 = \sqrt{\omega^2+\alpha^2}, \quad \omega = \frac{2 \pi}{T} \quad \Longrightarrow \quad \omega_0 = \sqrt{\frac{4\pi^2}{T^2} + \alpha} 
+\omega_0 = \sqrt{\omega^2+\alpha^2}, \quad \omega = \frac{2 \pi}{T} \quad \Longrightarrow \quad \omega_0 = \sqrt{\frac{4*pi^2}{T^2} + \alpha^2}
 \end{equation}
 and get the following values:
 
@@ -223,6 +226,31 @@ $I = 0.3 \unit{A}$ &:& $\alpha = 0.1981\unit{Hz}$\\
 $I = 0.8 \unit{A}$ &:& $\alpha = 3.11\unit{Hz}$
 \end{tabular}
 \end{table}
+
+From the same diagram, we can read the maximal resonance frequencies $\omega$
+
+\begin{table}[h]
+\center
+\begin{tabular}{lcl}
+$I = 0.3 \unit{A}$ &:& $\omega = 12.6920\unit{Hz}$\\
+$I = 0.8 \unit{A}$ &:& $\omega = 13.4340
+\unit{Hz}$
+\end{tabular}
+\end{table}
+
+Using formula \ref{omega0} and the values for alpha obtained from the graphical analysis we can again calculate $\omega_0$:
+\begin{table}[h]
+\center
+\begin{tabular}{lcl}
+$I = 0.3 \unit{A}$ &:& $\omega_0 = 12.6935\unit{Hz}$\\
+$I = 0.8 \unit{A}$ &:& $\omega_0 = 13.0690254389
+\unit{Hz}$
+\end{tabular}
+\end{table}
+
+
+
+
 
 \section{Conclusion}
 
