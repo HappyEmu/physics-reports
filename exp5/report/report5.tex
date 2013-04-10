@@ -76,7 +76,7 @@ The materials used in this experiment are the following:
 	\label{fig:assembly}
 \end{figure}
 
-For our measurements, we connect the front output of the power supply to the multimeter and then to the eddy brake and set the multimeter to read the amperage of alternating current. The electric engine is directly connected to the back output of the power supply. The engine is attached to the metal disc using a spring as shown in \ref{fig:assembly}.
+For our measurements, we connect the front output of the power supply to the multimeter and then to the eddy brake and set the multimeter to read the amperage of alternating current. The electric engine is directly connected to the back output of the power supply and attached to the metal disc using a spring as shown in \ref{fig:assembly}.
 \subsubsection{forced oscillation}
 For our first measurement series, we set the eddy brake to a certain current and then measured the maximal amplitude of the oscillation at different generator frequencies.
 \subsubsection{free oscillation}
@@ -120,8 +120,38 @@ For our second mesaurement series we locked the motor and set the eddy brake to 
 	\label{fig:0.8A}
 \end{figure}
 
+TODO: insert Frequency measurements!
+
 
 \section{Analysis and Discussion}
+We used two methods for determining the damping coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is 1 $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
+\begin{equation}
+y = Ae^{- \alpha \cdot t}
+\end{equation}
+Where $A$ is the initial deflection
+We can now read $\alpha$ directly from the fit formulae:
+\begin{itemize}
+\item $I = 0.3 \unit{A}$ : $\alpha = 0.079\unit{Hz}$
+\item $I = 0.5 \unit{A}$ : $\alpha = 0.169\unit{Hz}$
+\item $I = 0.65 \unit{A}$ : $\alpha = 0.251\unit{Hz}$
+\item $I = 0.8 \unit{A}$ : $\alpha = 0.380\unit{Hz}$
+\end{itemize}
+If we now proceed to calculating the resonant angular frequency of the undampened system, we need to use the formula !!!reference!!! to get the values:
+\begin{itemize}
+\item $I = 0.3 \unit{A}$ : $\omega_0 = 3.0810\unit{Hz}$
+\item $I = 0.5 \unit{A}$ : $\omega_0 = 3.0846\unit{Hz}$
+\item $I = 0.65 \unit{A}$ : $\omega_0 = 3.0902\unit{Hz}$
+\item $I = 0.8 \unit{A}$ : $\omega_0 = 3.0649\unit{Hz}$
+\end{itemize}
+
+Which yields:
+\begin{equation}
+\omega_0 = 3.080175 \pm 0.0054320615 \unit{Hz}
+\end{equation}
+
+The second method uses the measurements depicted in \ref{fig:forcedoscillation} and formulae !!!makeref!!!.
+We first determine $\alpha$ 
+
 
 \section{Conclusion}
 
