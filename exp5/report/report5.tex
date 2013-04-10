@@ -47,7 +47,7 @@ where $\phi$ is the angle of revolution, $J$ the moment of inertia and $M_i$ the
 \subsubsection{Free damped oscillation}
 Equation of motion:
 \begin{equation}
-J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{Friction}} + \underbrace{D \phi}_{\text{Spring}} = 0
+J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{frictional moment}} + \underbrace{D \phi}_{\text{repulsive moment}} = 0
 \end{equation}
 where $R$ is the damping coefficent, and $D$ is the spring constant. Additionally, we define
 \begin{equation}
@@ -100,13 +100,14 @@ By assumption: $\varphi(t) = (A_1e^{\omega t} + A_2e^{-\omega t})e^{-\alpha t}$\
 \subsubsection{Forced damped oscillation}
 Equation of motion:
 \begin{equation}
-J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{Friction}} + \underbrace{D \phi}_{\text{Spring}}  = \underbrace{M_0 \sin{\Omega t}}_{\text{propulsive time dependant moment}}
+J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{frictional moment}} + \underbrace{D \phi}_{\text{repulsive moment}}  = \underbrace{M_0 \sin{\Omega t}}_{\text{propulsive time dependant moment}}
 \end{equation}
 
 The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
 \begin{equation}
 \phi(t) = A \sin{(\Omega t - \delta)} + B e^{-\alpha t} \cos{(\omega t - \beta)} \label{eq:forceddampedsolution}
 \end{equation}
+
 The oscillation's amplitude $A$ is dependant on the amplitude of the stimulus $\Omega$. $A$ reaches its maximum value at $\Omega_R$:
 \begin{equation}
 \Omega_R = \sqrt{\omega_0^2-2\alpha^2}
@@ -120,7 +121,7 @@ The materials used in this experiment are the following:
 \item A ring with a printed scale with greater inner radius than the metal disc's diameter
 \item An eddy brake
 \item An electric engine with 2 analogue regulating knobs for speed regulation
-\item A power supply with two outputs, one adjustable at the front at 1-15V / 2A max and the other one at the back fixed at 25V / 0.2A
+\item A power supply with two DC outputs, one adjustable at the front at 1-15V / 2A max and the other one at the back fixed at 25V / 0.2A
 \item A mechanical stopwatch (0.2s steps)
 \item A multimeter (Model FLUKE 73 Multimeter)
 \item Six electric wires
@@ -135,11 +136,11 @@ The materials used in this experiment are the following:
 	\label{fig:assembly}
 \end{figure}
 
-For our measurements, we connect the front output of the power supply to the multimeter and then to the eddy brake and set the multimeter to read the amperage of alternating current. The electric engine is directly connected to the back output of the power supply and attached to the metal disc using a spring as shown in \ref{fig:assembly}.
-\subsubsection{forced oscillation}
+For our measurements, we connect the front output of the power supply to the multimeter and then to the eddy brake and set the multimeter to read the amperage of direct current. The electric engine is directly connected to the back output of the power supply and attached to the metal disc using a spring as shown in \ref{fig:assembly}.
+\subsubsection{Forced oscillation}
 For our first measurement series, we set the eddy brake to a certain current and then measured the maximal amplitude of the oscillation at different generator frequencies.
-\subsubsection{free oscillation}
-For our second mesaurement series we locked the motor and set the eddy brake to the same currents as before plus some others. Then, we moved the disc to an initial deflection and released it, measuring the progression of the maximal amplitudes.
+\subsubsection{Free oscillation}
+For our second mesaurement series we locked the motor and set the eddy brake to the same currents as before plus some others. Then, we moved the disc to an initial deflection and released it, measuring the progression of the maximal amplitudes over time.
 
 \section{Measurements}
 \subsection{forced oscillation}
@@ -180,7 +181,7 @@ For our second mesaurement series we locked the motor and set the eddy brake to 
 \end{figure}
 
 TODO: insert Frequency measurements!
-
+TODO: change AC to DC
 
 \section{Analysis and Discussion}
 We used two methods for determining the decay coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is $1$ $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
@@ -190,7 +191,7 @@ y = Ae^{- \alpha \cdot t}
 where $A$ is the initial deflection.
 We can now read $\alpha$ directly from the fit formulae:
 
-\begin{table}[h]
+\begin{table}[H]
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\alpha = 0.079\unit{Hz}$\\
@@ -207,7 +208,7 @@ If we now proceed to calculating the resonant angular frequency of the undampene
 \end{equation}
 and get the following values:
 
-\begin{table}[h]
+\begin{table}[H]
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\omega_0 = 3.0810\unit{Hz}$\\
@@ -234,7 +235,7 @@ We first determine $\alpha$ by means of graphical analysis:
 
 As stated in \cite{physcript13}, page 80, $\alpha$ is defined as half the width of the resonance curve at $y=\frac{A^*_{max}}{\sqrt{2}}$. This yields the following values:
 
-\begin{table}[h]
+\begin{table}[H]
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\alpha = 0.0472\unit{Hz}$\\
@@ -244,7 +245,7 @@ $I = 0.8 \unit{A}$ &:& $\alpha = 0.3491\unit{Hz}$
 
 From the same diagram, we can read the maximal resonance frequencies $\omega$
 
-\begin{table}[h]
+\begin{table}[H]
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\omega = 3.1104\unit{Hz}$\\
@@ -254,7 +255,7 @@ $I = 0.8 \unit{A}$ &:& $\omega = 3.0218\unit{Hz}
 \end{table}
 
 Using formula \ref{omega0} and the values for alpha obtained from the graphical analysis we can again calculate $\omega_0$:
-\begin{table}[h]
+\begin{table}[H]
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\omega_0 = 3.1108\unit{Hz}$\\
