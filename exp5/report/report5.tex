@@ -249,8 +249,7 @@ From the same diagram, we can read the maximal resonance frequencies $\omega$
 \center
 \begin{tabular}{lcl}
 $I = 0.3 \unit{A}$ &:& $\omega = 3.1104\unit{Hz}$\\
-$I = 0.8 \unit{A}$ &:& $\omega = 3.0218\unit{Hz}
-\unit{Hz}$
+$I = 0.8 \unit{A}$ &:& $\omega = 3.0218\unit{Hz}$
 \end{tabular}
 \end{table}
 
@@ -261,16 +260,27 @@ Using formula \ref{omega0} and the values for alpha obtained from the graphical 
 $I = 0.3 \unit{A}$ &:& $\omega_0 = 3.1108\unit{Hz}$\\
 $I = 0.8 \unit{A}$ &:& $\omega_0 = 3.0419
 \unit{Hz}$
-
-TODO: Error calc
 \end{tabular}
 \end{table}
 
+which yields $\omega_0 = 3.07635 \pm 0.02435 \unit{Hz}$
+\subsection{Final Comparison of Results}
 
+\begin{table}[H]
+\center
+\begin{tabular}{lrrr}
+&Free oscillation& Forced oscillation& Relative error\\
+$\alpha$(0.3 A)& 0.0790 Hz & 0.0472 Hz & -40.25\%\\
+$\alpha$(0.8 A)& 0.3800 Hz & 0.3491 Hz & -8.13\%\\
+$\omega_0$&$3.0802 \pm 0.005432 \unit{Hz}$&$ 3.07635 \pm 0.02435 \unit{Hz}$ & -0.12\%\\
+\end{tabular}
+\end{table}
 
-
+The results of both methods are quite close to each other, apart from the decay coefficient at 0.3 A on the eddy brake. We aggregate that to the problems we faced in the graphical analysis (i.e. the curve being very steep and having very different results for very similar measurements) and assume that the measurement of the decay coefficient was much more precise for the free oscillation, because we used regression analysis, which tends to yield good results. 
 
 \section{Conclusion}
+
+Taking everything stated in this report into consideration, we think our results are good and precise, as both methods yield very similar results for the resonant frequency of the free undamped system. As there are no theoretical values for our experiment setup we can use, we have no further method of evaluation.
 
 
 \begin{thebibliography}{9}
