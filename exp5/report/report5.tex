@@ -94,6 +94,21 @@ By assumption: $\varphi(t) = (A_1e^{\omega t} + A_2e^{-\omega t})e^{-\alpha t}$\
 \Rightarrow A_2=\frac{\varphi_0}{2 \omega} (\omega - \alpha)
 \end{equation}
 
+\subsubsection{Forced damped oscillation}
+Equation of motion:
+\begin{equation}
+J\ddot{\phi} + \underbrace{R \dot{\phi}}_{\text{Friction}} + \underbrace{D \phi}_{\text{Spring}}  = \underbrace{M_0 \sin{\Omega t}}_{\text{propulsive time dependant moment}}
+\end{equation}
+
+The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
+\begin{equation}
+\phi(t) = A \sin{(\Omega t - \delta)} + B e^{-\alpha t} \cos{(\omega t - \beta)} \label{eq:forceddampedsolution}
+\end{equation}
+The oscillation's amplitude $A$ is dependant on the amplitude of the stimulus $\Omega$. $A$ reaches its maximum value at $\Omega_R$:
+\begin{equation}
+\Omega_R = \sqrt{\omega_0^2-2\alpha^2}
+\end{equation}
+
 \section{Experiment setup and execution}
 \subsection{Used materials}
 The materials used in this experiment are the following:
