@@ -108,11 +108,12 @@ The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
 \phi(t) = A \sin{(\Omega t - \delta)} + B e^{-\alpha t} \cos{(\omega t - \beta)} \label{eq:forceddampedsolution}
 \end{equation}
 
-This is a superposition of two oscillations with disparate angular frequencies ($\Omega \neq \omega$) which will lead to a beat with frequency $\lvert \Omega - \omega \rvert$. After some time the natural oscillation will subside and only the propulsive oscillation with frequency $\Omega$ can be observed. In our discussion, we will use the symbol $\omega$ 
+This is a superposition of two oscillations with disparate angular frequencies ($\Omega \neq \omega$) which will lead to a beat with frequency $\lvert \Omega - \omega \rvert$. After some time the natural oscillation will subside and only the propulsive oscillation with frequency $\Omega$ can be observed. 
 
 The oscillation's amplitude $A$ is dependant on the amplitude of the stimulus $\Omega$. $A$ reaches its maximum value at $\Omega_R$:
 \begin{equation}
 \Omega_R = \sqrt{\omega_0^2-2\alpha^2}
+\label{eq:}
 \end{equation}
 
 \section{Experiment setup and execution}
@@ -263,6 +264,21 @@ $I = 0.8 \unit{A}$ &:& $\omega_0 = 3.0619 \unit{Hz}$
 
 which yields $\omega_0 = 3.0865 \pm 0.0246 \unit{Hz}$
 \subsection{Final Comparison of Results}
+
+Using $A_{max}^*$ from the forced oscillation experiment and $\alpha, \omega_0$ from the free oscillation we can construct an expected theoretical curve $A(\Omega - \omega_0)$
+
+\begin{equation}
+A(\Omega - \omega_0) = \frac{A_{max}^* \cdot \alpha}{\sqrt{\left(\Omega - \omega_0\right)^2 + \alpha^2}}
+\end{equation}
+
+This will yield the following expected graph:
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/meas_vs_theory.pdf}
+	\caption{Comparing measurements with theoretical expected value}
+	\label{fig:measvstheory}
+\end{figure}
 
 \begin{table}[H]
 \center
