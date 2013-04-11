@@ -63,7 +63,7 @@ with
 \omega \doteq \sqrt{\omega_0^2-\alpha^2}
 \label{omega0}
 \end{equation}
-where $A$ and $\beta$ are integration constants determined by initial conditions.
+where $A$ and $\beta$ are integration constants determined by initial conditions. 
 
 \subsubsection{Paranthesis: Preliminary Exercises}
 By assumption: $\varphi(t) = (A_1e^{\omega t} + A_2e^{-\omega t})e^{-\alpha t}$\\
@@ -108,6 +108,8 @@ The solution in case of weak damping ($\alpha^2 - \omega_0^2 < 0$) is
 \phi(t) = A \sin{(\Omega t - \delta)} + B e^{-\alpha t} \cos{(\omega t - \beta)} \label{eq:forceddampedsolution}
 \end{equation}
 
+This is a superposition of two oscillations with disparate angular frequencies ($\Omega \neq \omega$) which will lead to a beat with frequency $\lvert \Omega - \omega \rvert$. After some time the natural oscillation will subside and only the propulsive oscillation with frequency $\Omega$ can be observed. In our discussion, we will use the symbol $\omega$ 
+
 The oscillation's amplitude $A$ is dependant on the amplitude of the stimulus $\Omega$. $A$ reaches its maximum value at $\Omega_R$:
 \begin{equation}
 \Omega_R = \sqrt{\omega_0^2-2\alpha^2}
@@ -143,7 +145,7 @@ For our first measurement series, we set the eddy brake to a certain current and
 For our second mesaurement series we locked the motor and set the eddy brake to the same currents as before plus some others. Then, we moved the disc to an initial deflection and released it, measuring the progression of the maximal amplitudes over time.
 
 \section{Measurements}
-\subsection{forced oscillation}
+\subsection{Forced oscillation}
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/measurements_amplitudes.pdf}
@@ -151,7 +153,7 @@ For our second mesaurement series we locked the motor and set the eddy brake to 
 	\label{fig:forcedoscillation}
 \end{figure}
 
-\subsection{free oscillation}
+\subsection{Free oscillation}
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/3A.pdf}
@@ -180,16 +182,13 @@ For our second mesaurement series we locked the motor and set the eddy brake to 
 	\label{fig:0.8A}
 \end{figure}
 
-TODO: insert Frequency measurements!
-TODO: change AC to DC
-
 \section{Analysis and Discussion}
-We used two methods for determining the decay coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to the formula !!!makeref!!! and seeing that $\lvert cos(\omega\cdot t-\beta)\rvert$ is $1$ $\forall \omega \cdot t = k \cdot \pi (k \in \mathbb{N})$, we deduce form of the exponential fit formula to be:
+We used two methods for determining the decay coefficient $\alpha$ and the angular frequency. The first method implies making an exponential fit to the exponential values of the amplitude history as seen in figures \ref{fig:0.3A} - \ref{fig:0.8A}.  By comparing the formula of the exponential fit to formula \ref{eq:freedampedsolution} and seeing that the $Ae^{- \alpha \cdot t}$ term of the solution is the exponential decay of the amplitude over time, we deduce the form of the exponential fit formula to be:
 \begin{equation}
-y = Ae^{- \alpha \cdot t}
+y(t) = Ae^{- \alpha \cdot t}
 \end{equation}
 where $A$ is the initial deflection.
-We can now read $\alpha$ directly from the fit formulae:
+We can now read $\alpha$ directly from the fit formulae indicated in the measurement diagrams:
 
 \begin{table}[H]
 \center
@@ -233,7 +232,7 @@ We first determine $\alpha$ by means of graphical analysis:
 	\label{fig:graphical}
 \end{figure}
 
-As stated in \cite{physcript13}, page 80, $\alpha$ is defined as half the width of the resonance curve at $y=\frac{A^*_{max}}{\sqrt{2}}$. This yields the following values:
+As stated in \cite{physcript13}, page 88, $\alpha$ is defined as half the width of the resonance curve at $y=\frac{A^*_{max}}{\sqrt{2}}$. This yields the following values:
 
 \begin{table}[H]
 \center
@@ -248,8 +247,8 @@ From the same diagram, we can then read the maximal resonance frequencies $\omeg
 \begin{table}[H]
 \center
 \begin{tabular}{lcl}
-$I = 0.3 \unit{A}$ &:& $\omega = 3.1104\unit{Hz}$\\
-$I = 0.8 \unit{A}$ &:& $\omega = 3.0218\unit{Hz}$
+$I = 0.3 \unit{A}$ &:& $\Omega_R = 3.1104\unit{Hz}$\\
+$I = 0.8 \unit{A}$ &:& $\Omega_R = 3.0218\unit{Hz}$
 \end{tabular}
 \end{table}
 
@@ -268,11 +267,14 @@ which yields $\omega_0 = 3.07635 \pm 0.02435 \unit{Hz}$
 
 \begin{table}[H]
 \center
-\begin{tabular}{lrrr}
+\begin{tabular}{|l|rrr|}
+\hline
 &Free oscillation& Forced oscillation& Relative error\\
-$\alpha$(0.3 A)& 0.0790 Hz & 0.0472 Hz & -40.25\%\\
-$\alpha$(0.8 A)& 0.3800 Hz & 0.3491 Hz & -8.13\%\\
+\hline\hline
+$\alpha$ (0.3 A)& 0.0790 Hz & 0.0472 Hz & -40.25\%\\
+$\alpha$ (0.8 A)& 0.3800 Hz & 0.3491 Hz & -8.13\%\\
 $\omega_0$&$3.0802 \pm 0.005432 \unit{Hz}$&$ 3.07635 \pm 0.02435 \unit{Hz}$ & -0.12\%\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -282,7 +284,8 @@ In order to not having to wildly guess whether or not our results are accurate, 
 
 which falls almost perfectly in line with our measurements.
 
-The results of both methods are quite close to each other, apart from the decay coefficient at 0.3 A on the eddy brake. We aggregate that to the problems we faced in the graphical analysis (i.e. the curve being very steep and having very different results for very similar measurements) and assume that the measurement of the decay coefficient was much more precise for the free oscillation, because we used regression analysis, which tends to yield good results. 
+The results of both methods are quite close to each other, apart from the decay coefficient at 0.3 A on the eddy brake. We aggregate that to the problems we faced in the graphical analysis (i.e. the curve being very steep and having very different results for very similar measurements) and assume that the measurement of the decay coefficient was much more precise for the free oscillation, because we used regression analysis, which tends to yield good results.\\
+Another source for problems was the accuracy of the stop watch ($\pm 0.02 \unit{s}$) and the process of manually measuring time. We tried to minimize these errors by measuring up to 10 oscillation periods, effectively reducing said error by a factor of 10. Additionally, all time measurements were taken twice for each reading so we can indicate the error of our measurements.  
 
 \section{Conclusion}
 
