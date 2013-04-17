@@ -40,73 +40,6 @@
 The goal of this experiment is to determine the focal distance of a set of lenses using the method proposed by German scientist Friedrich Wilhelm Bessel.
 
 \subsection{Theory}
-\subsubsection{preliminary exercises}
-
-\textbf{Task 1}
-\begin{equation}
-	f=18cm\quad G=46cm\quad B=1cm
-\end{equation}
-\begin{equation}
-	b=f\frac{B+G}{G}=18.391cm
-\end{equation}
-\begin{equation}
-	g=f\frac{B+G}{B}=846cm
-\end{equation}
-\\
-\textbf{Task 2}
-\begin{equation}
-	f=5cm\quad b=6cm
-\end{equation}
-\begin{equation}
-	g=\frac{bf}{b-f}=30cm
-\end{equation}
-\\
-\textbf{Task 3}
-\begin{equation}
-	G=30cm\quad g=500cm\quad B=1cm
-\end{equation}
-\begin{equation}
-	f=\frac{gB}{B+G}=16.129cm
-\end{equation}
-\textbf{Task 4}
-\begin{equation}
-\sum n_i s_i \stackrel{!}= \mbox{Minimum}
-\end{equation}
-\begin{equation}
-\Rightarrow n_1 \sqrt{(a_1+x)^2+d_1^2}+n_1\sqrt{(a_2-x)^2+d_2^2} \stackrel{!}= \mbox{Minimum}
-\end{equation}
-\begin{equation}
-\Rightarrow \frac{d}{dx} \left(\sqrt{(a_1+x)^2+d_1^2}+\sqrt{(a_2+x)^2+d_2^2}\right) \stackrel{!}= 0
-\end{equation}
-\begin{equation}
-\frac{1}{2} \frac{2(a_1+x)}{\sqrt{(a_1+x)^2+d_1^2}}+\frac{1}{2} \frac{-2(a_2-x)}{\sqrt{(a_2-x)^2+d_2^2}} \stackrel{!}= 0
-\end{equation}
-\begin{equation}
-\frac{(a_1+x)^2}{(a_1+x)^2+d_1^2} = \frac{(a_2-x)^2}{(a_2-x)^2+d_2^2}
-\end{equation}
-This obviously holds for x=0 $\Rightarrow$ x=0 satisfies the minimum condition.
-\\ \\
-law of refraction:
-\begin{equation}
-s(x) = n_1 \cdot \overline{P_1 A} + n_2 \cdot \overline{A P_2} = n_1 \cdot \sqrt{a^2+x^2} + n_2 \cdot \sqrt{b^2+(d-x)^2} \stackrel{!}= \mbox{Minimum}
-\end{equation}
-\begin{equation}
-\frac{ds}{dx} = n_1 \cdot \frac{x}{\underbrace{\sqrt{a^2+x^2}}_{\sin \alpha_1}}- n_2 \cdot \frac{d-x}{\underbrace{\sqrt{b^2+(d-x)^2}}_{\sin \alpha_2}} \stackrel{!}= 0
-\end{equation}
-\begin{equation}
-\Rightarrow \frac{\sin \alpha_1}{\sin \alpha_2}=\frac{n_2}{n_1}
-\end{equation}
-\\ 
-\textbf{Task 5}\\
-images missing\\
-\\
-\textbf{Task Chapter 11.2.3}
-\begin{equation}
-f = \frac{a^2-e^2}{4a} = \frac{600^2-255.3^2}{4\cdot 600}mm = 122.84mm
-\end{equation}
-\begin{equation}
-f_x = \frac{f \cdot (f_s-d)}{f_s-f} = \frac{122.84\cdot (80-10)}{80-122.84}mm = -200.71mm
-\end{equation}
 
 \subsubsection{Lens equation}
 The commonly known lens formula is
@@ -166,6 +99,74 @@ It is not possible to directly measure focal distances $f > \frac{a}{4}$. Analog
 
 \begin{equation}
 f_x = \frac{f \cdot \left( f_s - d\right)}{f_s - f}
+\end{equation}
+
+\subsubsection{Preliminary exercises}
+
+\textbf{Task 1}
+\begin{equation}
+	f=18cm\quad G=46cm\quad B=1cm
+\end{equation}
+\begin{equation}
+	b=f\frac{B+G}{G}=18.391cm
+\end{equation}
+\begin{equation}
+	g=f\frac{B+G}{B}=846cm
+\end{equation}
+\\
+\textbf{Task 2}
+\begin{equation}
+	f=5cm\quad b=6cm
+\end{equation}
+\begin{equation}
+	g=\frac{bf}{b-f}=30cm
+\end{equation}
+\\
+\textbf{Task 3}
+\begin{equation}
+	G=30cm\quad g=500cm\quad B=1cm
+\end{equation}
+\begin{equation}
+	f=\frac{gB}{B+G}=16.129cm
+\end{equation}
+\textbf{Task 4}
+\begin{equation}
+\sum n_i s_i \stackrel{!}= \mbox{Minimum}
+\end{equation}
+\begin{equation}
+\Rightarrow n_1 \sqrt{(a_1+x)^2+d_1^2}+n_1\sqrt{(a_2-x)^2+d_2^2} \stackrel{!}= \mbox{Minimum}
+\end{equation}
+\begin{equation}
+\Rightarrow \frac{d}{dx} \left(\sqrt{(a_1+x)^2+d_1^2}+\sqrt{(a_2+x)^2+d_2^2}\right) \stackrel{!}= 0
+\end{equation}
+\begin{equation}
+\frac{1}{2} \frac{2(a_1+x)}{\sqrt{(a_1+x)^2+d_1^2}}+\frac{1}{2} \frac{-2(a_2-x)}{\sqrt{(a_2-x)^2+d_2^2}} \stackrel{!}= 0
+\end{equation}
+\begin{equation}
+\frac{(a_1+x)^2}{(a_1+x)^2+d_1^2} = \frac{(a_2-x)^2}{(a_2-x)^2+d_2^2}
+\end{equation}
+This obviously holds for $x=0 \Rightarrow x=0$ satisfies the minimum condition.
+\\ \\
+Law of refraction:
+\begin{equation}
+s(x) = n_1 \cdot \overline{P_1 A} + n_2 \cdot \overline{A P_2} = n_1 \cdot \sqrt{a^2+x^2} + n_2 \cdot \sqrt{b^2+(d-x)^2} \stackrel{!}= \mbox{Minimum}
+\end{equation}
+\begin{equation}
+\frac{ds}{dx} = n_1 \cdot \frac{x}{\underbrace{\sqrt{a^2+x^2}}_{\sin \alpha_1}}- n_2 \cdot \frac{d-x}{\underbrace{\sqrt{b^2+(d-x)^2}}_{\sin \alpha_2}} \stackrel{!}= 0
+\end{equation}
+\begin{equation}
+\Rightarrow \frac{\sin \alpha_1}{\sin \alpha_2}=\frac{n_2}{n_1}
+\end{equation}
+\\ 
+\textbf{Task 5}\\
+images missing\\
+\\
+\textbf{Task Chapter 11.2.3}
+\begin{equation}
+f = \frac{a^2-e^2}{4a} = \frac{600^2-255.3^2}{4\cdot 600}mm = 122.84mm
+\end{equation}
+\begin{equation}
+f_x = \frac{f \cdot (f_s-d)}{f_s-f} = \frac{122.84\cdot (80-10)}{80-122.84}mm = -200.71mm
 \end{equation}
 
 \section{Experiment setup and execution}
