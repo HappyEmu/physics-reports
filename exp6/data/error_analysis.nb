@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      6896,        194]
-NotebookOptionsPosition[      6216,        168]
-NotebookOutlinePosition[      6701,        185]
-CellTagsIndexPosition[      6658,        182]
+NotebookDataLength[      9238,        276]
+NotebookOptionsPosition[      8405,        245]
+NotebookOutlinePosition[      8892,        262]
+CellTagsIndexPosition[      8849,        259]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -164,10 +164,87 @@ Cell[BoxData[
    3.5751933352257223`*^9, 3.5751933688993797`*^9}, 3.575193402761134*^9, {
    3.575193493975523*^9, 3.57519356649157*^9}, {3.575193609820408*^9, 
    3.575193647720048*^9}, {3.575193926333926*^9, 3.575193941731181*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"f", ",", "sf"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"fz", "[", 
+    RowBox[{"f_", ",", "fs_"}], "]"}], "=", 
+   RowBox[{"f", "*", 
+    RowBox[{"fs", "/", 
+     RowBox[{"(", 
+      RowBox[{"fs", "-", "f"}], ")"}]}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.575198799037417*^9, 3.575198839960235*^9}, {
+  3.575199005527891*^9, 3.5751990251479683`*^9}, {3.575199057160473*^9, 
+  3.575199058254209*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sfz\.b2", "=", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"fz", "[", 
+          RowBox[{"f", ",", "fs"}], "]"}], ",", "f"}], "]"}], "^", "2"}], "*", 
+      RowBox[{"sf", "^", "2"}]}], "+", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{"fz", "[", 
+          RowBox[{"f", ",", "fs"}], "]"}], ",", "fs"}], "]"}], "^", "2"}], 
+      "*", 
+      RowBox[{"sfs", "^", "2"}]}]}], "]"}], "^", "2"}]}]], "Input",
+ CellChangeTimes->{{3.575199037076743*^9, 3.5751990541035213`*^9}, {
+  3.5751992921328993`*^9, 3.575199341834268*^9}, {3.5751994018939037`*^9, 
+  3.575199405758312*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"f", " ", "fs"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "f"}], "+", "fs"}], ")"}], "2"]], "+", 
+      FractionBox["fs", 
+       RowBox[{
+        RowBox[{"-", "f"}], "+", "fs"}]]}], ")"}], "2"], " ", 
+   SuperscriptBox["sf", "2"]}], "+", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"f", " ", "fs"}], 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "f"}], "+", "fs"}], ")"}], "2"]]}], "+", 
+      FractionBox["f", 
+       RowBox[{
+        RowBox[{"-", "f"}], "+", "fs"}]]}], ")"}], "2"], " ", 
+   SuperscriptBox["sfs", "2"]}]}]], "Output",
+ CellChangeTimes->{3.57519930414182*^9, 3.575199343889628*^9, 
+  3.57519940661259*^9}]
 }, Open  ]]
 },
 WindowSize->{740, 731},
-WindowMargins->{{Automatic, 0}, {42, Automatic}},
+WindowMargins->{{310, Automatic}, {25, Automatic}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -190,11 +267,16 @@ Cell[1691, 49, 652, 13, 48, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2380, 67, 1131, 27, 33, "Input"],
-Cell[3514, 96, 504, 10, 43, "Output"]
+Cell[3514, 96, 504, 10, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4055, 111, 927, 21, 33, "Input"],
-Cell[4985, 134, 1215, 31, 97, "Output"]
+Cell[4985, 134, 1215, 31, 64, "Output"]
+}, Open  ]],
+Cell[6215, 168, 499, 14, 57, "Input"],
+Cell[CellGroupData[{
+Cell[6739, 186, 736, 22, 33, "Input"],
+Cell[7478, 210, 911, 32, 60, "Output"]
 }, Open  ]]
 }
 ]
