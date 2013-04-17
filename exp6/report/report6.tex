@@ -217,15 +217,24 @@ For our measurements, the screen is attached at one end of the rail and the proj
   \includegraphics[width=0.4\textwidth]{diag/general_measurements.pdf}
 	\caption{General measurements for our assembly}
 \end{figure}
+
 \begin{figure}[H]
-	\centering
-  \includegraphics[width=0.4\textwidth]{diag/one_lens.pdf}
-	\caption{measurements for one mounted lens}
-\end{figure}
-\begin{figure}[H]
-	\centering
-  \includegraphics[width=0.4\textwidth]{diag/two_lenses.pdf}
-	\caption{measurements for two mounted lenses}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diag/one_lens.pdf}
+                \caption{Lenses measured directly}
+                \label{fig:direct}
+        \end{subfigure}%
+        ~
+        \begin{subfigure}[b]{0.345\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diag/two_lenses.pdf}
+                \caption{Lenses measured indirectly}
+                \label{fig:indirect}
+        \end{subfigure}
+        \caption{Measurements of lens positions $x_1$ and $x_2$}
+        \label{fig:measurements}
 \end{figure}
 
 \section{Analysis and Discussion}
