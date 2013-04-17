@@ -55,7 +55,33 @@ The lens equation for a pair of lenses $L_1$ and $L_2$ looks a bit different:
 where $f_i$ is the focal distance of lense $L_i$ and $d$ is the distance between $L_1$ and $L_2$
 
 \subsubsection{Bessel's method}
-We use the method proposed by Bessel to find the focal distance $f$ of a lense by experimental means.
+We use the method proposed by Bessel to find the focal distance $f$ of a lense by experimental means. Let $a \doteq g + b$ be a fixed quantity. Then there exists for a given focal distance $f < \frac{a}{4}$ only two possible lens positions which produce a sharp image $B$ of object $G$. 
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/lens_skript.pdf}
+	\caption{Finding focal distance using Bessel's method}
+	\label{fig:method}
+\end{figure}
+
+These lens positions are given by
+\begin{equation}
+b_{1,2} = \frac{a}{2} \pm \sqrt{\left(\frac{a}{2}\right)^2-a\cdot f}
+\end{equation}
+
+\begin{equation}
+g_{1,2} = a-b_{1,2}=b_{2,1} = \frac{a}{2} \mp \sqrt{\left(\frac{a}{2}\right)^2-a\cdot f} 
+\end{equation}
+
+\begin{equation}
+b_1 - b_2 = 2 \cdot \sqrt{\left(\frac{a}{2}\right)^2-a\cdot f}
+\end{equation}
+
+Using $e \doteq b_1 - b_2$ and solving for $f$ yields
+
+\begin{equation}
+\boxed{f = \frac{a^2-e^2}{4\cdot a}}
+\end{equation}
 
 \section{Experiment setup and execution}
 
