@@ -240,22 +240,35 @@ For our measurements, the screen is attached at one end of the rail and the proj
 \end{figure}
 
 \section{Analysis and Discussion}
-Applying the results of our uncertainty analysis to our results -using $1$mm as estimated error for $a$- we get the following values for $f$:
-
 \begin{table}[H]
 \center
-\begin{tabular}{|l|r|r|r|}
+\begin{tabular}{|l|c|c|c|c|}
 \hline
-Lens & $x_1$ [cm] & $x_2$ [cm] & $f$ [m]\\
+Lens(-es) & $x_1$ [cm] & $x_2$ [cm] & $\sigma_{x_1}$ [m] & $\sigma_{x_2}$ [m]\\
 \hline
-C1 &$12.19 \pm 0.01$&$55.9 \pm 0.0354$& $0.05579 \pm 0.0004278$\\
-C2-C1 &$28.95 \pm 0.0224$&$57.89 \pm 0.01$& $0.07990 \pm 0.0003837$\\
-C3-C4 &$10.91 \pm 0.01$&$57.24 \pm 0.0187$& $0.09364 \pm 0.000373$\\
-C4 &$12.13 \pm 0.01$&$55.9 \pm 0.0354$& $0.1022 \pm 0.0003653$\\
+C1 &$12.19 \pm 0.01$&$55.9 \pm 0.0354$& $0.0612$ & $0.0354$\\
+C2-C1 &$28.95 \pm 0.0224$&$57.89 \pm 0.01$&$0.05$&$0.0224$\\
+C3-C4 &$10.91 \pm 0.01$&$57.24 \pm 0.0187$&$0.0224$&$0.0418$\\
+C4 &$12.13 \pm 0.01$&$55.9 \pm 0.0354$&$0.0224$&$0.0791$\\
 \hline
 \end{tabular}
 \end{table}
-Using formulae \ref{lenssystem} and \ref{lenssystem2}
+Applying the results of our uncertainty analysis to our results -using $1$mm as estimated error for $a$- and using formulae \ref{lenssystem} and \ref{lenssystem2} wherever we had to combine two lenses, assuming the distance $d$ between two lenses is $0$, we get for $f$:
+
+\begin{table}[H]
+\center
+\begin{tabular}{|l|c|c|c|}
+\hline
+Lens & $f$ [m] & $f$ [m] theoretical & relative error\\
+\hline
+C1 & $ 0.05579 \pm 0.0004278$&$0.05$&$11.58\%$\\
+C2 & $-0.1849 \pm ??$&$-0.15$&$23.25\%$\\
+C3 & $ 1.1151 \pm ??$&$1$&$11.51\%$\\
+C4 & $0.1022 \pm 0.0003653$&$0.1$&$2.22\%$\\
+\hline
+\end{tabular}
+\end{table}
+ 
 
 \section{Conclusion}
 
