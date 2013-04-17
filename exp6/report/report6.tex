@@ -169,6 +169,20 @@ f = \frac{a^2-e^2}{4a} = \frac{600^2-255.3^2}{4\cdot 600}mm = 122.84mm
 f_x = \frac{f \cdot (f_s-d)}{f_s-f} = \frac{122.84\cdot (80-10)}{80-122.84}mm = -200.71mm
 \end{equation}
 
+\subsection{Uncertainty analysis}
+\begin{align*}
+b_1 &= a - x_1\\
+b_2 &= a - x_2\\
+\end{align*}
+\[e = b_1 - b_2 = x_2 - x_1\]
+\begin{equation}
+\Longrightarrow s_e^2 = s_{x_1}^2 + s_{x_2}^2
+\end{equation}
+
+\begin{equation}
+\Longrightarrow s_f^2 = \left[ \frac{1}{2} - \frac{a^2-e^2}{4 a^2} \right]^2 \cdot s_a^2 + \frac{e^2 \left( s_{x_1}^2 + s_{x_2}^2 \right)}{4  a^2}
+\end{equation}
+
 \section{Experiment setup and execution}
 
 \subsection{Used materials}

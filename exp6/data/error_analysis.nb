@@ -1,0 +1,203 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6896,        194]
+NotebookOptionsPosition[      6216,        168]
+NotebookOutlinePosition[      6701,        185]
+CellTagsIndexPosition[      6658,        182]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"e", "[", 
+    RowBox[{"x1_", ",", "x2_"}], "]"}], "=", 
+   RowBox[{"x2", "-", "x1"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"a_", ",", "e_"}], "]"}], "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"a", "^", "2"}], "-", 
+      RowBox[{"e", "^", "2"}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{"4", "a"}], ")"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.575190114134281*^9, 3.575190170602524*^9}, {
+  3.5751903904763613`*^9, 3.575190393803712*^9}, {3.575191656655423*^9, 
+  3.575191694299055*^9}, {3.575192042487569*^9, 3.575192049152021*^9}, {
+  3.575192301278242*^9, 3.575192305657631*^9}, {3.575192463044482*^9, 
+  3.575192464859852*^9}, {3.575192929064209*^9, 3.575192939541127*^9}, {
+  3.5751931087401342`*^9, 3.575193110153542*^9}, {3.575193204313326*^9, 
+  3.5751932759379663`*^9}, {3.57519332071311*^9, 3.575193341900057*^9}, {
+  3.575193458538563*^9, 3.5751934860726967`*^9}, {3.5751935622571087`*^9, 
+  3.5751935638133802`*^9}, {3.5751935994878693`*^9, 3.5751936005027018`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Set", "::", "write"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Tag \[NoBreak]\\!\\(Times\\)\[NoBreak] in \[NoBreak]\\!\\(\
+\\(\\(\\(a\\^2 - e\\^2\\)\\/\\(4\\\\ a\\)\\)\\)[\\(\\(a_, e_\\)\\)]\\)\
+\[NoBreak] is Protected. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/write\\\", ButtonNote -> \
+\\\"Set::write\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.575193493886778*^9, 3.57519356644007*^9}, {
+  3.575193609772113*^9, 3.575193647666293*^9}, {3.575193926232753*^9, 
+  3.575193941658244*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"se", " ", "=", " ", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"e", "[", 
+         RowBox[{"x1", ",", "x2"}], "]"}], ",", "x1"}], "]"}], "^", "2"}], 
+     "*", 
+     RowBox[{"sx1", "^", "2"}]}], "+", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"e", "[", 
+         RowBox[{"x1", ",", "x2"}], "]"}], ",", "x2"}], "]"}], "^", "2"}], 
+     "*", 
+     RowBox[{"sx2", "^", "2"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.575190190380645*^9, 3.575190238206973*^9}, {
+   3.5751903690288486`*^9, 3.575190422562792*^9}, {3.575190461710794*^9, 
+   3.5751904842616367`*^9}, {3.5751915710991096`*^9, 3.57519164400027*^9}, {
+   3.575191699944261*^9, 3.5751917031044617`*^9}, 3.575191739633884*^9, {
+   3.575192055550726*^9, 3.5751920574948797`*^9}, {3.575192139956871*^9, 
+   3.575192172201091*^9}, {3.5751923989473143`*^9, 3.575192543136804*^9}, {
+   3.5751929590461073`*^9, 3.575192968900166*^9}, {3.5751935019691353`*^9, 
+   3.5751935396883287`*^9}, {3.57519366707215*^9, 3.575193672412587*^9}}],
+
+Cell[BoxData[
+ SqrtBox[
+  RowBox[{
+   SuperscriptBox["sx1", "2"], "+", 
+   SuperscriptBox["sx2", "2"]}]]], "Output",
+ CellChangeTimes->{{3.57519303558571*^9, 3.5751930807732573`*^9}, {
+   3.575193113375546*^9, 3.575193140205336*^9}, {3.5751931757120037`*^9, 
+   3.575193188504698*^9}, {3.575193335197921*^9, 3.575193368870965*^9}, 
+   3.575193402246808*^9, {3.575193493954296*^9, 3.575193566470912*^9}, {
+   3.57519360979991*^9, 3.575193647696807*^9}, {3.5751939262806063`*^9, 
+   3.575193941707872*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sf\.b2", "=", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{"f", ",", "e"}], "]"}], "^", "2"}], "*", 
+      RowBox[{"se", "^", "2"}]}], "+", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{"f", ",", "a"}], "]"}], "^", "2"}], "*", 
+      RowBox[{"sa", "^", "2"}]}]}], "]"}], "^", "2"}]}]], "Input",
+ CellChangeTimes->{{3.5751917449568253`*^9, 3.575191782663116*^9}, {
+  3.575191813247723*^9, 3.575191830377656*^9}, {3.575192060365308*^9, 
+  3.575192067366721*^9}, {3.575192184141491*^9, 3.5751921875486183`*^9}, {
+  3.5751930159902887`*^9, 3.575193017154107*^9}, {3.575193117699888*^9, 
+  3.575193136663588*^9}, {3.57519317129799*^9, 3.5751931860124493`*^9}, {
+  3.575193545844308*^9, 3.575193546135708*^9}, {3.575193632153948*^9, 
+  3.575193644477109*^9}, {3.5751939213662786`*^9, 3.575193937753809*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["1", "2"], "-", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["a", "2"], "-", 
+        SuperscriptBox["e", "2"]}], 
+       RowBox[{"4", " ", 
+        SuperscriptBox["a", "2"]}]]}], ")"}], "2"], " ", 
+   SuperscriptBox["sa", "2"]}], "+", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["e", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["sx1", "2"], "+", 
+      SuperscriptBox["sx2", "2"]}], ")"}]}], 
+   RowBox[{"4", " ", 
+    SuperscriptBox["a", "2"]}]]}]], "Output",
+ CellChangeTimes->{
+  3.575191833201831*^9, 3.5751920710001698`*^9, {3.575192160915841*^9, 
+   3.575192192325768*^9}, 3.575192310106571*^9, {3.575192426640339*^9, 
+   3.5751924894002657`*^9}, {3.575192525745523*^9, 3.575192545397212*^9}, {
+   3.575193003340217*^9, 3.5751930808100357`*^9}, {3.5751931134130793`*^9, 
+   3.575193140227097*^9}, {3.5751931757315397`*^9, 3.575193188524962*^9}, {
+   3.5751933352257223`*^9, 3.5751933688993797`*^9}, 3.575193402761134*^9, {
+   3.575193493975523*^9, 3.57519356649157*^9}, {3.575193609820408*^9, 
+   3.575193647720048*^9}, {3.575193926333926*^9, 3.575193941731181*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 731},
+WindowMargins->{{Automatic, 0}, {42, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
+   ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1109, 25, 57, "Input"],
+Cell[1691, 49, 652, 13, 48, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2380, 67, 1131, 27, 33, "Input"],
+Cell[3514, 96, 504, 10, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4055, 111, 927, 21, 33, "Input"],
+Cell[4985, 134, 1215, 31, 97, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
