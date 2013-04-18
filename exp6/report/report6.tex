@@ -83,6 +83,7 @@ Using $e \doteq b_1 - b_2$ and solving for $f$ yields
 
 \begin{equation}
 \boxed{f = \frac{a^2-e^2}{4\cdot a}}
+\label{f_theory}
 \end{equation}
 
 \paragraph{Diverging lenses}
@@ -274,7 +275,9 @@ Lens(-es) & $x_1$ [cm] & $x_2$ [cm] & $\sigma_{x_1}$ [m] & $\sigma_{x_2}$ [m]\\
 \hline
 \end{tabular}
 \end{table}
-Applying the results of our uncertainty analysis to our results -- using $\pm 1$mm as estimated error for $a$ -- and using formulae \ref{lenssystem} and \ref{lenssystem2} wherever we had to combine two lenses, assuming the distance $d$ between two lenses is $0$, we get for $f$:
+We can now calculate $f$ using \ref{f_theory} and formulae \ref{lenssystem},  \ref{lenssystem2} wherever we had to combine two lenses. We assumed the distance $d$ between two lenses to be $0$.
+
+Applying the results of our uncertainty analysis to our results -- using $\pm 1$mm as estimated error for $a$ -- we get for $f$:
 
 \begin{table}[H]
 \center
@@ -291,15 +294,15 @@ Lens & $f$ [m] measured & $f$ [m] theoretical & relative error\\
 \end{table} 
 Our values for $f$ diverge slightly from the theoretically expected ones. Looking for possible sources of error, we found the following:
 \begin{itemize}
-\item We used the approximation for infinitely thin lenses
+\item We used the approximation for refraction on a prism for small angles of incidence and refraction.
 \item We assumed the distance between two lenses (where any) to be 0
 \item The projected image was very small for some measurements. Judging when the image was sharp proved difficult.
-\item In some cases the image was staying sharp even if the lens was moved along the slider ever so slightly, making it difficult to find the most sharp position.
+\item In some cases the image was staying sharp even if the lens was moved along the slider ever so slightly, making it difficult to find the sharpest position.
 \end{itemize}
-Considering all these sources of error, we think our results are reasonable enough. The lenses which we couldn't measure directly tended to show a larger relative error than the ones we measured directly, which confirms the validity of at least parts of our possible sources of error.
+Considering all these sources of error, we think our results are reasonable enough. The lenses which we couldn't measure directly tended to show a larger relative error than the ones we measured directly, which confirms the validity of at least parts of our possible sources of error. This is further supported if we compare the standard errors of the mean of the lenses we could measure directly and the ones we had to measure as a lens system.
 \section{Conclusion}
 
-Conclusively, we think our results -considering the sources of error- prove the .......
+Conclusively, we think our results --considering the sources of error-- fall in line with the theoretical expectations. 
 
 
 \begin{thebibliography}{9}
