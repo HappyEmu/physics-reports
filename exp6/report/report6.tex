@@ -21,7 +21,7 @@
 \setcounter{tocdepth}{5}
 
 \author{Urs Gerber\\09-921-156 \and Gian-Luca Mateo\\11-113-545}
-\date{11th of March 2013}
+\date{11th of April 2013}
 
 \title{Lenses}
 \subtitle{Practical course report}
@@ -136,7 +136,7 @@ f_x = \frac{f \cdot \left( f_s - d\right)}{f_s - f}
 \textbf{Task 4}
 \begin{figure}[H]
 	\centering
-  \includegraphics[width=0.9\textwidth]{diag/exercises1.pdf}
+  \includegraphics[width=0.7\textwidth]{diag/exercises1.pdf}
 	\caption{law of reflection}
 \end{figure}
 \begin{equation}
@@ -198,12 +198,16 @@ b_2 &= a - x_2\\
 \end{equation}
 
 \paragraph*{Directly measured $f$}
+For directly measured lenses with $0 < f < \frac{a}{4}$ the standard error of the mean $s_f$ is
+\[
+f = \frac{a^2-e^2}{4\cdot a}
+\]
 
 \begin{equation}
-s_f^2 = \left[ \frac{1}{2} - \frac{a^2-e^2}{4 a^2} \right]^2 \cdot s_a^2 + \frac{e^2 \left( s_{x_1}^2 + s_{x_2}^2 \right)}{4  a^2}
+\Longrightarrow s_f^2 = \left[ \frac{1}{2} - \frac{a^2-e^2}{4 a^2} \right]^2 \cdot s_a^2 + \frac{e^2 \left( s_{x_1}^2 + s_{x_2}^2 \right)}{4  a^2}
 \end{equation}
 
-\paragraph*{Indirectly measured $f_z$}
+\paragraph*{Indirectly measured $f_z$} For indirectly measured lenses with $f_z < 0$ or $f_z > \frac{a}{4}$ and known focal distance $f_s$ of the second lens the standard error of the mean $s_{f_z}$ is
 
 \[f_z = \frac{f \cdot \left( f_s - d\right)}{f_s - f}\]
 
@@ -249,11 +253,15 @@ For our measurements, the screen is attached at one end of the rail and the proj
                 \caption{Lenses measured indirectly}
                 \label{fig:indirect}
         \end{subfigure}
-        \caption{Measurements of lens positions $x_1$ and $x_2$}
+        \caption{Measurements of lens positions $X_1$ and $X_2$}
         \label{fig:measurements}
 \end{figure}
 
 \section{Analysis and Discussion}
+
+\begin{equation}
+x_i = X_i - x_{lamp} (= g_i)
+\end{equation}
 \begin{table}[H]
 \center
 \begin{tabular}{|l|c|c|c|c|}
@@ -286,15 +294,15 @@ Lens & $f$ [m] measured & $f$ [m] theoretical & relative error\\
 \end{table} 
 Our values for $f$ diverge slightly from the theoretically expected ones. Looking for possible sources of error, we found the following:
 \begin{itemize}
-\item We used the approximation for refraction on a prism for small angles of incidence and refraction.
-\item We assumed the distance between two lenses (where any) to be 0
+\item We used the approximation for refraction on a prism for small angles of incidence and refraction. The effects of this approximation can be observed in our measurements: The lenses with lower focal distances have a higher discrepancy from the theoretical expected values than the lenses with higher focal distances.
+\item We assumed the distance between two lenses (where any) to be 0.
 \item The projected image was very small for some measurements. Judging when the image was sharp proved difficult.
 \item In some cases the image was staying sharp even if the lens was moved along the slider ever so slightly, making it difficult to find the sharpest position.
 \end{itemize}
 Considering all these sources of error, we think our results are reasonable enough. The lenses which we couldn't measure directly tended to show a larger relative error than the ones we measured directly, which confirms the validity of at least parts of our possible sources of error. This is further supported if we compare the standard errors of the mean of the lenses we could measure directly and the ones we had to measure as a lens system.
 \section{Conclusion}
 
-Conclusively, we think our results --considering the sources of error-- fall in line with the theoretical expectations. 
+Conclusively, we think our results -- considering the sources of error -- fall in line with the theoretical expectations. 
 
 
 \begin{thebibliography}{9}
