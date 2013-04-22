@@ -38,8 +38,62 @@
 \section{Introduction}
 
 \subsection{Goal of the experiment}
+The goal of this experiment is to measure and analyse the characteristics of a coupled pendulum. For that we measure the cycle duration of the coupled pendulum in three different oscillation modes: in-phase, opposite in-phase and paraphase.
 
 \subsection{Theory}
+
+\subsubsection{Mathematical pendulum}
+\paragraph{Equation of motion}
+The equation of motion for the mathematical pendulum with thread length $l$ is given by
+\begin{equation}
+\ddot{\phi} + \frac{g}{l} \cdot \sin{\phi} = 0 \xRightarrow{\sin{\phi}\approx\phi} \ddot{\phi} + \frac{g}{l} \cdot \phi = 0
+\end{equation}
+with solution 
+\begin{equation}
+\phi (t) = \hat{\phi} \cdot \sin{\left( \sqrt{\frac{g}{l}} \cdot t + \phi_0 \right)} 
+\end{equation}
+The oscillation period $T_0$ of the mathematical pendulum is
+\begin{equation}
+T_0 = 2 \pi \sqrt{\frac{l}{g	}}
+\end{equation}
+
+\subsubsection{Coupled physical pendulum}
+
+\paragraph{Equation of motion}
+The equation of motion for one physical pendulum is given by
+
+\begin{equation}
+J\cdot \ddot{\phi} = M
+\end{equation}
+where $J$ is the moment of inertia with respect to the axis of rotation $O$ and $M$ the repulsive angular moment.
+
+\paragraph{Moment equations}
+The moment equations for pendulum 1 and pendulum 2 are:
+\begin{align}
+M_1 &= \overbrace{-D_g\cdot \phi_1}^{\text{directional moment}} + \overbrace{D_f \cdot (\phi_1 - \phi_2)}^{\text{coupling moment}}  \\
+M_2 &= -D_g\cdot \phi_2 - D_f \cdot (\phi_1 - \phi_2)
+\end{align}
+
+After inserting the moment equations into the equation of motion and solving the differential equations, we get the two solutions
+
+\begin{align}
+\phi_1(t) &= A \cdot \cos{(\omega t + \delta)} - B \cdot \cos{(\Omega t + \Delta)}\\
+\phi_2(t) &= A \cdot \cos{(\omega t + \delta)} + B \cdot \cos{(\Omega t + \Delta)}
+\end{align}
+with natural frequencies $\omega$ and $\Omega$
+\begin{align}
+\omega &= \sqrt{\frac{D_g}{J}}\\
+\Omega &= \sqrt{\frac{D_g+2 D_f}{J}}\\
+\end{align}
+One can see that the overall motion of each pendulum is composed of a superposition of two harmonic oscillations with different frequencies (beat).
+
+\paragraph{Initial values}
+We distinguish the following three cases for pendulum 1 and pendulum 2. At $t=0$ the initial deflection of the pendulums may be
+\begin{itemize}
+\item in-phase: $\phi_1 = \Phi, \quad \phi_2 = \Phi$
+\item opposite in-phase: $\phi_1 = -\Phi, \quad \phi_2 = +\Phi$
+\item paraphase: $\phi_1 = 0, \quad \phi_2 = \Phi$
+\end{itemize}
 
 \subsection{Uncertainty analysis}
 
