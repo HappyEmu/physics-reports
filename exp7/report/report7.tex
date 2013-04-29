@@ -44,7 +44,6 @@ The goal of this experiment is to measure and analyse the characteristics of a c
 \subsection{Theory}
 
 \subsubsection{Mathematical pendulum}
-\paragraph{Equation of motion}
 The equation of motion for the mathematical pendulum with thread length $l$ is given by
 \begin{equation}
 \ddot{\phi} + \frac{g}{l} \cdot \sin{\phi} = 0 \xRightarrow{\sin{\phi}\approx\phi} \ddot{\phi} + \frac{g}{l} \cdot \phi = 0
@@ -60,7 +59,6 @@ T_0 = 2 \pi \sqrt{\frac{l}{g	}}
 
 \subsubsection{Coupled physical pendulum}
 
-\paragraph{Equation of motion}
 The equation of motion for one physical pendulum is given by
 
 \begin{equation}
@@ -68,7 +66,6 @@ J\cdot \ddot{\phi} = M
 \end{equation}
 where $J$ is the moment of inertia with respect to the axis of rotation $O$ and $M$ the repulsive angular moment.
 
-\paragraph{Moment equations}
 The moment equations for pendulum 1 and pendulum 2 are:
 \begin{align}
 M_1 &= \overbrace{-D_g\cdot \phi_1}^{\text{directional moment}} + \overbrace{D_f \cdot (\phi_1 - \phi_2)}^{\text{coupling moment}}  \\
@@ -96,37 +93,40 @@ We distinguish the following three cases for pendulum 1 and pendulum 2. At $t=0$
 \item paraphase: $\phi_1 = 0, \quad \phi_2 = \Phi$
 \end{itemize}
 
-\subparagraph{In-phase}
+\subparagraph*{In-phase}
+The solutions in the in-phase case are
 \begin{align}
 \phi_1(t) &= \Phi \cos{\omega t}\\
 \phi_2(t) &= \Phi \cos{\omega t}
 \end{align}
-
+with oscillation period $\tau_{\omega}$
 \begin{equation}
 \tau_{\omega} = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{J}{D_g}}
 \end{equation}
 
-\subparagraph{Opposite in-phase}
+\subparagraph*{Opposite in-phase}
+The solutions in case of opposite in-phase mode are
 \begin{align}
 \phi_1(t) &= -\Phi \cos{\omega t}\\
 \phi_2(t) &= \Phi \cos{\omega t}
 \end{align}
-
+with oscillation frequency $\tau_{\Omega}$
 \begin{equation}
 \tau_{\Omega} = \frac{2 \pi}{\Omega} = 2 \pi \sqrt{\frac{J}{D_g+2 D_f}}
 \end{equation}
 
-\subparagraph{Paraphase}
+\subparagraph*{Paraphase}
+The solutions for the paraphase case are
 \begin{align}
 \phi_1(t) &= \frac{\Phi}{2}\left(\cos{\omega t} - \cos{\Omega t}\right)\\
 \phi_2(t) &= \frac{\Phi}{2}\left(\cos{\omega t} + \cos{\Omega t}\right)
 \end{align}
-
+with oscillaiton frequency $\tau$ and beat frequency $T_s$
 \begin{align}
 \tau &= \frac{4 \pi}{\Omega + \omega}\\
 T_s &= \frac{2 \pi}{\Omega -\omega}
 \end{align}
-
+Both $\tau$ and $T_s$ can be expressed in dependance of $\tau_{\omega}$ and $\tau_{\Omega}$ via
 \begin{align}
 \frac{1}{\tau} &= \frac{1}{2}\left( \frac{1}{\tau_{\omega}} + \frac{1}{\tau_{\Omega}} \right)\\
 \frac{1}{T_s} &= \frac{1}{\tau_{\Omega}} - \frac{1}{\tau_{\omega}}
@@ -189,8 +189,8 @@ For the first series of measurements, one pendulum is detached from the spring, 
 	\centering
 	\begin{tabular}{|lcc|}
 		\hline
-		d&=&$27.2\unit{cm}$\\
-		l&=&$30.35\unit{cm}$\\
+		$d$&=&$27.2\unit{cm}$\\
+		$l$&=&$30.35\unit{cm}$\\
 		\hline
 	\end{tabular}
 	\caption{measured lengths of the pendulum}
