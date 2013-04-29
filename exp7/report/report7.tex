@@ -277,9 +277,19 @@ For the first series of measurements, one pendulum is detached from the spring, 
 \section{Analysis and Discussion}
 First, we compare the theoretical oscillating period of a mathematical pendulum 
 \begin{equation}
-	T_m=2\pi\sqrt{\frac{l}{g}} = 1.1053 \unit{s}
+	T_m=2\pi\sqrt{\frac{l}{g}}
 \end{equation}
-to the value $T_p$ we obtained in our measurements.
+to the value $T_0$ we obtained in our measurements for the uncoupled pendulum.
+\begin{table}[H]
+	\centering
+	\begin{tabular}{llr}
+		$T_m$&$T_0$&rel. difference\\
+		$1.1053 \unit{s}$&$1.0475 \pm 0.0025$ & $-5.23\%$
+	\end{tabular}
+	\caption{Measured oscillation period for the uncoupled pendulum}
+\end{table}
+The values diverge a little in the direction we could expect it to, as the approximation of a mathematical pendulum does not take mass distribution into account, which in our case slows the pendulum down.
+
 
 
 \section{Conclusion}
