@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      7193,        265]
-NotebookOptionsPosition[      6324,        233]
-NotebookOutlinePosition[      6811,        250]
-CellTagsIndexPosition[      6768,        247]
+NotebookDataLength[     10585,        388]
+NotebookOptionsPosition[      9491,        348]
+NotebookOutlinePosition[      9976,        365]
+CellTagsIndexPosition[      9933,        362]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -229,10 +229,125 @@ Cell[BoxData[
     SuperscriptBox["sphi2", "2"]}]}], 
   SuperscriptBox["phi2", "4"]]], "Output",
  CellChangeTimes->{3.576209847333987*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"df", "[", 
+    RowBox[{"phi1_", ",", "phi2_"}], "]"}], "=", 
+   RowBox[{"g", "*", "l", "*", 
+    RowBox[{"(", 
+     RowBox[{"m", "+", 
+      RowBox[{"mp", "/", "2"}]}], ")"}], "*", 
+    RowBox[{"phi1", "/", 
+     RowBox[{"(", 
+      RowBox[{"phi2", "-", "phi1"}], ")"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"sdf\.b2", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"df", "[", 
+         RowBox[{"phi1", ",", "phi2"}], "]"}], ",", "phi1"}], "]"}], "^", 
+      "2"}], "*", 
+     RowBox[{"sphi1", "^", "2"}]}], "+", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"df", "[", 
+         RowBox[{"phi1", ",", "phi2"}], "]"}], ",", "phi2"}], "]"}], "^", 
+      "2"}], "*", 
+     RowBox[{"sphi2", "^", "2"}]}]}], "//", "FullSimplify"}]}]}], "Input",
+ CellChangeTimes->{{3.5762368416693974`*^9, 3.576236900216197*^9}, {
+  3.576236993093019*^9, 3.576237009871155*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["g", "2"], " ", 
+   SuperscriptBox["l", "2"], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", "m"}], "+", "mp"}], ")"}], "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["phi2", "2"], " ", 
+      SuperscriptBox["sphi1", "2"]}], "+", 
+     RowBox[{
+      SuperscriptBox["phi1", "2"], " ", 
+      SuperscriptBox["sphi2", "2"]}]}], ")"}]}], 
+  RowBox[{"4", " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"phi1", "-", "phi2"}], ")"}], "4"]}]]], "Output",
+ CellChangeTimes->{3.5762370227736683`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"df", "[", 
+    RowBox[{"to_", ",", "tO_"}], "]"}], "=", 
+   RowBox[{"2", 
+    RowBox[{"Pi", "^", "3"}], "*", "J", "*", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"1", "/", 
+       RowBox[{"tO", "^", "2"}]}], "-", 
+      RowBox[{"1", "/", 
+       RowBox[{"to", "^", "2"}]}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"df", "[", 
+        RowBox[{"to", ",", "tO"}], "]"}], ",", "to"}], "]"}], "^", "2"}], "*", 
+    RowBox[{"sto", "^", "2"}]}], "+", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"D", "[", 
+      RowBox[{
+       RowBox[{"df", "[", 
+        RowBox[{"to", ",", "tO"}], "]"}], ",", "tO"}], "]"}], "^", "2"}], "*", 
+    RowBox[{"stO", "^", "2"}]}]}], "//", "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.5762374700110064`*^9, 3.576237470175247*^9}, {
+  3.5762375048699083`*^9, 3.576237597193891*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"16", " ", 
+   SuperscriptBox["J", "2"], " ", 
+   SuperscriptBox["\[Pi]", "6"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["stO", "2"], " ", 
+      SuperscriptBox["to", "6"]}], "+", 
+     RowBox[{
+      SuperscriptBox["sto", "2"], " ", 
+      SuperscriptBox["tO", "6"]}]}], ")"}]}], 
+  RowBox[{
+   SuperscriptBox["to", "6"], " ", 
+   SuperscriptBox["tO", "6"]}]]], "Output",
+ CellChangeTimes->{3.576237600343554*^9}]
 }, Open  ]]
 },
-WindowSize->{740, 731},
-WindowMargins->{{171, Automatic}, {Automatic, 50}},
+WindowSize->{690, 742},
+WindowMargins->{{Automatic, 0}, {Automatic, 32}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -256,16 +371,24 @@ Cell[1692, 62, 663, 20, 66, "Output"]
 }, Open  ]],
 Cell[2370, 85, 508, 15, 33, "Input"],
 Cell[CellGroupData[{
-Cell[2903, 104, 608, 20, 57, "Input"],
+Cell[2903, 104, 608, 20, 80, "Input"],
 Cell[3514, 126, 407, 14, 63, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3958, 145, 866, 29, 80, "Input"],
+Cell[3958, 145, 866, 29, 103, "Input"],
 Cell[4827, 176, 346, 12, 62, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5210, 193, 789, 25, 103, "Input"],
-Cell[6002, 220, 306, 10, 95, "Output"]
+Cell[6002, 220, 306, 10, 62, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6345, 235, 1021, 33, 103, "Input"],
+Cell[7369, 270, 621, 21, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8027, 296, 963, 31, 80, "Input"],
+Cell[8993, 329, 482, 16, 93, "Output"]
 }, Open  ]]
 }
 ]
