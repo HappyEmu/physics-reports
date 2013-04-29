@@ -136,6 +136,19 @@ Both $\tau$ and $T_s$ can be expressed in dependance of $\tau_{\omega}$ and $\ta
 The degree of coupling $k$ between the two pendulums can be found either statically
 
 \begin{equation}
+k = \frac{\Phi_1}{\Phi_2}
+\end{equation}
+
+or dynamically
+
+\begin{equation}
+k = \frac{\tau_{\omega}^2 - \tau_{\Omega}^2}{\tau_{\omega}^2 + \tau_{\Omega}^2}
+\end{equation}
+
+\paragraph*{Coupling moment}
+The coupling moment $D_f$ can also be determined statically
+
+\begin{equation}
 D_f = g l \left( m+ \frac{m'}{2} \right) \frac{\Phi_1}{\Phi_2 -\Phi_1}
 \end{equation}
 
@@ -145,11 +158,12 @@ or dynamically
 D_f = 2 \pi^2 J \left( \frac{1}{\tau_{\Omega}^2} - \frac{1}{\tau_{\omega}^2}  \right) 
 \end{equation}
 
+
 \subsection{Uncertainty analysis}
 \subsubsection{Degree of coupling}
 \paragraph*{Static}
 \begin{equation}
-s_k^2 = \frac{\phi_2^2 s_{\phi_1}^2 + \phi_1^2 s_{\phi_2}^2}{\phi_2^4}
+s_k^2 = \frac{\Phi_2^2 s_{\Phi_1}^2 + \Phi_1^2 s_{\Phi_2}^2}{\Phi_2^4}
 \end{equation}
 
 \paragraph*{Dynamic}
@@ -171,7 +185,7 @@ s_{T_s}^2 = \frac{s_{\tau_{\Omega}}^2 \tau_{\omega}^4 + s_{\tau_{\omega}}^2 \tau
 
 \paragraph*{Static}
 \begin{equation}
-s_{D_f}^2 = \frac{g^2 l^2 \left(2 m + m'\right)^2 \left( \phi_2^2 s_{\phi_1}^2 + \phi_1^2 s_{\phi_2}^2 \right)}{4 \left(\phi_1 -\phi_2\right)^4} 
+s_{D_f}^2 = \frac{g^2 l^2 \left(2 m + m'\right)^2 \left( \Phi_2^2 s_{\Phi_1}^2 + \Phi_1^2 s_{\Phi_2}^2 \right)}{4 \left(\Phi_1 -\Phi_2\right)^4} 
 \end{equation}
 
 \paragraph*{Dynamic}
