@@ -86,7 +86,7 @@ with natural frequencies $\omega$ and $\Omega$
 One can see that the overall motion of each pendulum is composed of a superposition of two harmonic oscillations with different frequencies (beat).
 
 \paragraph{Initial values}
-We distinguish the following three cases for pendulum 1 and pendulum 2. At $t=0$ the initial deflection of the pendulums may be
+We distinguish the following three cases for pendulum 1 and pendulum 2. At $t=0$ the initial deflections of the pendulums may be
 \begin{itemize}
 \item in-phase: $\phi_1 = \Phi, \quad \phi_2 = \Phi$
 \item opposite in-phase: $\phi_1 = -\Phi, \quad \phi_2 = +\Phi$
@@ -131,6 +131,19 @@ Both $\tau$ and $T_s$ can be expressed in dependance of $\tau_{\omega}$ and $\ta
 \frac{1}{\tau} &= \frac{1}{2}\left( \frac{1}{\tau_{\omega}} + \frac{1}{\tau_{\Omega}} \right)\\
 \frac{1}{T_s} &= \frac{1}{\tau_{\Omega}} - \frac{1}{\tau_{\omega}}
 \end{align}
+
+\paragraph*{Degree of coupling}
+The degree of coupling $k$ between the two pendulums can be found either statically
+
+\begin{equation}
+D_f = g l \left( m+ \frac{m'}{2} \right) \frac{\Phi_1}{\Phi_2 -\Phi_1}
+\end{equation}
+
+or dynamically
+
+\begin{equation}
+D_f = 2 \pi^2 J \left( \frac{1}{\tau_{\Omega}^2} - \frac{1}{\tau_{\omega}^2}  \right) 
+\end{equation}
 
 \subsection{Uncertainty analysis}
 
