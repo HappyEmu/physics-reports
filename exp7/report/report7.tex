@@ -198,9 +198,9 @@ s_{D_f}^2 = \frac{16 J^2 \pi^6 \left( s_{\tau_{\Omega}}^2 \tau_{\omega}^6 + s_{\
 \subsection{Used materials}
 The materials used in this experiment are the following:
 \begin{itemize}
-\item An assembly (labelled No.$3$) with two ball bearing mounted sticks ($21.37\unit{g}$ each), which have threaded bottoms
-\item Two weights ($214.15 \unit{g}$ each) with threaded holes which can be screwed onto the bottom of the sticks and secured with two nuts ($2\unit{g}$ each)
-\item two brackets, mountable to the sticks
+\item An assembly (labelled No.$3$) with two ball bearing mounted shafts ($21.37\unit{g}$ each), which have threaded bottoms
+\item Two weights ($214.15 \unit{g}$ each) with threaded holes which can be screwed onto the bottom of the shafts and secured with two nuts ($2\unit{g}$ each)
+\item two brackets, mountable to the shafts
 \item a spring, attachable to the brackets 
 \item a ruler, metric scale, $38 \unit{cm}$ long
 \item a mechanical stopwatch, $0.2 \unit{s}$ steps
@@ -262,7 +262,7 @@ For the first series of measurements, one pendulum is detached from the spring, 
 	$\tau_\omega$&:&$1.04\pm 0 \unit{s}$&$1.0425\pm 0.00478\unit{s}$\\	
 	$\tau_\Omega$&:&$0.994\pm 0.002 \unit{s}$&$0.958\pm 0.00368\unit{s}$\\
 	$\tau$&:&$0.996\pm 0.002 \unit{s}$&$0.991\pm 0.00961\unit{s}$\\
-	$T_s$&:&$13.24\pm 0.0163 \unit{s}$&$12.715\pm 0.0435\unit{s}$\\
+	$T_s$&:&$13.24\pm 0.0163 \unit{s}$&$22.0667\pm 0.0272\unit{s}$\\
 	\end{tabular}
 	\caption{The measured oscillation periods for two different heights of the spring}
 \end{table}
@@ -277,20 +277,20 @@ For the first series of measurements, one pendulum is detached from the spring, 
 \section{Analysis and Discussion}
 First, we compare the theoretical oscillating period of a mathematical pendulum 
 \begin{equation}
-	T_m=2\pi\sqrt{\frac{l}{g}}
+	T_m=2\pi\sqrt{\frac{d}{g}}
 \end{equation}
 to the value $T_0$ we obtained in our measurements for the uncoupled pendulum.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{llr}
 		$T_m$&$T_0$&rel. difference\\
-		$1.1053 \unit{s}$&$1.0475 \pm 0.0025$ & $-5.23\%$
+		$1.0462 \unit{s}$&$1.0475 \pm 0.0025$ & $+0.12\%$
 	\end{tabular}
-	\caption{Measured oscillation period for the uncoupled pendulum}
+	\caption{Measured oscillation period vs mathematical pendulum}
 \end{table}
-The values diverge a little in the direction we could expect it to, as the approximation of a mathematical pendulum does not take mass distribution into account, which in our case slows the pendulum down.
-
-
+This results show that the approximation for a mathematical pendulum yields values very close to our measurements. This is not a big surprise, as nearly $90\%$ of the mass of the pendulum are contained in the weight at the bottom ($214.15\unit{g}$ out of $237.52\unit{g}$), causing the shaft to have a nearly irrelevant impact on the oscillation period.\\
+\newline
+Next, we proceed to comparing the measured values of $\tau$ and $T_s$ to the theoretical results obtained using values $\tau_\omega$ and $\tau_\Omega$.
 
 \section{Conclusion}
 
