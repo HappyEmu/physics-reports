@@ -85,6 +85,21 @@ with natural frequencies $\omega$ and $\Omega$
 \end{align}
 One can see that the overall motion of each pendulum is composed of a superposition of two harmonic oscillations with different frequencies (beat).
 
+\paragraph{Moment of inertia $J$}
+The moment of inertia $J$ of one pendulum can be found by summing up the share of the shaft $J_s$, weight $J_w$ and nut $J_n$:
+
+\begin{equation}
+J = J_s + J_w + J_n
+\end{equation}
+
+The formulae for $J_s$, $J_w$ and $J_n$ can be found in the script on page 103 ff:
+
+\begin{align}
+J_s &= \frac{m_s}{12} \left( 3 r^2 + 4 l^2 \right)\\
+J_w &= \frac{m_g}{12} \left[ 3(R^2 + r^2) + h^2 +12d^2 \right]\\
+J_n &= \frac{m_n}{12} \left[ 3 ( R_R^2+r_R^2) + h'^2+12d'^2 \right]
+\end{align}
+
 \paragraph{Initial values}
 We distinguish the following three cases for pendulum 1 and pendulum 2. At $t=0$ the initial deflections of the pendulums may be
 \begin{itemize}
@@ -180,7 +195,7 @@ s_{\tau}^2 = \frac{4 \left( s_{\tau_{\Omega}}^2 \tau_{\omega}^4 + s_{\tau_{\omeg
 
 \subsubsection{Beat period $T_s$}
 \begin{equation}
-s_{T_s}^2 = \frac{s_{\tau_{\Omega}}^2 \tau_{\omega}^4 + s_{\tau_{\omega}}^2 \tau_{\Omega}^4 )}{\left( \tau_{\omega} - \tau_{\Omega} \right)^4}
+s_{T_s}^2 = \frac{s_{\tau_{\Omega}}^2 \tau_{\omega}^4 + s_{\tau_{\omega}}^2 \tau_{\Omega}^4 }{\left( \tau_{\omega} - \tau_{\Omega} \right)^4}
 \end{equation}
 
 \subsubsection{Coupling moment $D_f$}
@@ -200,8 +215,8 @@ s_{D_f}^2 = \frac{16 J^2 \pi^6 \left( s_{\tau_{\Omega}}^2 \tau_{\omega}^6 + s_{\
 \subsection{Used materials}
 The materials used in this experiment are the following:
 \begin{itemize}
-\item An assembly (labelled No.$3$) with two ball bearing mounted shafts ($21.37\unit{g}$ each), which have threaded bottoms
-\item Two weights ($214.15 \unit{g}$ each) with threaded holes which can be screwed onto the bottom of the shafts and secured with two nuts ($2\unit{g}$ each)
+\item An assembly (labelled No.$3$) with two ball bearing mounted shafts ($m_s = 21.37\unit{g}$ each), which have threaded bottoms
+\item Two weights ($m_w = 214.15 \unit{g}$ each) with threaded holes which can be screwed onto the bottom of the shafts and secured with two nuts ($m_n = 2\unit{g}$ each)
 \item two brackets, mountable to the shafts
 \item a spring, attachable to the brackets 
 \item a ruler, metric scale, $38 \unit{cm}$ long
@@ -255,11 +270,12 @@ For the first series of measurements, one pendulum is detached from the spring, 
 	\caption{measured lengths of the pendulum}
 \end{table}
 
+\section{Analysis and Discussion}
 
 \begin{table}[H]
 \centering
 	\begin{tabular}{lcrr}
-	&&$15\unit{cm}$&$20\unit{cm}$\\
+	&&$h_s = 15\unit{cm}$&$h_s = 20\unit{cm}$\\
 	\hline	
 	$\tau_\omega$&:&$1.04\pm 0 \unit{s}$&$1.0425\pm 0.00478\unit{s}$\\	
 	$\tau_\Omega$&:&$0.994\pm 0.002 \unit{s}$&$0.958\pm 0.00368\unit{s}$\\
@@ -276,7 +292,6 @@ For the first series of measurements, one pendulum is detached from the spring, 
 	\caption{Measured oscillation period for the uncoupled pendulum}
 \end{table}
 
-\section{Analysis and Discussion}
 \subsection{Free oscillation}
 First, we compare the theoretical oscillating period of a mathematical pendulum 
 \begin{equation}
@@ -286,18 +301,18 @@ to the value $T_0$ we obtained in our measurements for the uncoupled pendulum.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{llr}
-		$T_m$&$T_0$&rel. difference\\
+		$T_m$&$T_0$&rel. difference\\ \hline
 		$1.0462 \unit{s}$&$1.0475 \pm 0.0025$ & $+0.12\%$
 	\end{tabular}
 	\caption{Measured oscillation period vs mathematical pendulum}
 \end{table}
 This results show that the approximation for a mathematical pendulum yields values very close to our measurements. This is not a big surprise, as nearly $90\%$ of the mass of the pendulum are contained in the weight at the bottom ($214.15\unit{g}$ out of $237.52\unit{g}$), causing the shaft to have a nearly irrelevant impact on the oscillation period.
-\subsection{coupled oscillation}
+\subsection{Coupled oscillation}
 Next, we proceed to comparing the measured values of $\tau$ and $T_s$ to the theoretical results obtained using the measured values $\tau_\omega$ and $\tau_\Omega$ and formulae \ref{tau} and \ref{ts}.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{lcrrr}
-	&&Calculated&Measurements&relative error\\
+	&&Calculated&Measurements&relative error\\ \hline
 	$\tau$&:& $1.0165 \pm	0.001046 \unit{s}$&$0.998 \pm 0.002 \unit{s}$&$-1.82\% $\\
 	$T_s$ &:& $22.473  \pm 1.0223\unit{s}$ &$22.0667 \pm 0.0272\unit{s}$ & $-1.81\%$\\
 	\end{tabular}
@@ -307,7 +322,7 @@ Next, we proceed to comparing the measured values of $\tau$ and $T_s$ to the the
 \begin{table}[H]
 	\centering
 	\begin{tabular}{lcrrr}
-	&&Calculated&Measurements&relative error\\
+	&&Calculated&Measurements&relative error\\  \hline
 	$\tau$&:& $0.998 \pm 0.00297 \unit{s}$&$0.991 \pm	0.00961\unit{s}$&$-0.71\% $\\
 	$T_s$ &:& $11.819 \pm 0.8329\unit{s}$ &$12.715 \pm	0.0435\unit{s}$ & $+7.58\%$\\
 	\end{tabular}
@@ -315,6 +330,8 @@ Next, we proceed to comparing the measured values of $\tau$ and $T_s$ to the the
 \end{table}
 
 The calculated values are in agreement with our measurements, even though that does not mean a lot for the beat period $T_s$, as the relative errors of the calculated values are nearly $5\%$ and $10\%$, respectively. The stopwatch at our disposal only measured time in $0.2\unit{s}$ steps, which we think is a reason for the big errors. Another reason was that measuring the beat frequency was hard, because after some cycles the pendulums failed to stop completely, which meant we could not know when exactly to stop the watch.
+
+\subsection{Moment of inertia $J$}
 
 
 \subsection{Coupling moment $D_f$}
@@ -346,6 +363,9 @@ $h_s = 15 \unit{cm}$ & $0.0647 \pm 0.0211$ & $0.0452 \pm 0.00201$ & $-30.14\%$\\
  
 \end{tabular}
 \end{table} 
+
+The discrepancies between the static and dynamic values are explained by the same reasonings as in the case of the coupling moment $D_f$.
+
 
 \section{Conclusion}
 Generally speaking, our results strongly agree with theory. The only divergences we noted were very probably due the spring, which we think does not act as theory expects.
