@@ -135,31 +135,33 @@ Both $\tau$ and $T_s$ can be expressed in dependance of $\tau_{\omega}$ and $\ta
 \paragraph*{Degree of coupling}
 The degree of coupling $k$ between the two pendulums can be found either statically
 
-\begin{equation}
+\begin{equation} \label{eq:coupconst_stat}
 k = \frac{\Phi_1}{\Phi_2}
 \end{equation}
 
 or dynamically
 
-\begin{equation}
+\begin{equation} \label{eq:coupconst_dyn}
 k = \frac{\tau_{\omega}^2 - \tau_{\Omega}^2}{\tau_{\omega}^2 + \tau_{\Omega}^2}
 \end{equation}
 
 \paragraph*{Coupling moment}
 The coupling moment $D_f$ can also be determined statically
 
-\begin{equation}
+\begin{equation} \label{eq:coupling_stat}
 D_f = g l \left( m+ \frac{m'}{2} \right) \frac{\Phi_1}{\Phi_2 -\Phi_1}
 \end{equation}
 
 or dynamically
 
-\begin{equation}
+\begin{equation} \label{eq:coupling_dyn}
 D_f = 2 \pi^2 J \left( \frac{1}{\tau_{\Omega}^2} - \frac{1}{\tau_{\omega}^2}  \right) 
 \end{equation}
 
 
 \subsection{Uncertainty analysis}
+Our uncertainty analysis is based on statistical methods such as standard deviation and standard error of the mean in case of measured quantities. For derived quantities the following section lists all formulae used to obtain the errors in our calculations.
+
 \subsubsection{Degree of coupling}
 \paragraph*{Static}
 \begin{equation}
@@ -275,6 +277,7 @@ For the first series of measurements, one pendulum is detached from the spring, 
 \end{table}
 
 \section{Analysis and Discussion}
+\subsection{Free oscillation}
 First, we compare the theoretical oscillating period of a mathematical pendulum 
 \begin{equation}
 	T_m=2\pi\sqrt{\frac{d}{g}}
@@ -291,6 +294,37 @@ to the value $T_0$ we obtained in our measurements for the uncoupled pendulum.
 This results show that the approximation for a mathematical pendulum yields values very close to our measurements. This is not a big surprise, as nearly $90\%$ of the mass of the pendulum are contained in the weight at the bottom ($214.15\unit{g}$ out of $237.52\unit{g}$), causing the shaft to have a nearly irrelevant impact on the oscillation period.\\
 \newline
 Next, we proceed to comparing the measured values of $\tau$ and $T_s$ to the theoretical results obtained using values $\tau_\omega$ and $\tau_\Omega$.
+
+
+\subsection{Coupling moment $D_f$}
+We now continue to compare the coupling moment $D_f$ measured statically and dynamically. In the static case, the coupling moment can be found with formula \ref{eq:coupling_stat} and the dynamic values were obtained using formula \ref{eq:coupling_dyn}:
+
+\begin{table}[H]
+\center
+\begin{tabular}{cccc}
+ & $D_f$ static & $D_f$ dynamic & rel. difference\\
+\hline
+$h_s = 20 \unit{cm}$ & $0.0659 \pm 0.0171$ & $0.0559 \pm 0.0123$ & $-15.17\%$\\
+$h_s = 15 \unit{cm}$ & $0.0463 \pm 0.0162$ & $0.0289 \pm 0.00422$ & $-37.6\%$\\
+ 
+\end{tabular}
+\end{table} 
+
+As one can easily see the values in the dynamic case are significantly lower than their statically obtained counterparts. Although the static values have a higher margin of error we think that the dynamic values are less trustworthy. First, the measurement of the moment of inertia $J$ depicts a significant error on the dynamic values because of the linear relationship of $D_f$ and $J$. If $J$ was not measured accurately, $D_f$ is inherently imprecise as well. Furthermore, the spring coupling the two pendulums together is not ideal and was sometimes fully relaxed or even exerted a repellant force on the pendulums when the pendulums were closest to each other, resulting in a significantly lowered coupling moment than expected.
+
+\subsection{Coupling constant $k$}
+The coupling constant $k$ is again measured and calculated statically and dynamically via formlae \ref{eq:coupconst_stat} and \ref{eq:coupconst_dyn} respectively:
+
+\begin{table}[H]
+\center
+\begin{tabular}{cccc}
+ & $k$ static & $k$ dynamic & rel. difference\\
+\hline
+$h_s = 20 \unit{cm}$ & $0.0896 \pm 0.0212$ & $0.0843 \pm 0.00595$ & $-5.91\%$\\
+$h_s = 15 \unit{cm}$ & $0.0647 \pm 0.0211$ & $0.0452 \pm 0.00201$ & $-30.14\%$\\
+ 
+\end{tabular}
+\end{table} 
 
 \section{Conclusion}
 
