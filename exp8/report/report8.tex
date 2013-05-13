@@ -23,9 +23,9 @@
 \setcounter{tocdepth}{5}
 
 \author{Urs Gerber\\09-921-156 \and Gian-Luca Mateo\\11-113-545}
-\date{18th of April 2013}
+\date{25th of April 2013}
 
-\title{Coupled pendulums}
+\title{Spectrometer}
 \subtitle{Practical course report}
 
 \begin{document}
@@ -35,7 +35,7 @@
 \tableofcontents
 \newpage
 
-\chapter{Experiment: Coupled pendulums}
+\chapter{Experiment: Spectrometer}
 
 \section{Introduction}
 
@@ -136,9 +136,10 @@ In the first measurement, we first adjusted the platform so the sides of the pri
 \\\\
 For the second measurement, we lit up the vapor lamp and, rotating the platform, looked for the point where the spectral lines were minimally deflected. We measured that angle for each of the seven spectral lines stated in \cite[p. 159]{physcript13}. 
 \\\\
-For the third measurements, we mounted the adjustable slit on the telescope and closed it to the narrowest possible position where the yellow lines were still distinguishable. 
+For the third measurements, we mounted the adjustable slit on the telescope and closed it to the narrowest possible position where the yellow lines were still distinguishable, thus measuring the minimal base length. 
 \section{Measurements}
 
+\subsection{Minimal deflection}
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/right.pdf}
@@ -152,12 +153,18 @@ For the third measurements, we mounted the adjustable slit on the telescope and 
 	\caption{Minimum deflection angles on the left side}
 	\label{fig:left}
 \end{figure}
+\subsection{Minimal Base Length}
+We measured a minimal slit width $x$ of:
+\begin{equation}
+	x = 0.76\unit{mm}
+\notag
+\end{equation}
 
 \section{Analysis and Discussion}
 
 \subsection{Wedge Angle of the Prism}
 
-Our measurements yielded the following:
+Our measurements for the wedge angle of the prism yielded the following:
 \begin{equation}
 	\phi = \ang{60.2}
 \notag
@@ -172,6 +179,11 @@ We think the footprint of the used prism is an equilateral triangle, although we
 	\label{fig:meas_and_fit}
 \end{figure}
 As predicted by theory, the refractive Index $n$ is higher for lower wavelengths and lower for higher wavelengths. Furthermore, the obtained values fall in line with values for different kinds of glass, which we think is a strong indication that our values are reasonable.
+
+\subsection{Minimal Base Length}
+
+Using formula \ref{slit} ... we can do something, can't we?
+
 
 \section{Conclusion}
 
