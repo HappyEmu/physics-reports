@@ -56,16 +56,59 @@ A spectrometer is a device which is used to examine the spectral composition of 
 One goal of this experiment is to characterize the prism of such a spectrometer. Opposite to the functionality mentioned above, the spectrometer can also be used to find the refractive index of the incoming at a certain wavelength by measuring the angle of deflection of the beam after travelling through the prism. In order to do that, the minimum angle of deflection $\delta_m$ must be found for a given wavelength. This is the angle at which the spectrum reverses its direction, meaning that the spectrum is steady when the minimum angle of deflection is reached. At this angle, the following relation holds:
 
 \begin{equation}\label{eq:index}
-n = \frac{\sin\alpha_1}{\sin\beta_1} = \frac{sin{\frac{\delta_m+\phi}{2}}}{\sin{\frac{\phi}{2}}}
+n = \frac{\sin\alpha_1}{\sin\beta_1} = \frac{\sin{\left(\frac{\delta_m+\phi}{2} \right)}}{\sin{\frac{\phi}{2}}}
 \end{equation}
 
 where $\alpha_1$ is the angle of incidence, $\beta_1$ the angle of reflection and $\phi$ the prism's wedge angle. This relation will be used to calculate the refractive indices of the prism at different wavelengths.\\
 
 Additionally, if the prism's base length $a$ is known, the optical resolution $A$ of the prism can by found by using the derivative of the refractive index with respect to the wavelength $\frac{\dif n}{\dif \lambda}$:
 
-\begin{equation}
+\begin{equation}\label{eq:resolution_calc}
 A = a\cdot \frac{\dif n}{\dif \lambda}
-\end{equation} 
+\end{equation}
+
+The minimal optical resolution to be able to distinguish two spectral lines can be found via 
+
+\begin{equation}\label{eq:resolution_theory}
+A_{\text{Theory}} = \frac{\lambda}{\Delta \lambda}
+\end{equation}
+
+\subsubsection{Spectral lines of mercury}
+
+The observed spectral lines of mercury are listed below in table \ref{tab:spectral_lines}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+Color & wave length $\lambda$ [nm]\\
+\hline\hline
+dark red & 690.8\\
+red & 623.4 \\
+yellow I & 579.1\\
+yellow II & 577.0\\
+green & 546.1\\
+blue-green & 491.6\\
+indigo & 435.8\\
+purple I & 407.8\\
+purple II & 404.7\\\hline
+\end{tabular}
+\label{tab:spectral_lines}
+\end{table}
+
+To determine the minimal base length $a$ necessary at which the two yellow spectral lines can still be visually distinguished can be found by mounting a variable slit of width $x$ in front of the objective. Using 
+
+\begin{equation}\label{eq:slit}
+x = \frac{a}{2} \frac{\cos{\alpha_2}}{\sin{\frac{\phi}{2}}}
+\end{equation}
+
+and
+
+\begin{equation}
+\alpha_2 = \frac{\delta_m + \phi}{2} \quad ( = \alpha_1 \quad \text{at min. angle of deflection})
+\end{equation}
+
+we are able to calculate afore-said minimal base length $a$. 
 
 \section{Experiment setup and execution}
 
