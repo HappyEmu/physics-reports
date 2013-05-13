@@ -1,0 +1,228 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7509,        219]
+NotebookOptionsPosition[      6739,        191]
+NotebookOutlinePosition[      7225,        208]
+CellTagsIndexPosition[      7182,        205]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"n", "[", 
+    RowBox[{"dm_", ",", "phi_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"dm", "+", "phi"}], ")"}], "/", "2"}], "Degree"}], "]"}], "/", 
+    RowBox[{"Sin", "[", 
+     RowBox[{
+      RowBox[{"phi", "/", "2"}], "Degree"}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5774233639722433`*^9, 3.577423427940146*^9}, 
+   3.5774235289692307`*^9, {3.5774250043409443`*^9, 3.577425022270173*^9}, {
+   3.577425090761705*^9, 3.57742511770577*^9}, 3.57742517125321*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sn\.b2", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"n", "[", 
+         RowBox[{"dm", ",", "phi"}], "]"}], ",", "dm"}], "]"}], "^", "2"}], 
+     "*", 
+     RowBox[{"sdm", "^", "2"}]}], "+", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"n", "[", 
+         RowBox[{"dm", ",", "phi"}], "]"}], ",", "phi"}], "]"}], "^", "2"}], 
+     "*", 
+     RowBox[{"sphi", "^", "2"}]}]}], "//", "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.5774234346293716`*^9, 3.577423509992487*^9}, {
+  3.577423559543652*^9, 3.577423594104822*^9}, {3.577423636493709*^9, 
+  3.5774236499168053`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["\[Degree]", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       SuperscriptBox["sdm", "2"]}], " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Degree]", " ", 
+          RowBox[{"(", 
+           RowBox[{"dm", "+", "phi"}], ")"}]}], "]"}]}], ")"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["sphi", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Degree]", " ", "dm"}], "]"}]}], ")"}], " ", 
+      SuperscriptBox[
+       RowBox[{"Csc", "[", 
+        FractionBox[
+         RowBox[{"\[Degree]", " ", "phi"}], "2"], "]"}], "2"]}]}], ")"}]}], 
+  RowBox[{"4", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"\[Degree]", " ", "phi"}], "]"}]}], ")"}]}]]], "Output",
+ CellChangeTimes->{{3.5774235611198187`*^9, 3.577423595438157*^9}, 
+   3.577423659734558*^9, 3.577424710560004*^9, 3.577424777715683*^9, 
+   3.577424818899004*^9, {3.577424901653591*^9, 3.5774249075612926`*^9}, 
+   3.577425121969624*^9, {3.577425161309236*^9, 3.57742518564785*^9}, 
+   3.577425271891666*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Evaluate", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", "sn\.b2", "]"}], "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"sdm", "\[Rule]", "0.05"}], ",", 
+     RowBox[{"sphi", "\[Rule]", "0.05"}], ",", " ", 
+     RowBox[{"dm", "\[Rule]", "51.55"}], " ", ",", 
+     RowBox[{"phi", "\[Rule]", "60.2"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5774236617094088`*^9, 3.5774237383407927`*^9}, {
+   3.577423771268682*^9, 3.577423810173397*^9}, 3.5774242793633003`*^9, {
+   3.577424943199645*^9, 3.577424954949121*^9}, {3.577425154782989*^9, 
+   3.577425182369492*^9}, {3.577425226796102*^9, 3.5774252389200087`*^9}}],
+
+Cell[BoxData["0.0008985025303387039`"], "Output",
+ CellChangeTimes->{
+  3.577423810659395*^9, 3.577424710608323*^9, 3.5774247777377367`*^9, 
+   3.577424818916355*^9, {3.577424901658702*^9, 3.577424907566503*^9}, {
+   3.5774249445728903`*^9, 3.577424956029645*^9}, 3.577425122008251*^9, {
+   3.577425161376513*^9, 3.5774251995420856`*^9}, 3.5774252396409483`*^9, 
+   3.5774252719136257`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ndata", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+    "47.775", ",", "\n", "48.2", ",", "\n", "48.475", ",", "\n", "48.575", 
+     ",", "\n", "48.85", ",", "\n", "49.575", ",", "\n", "50.575", ",", "\n", 
+     "51.4", ",", "\n", "51.55"}], "\n", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"result", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Evaluate", "[", 
+     RowBox[{
+      RowBox[{"Sqrt", "[", "sn\.b2", "]"}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"sdm", "\[Rule]", "0.05"}], ",", 
+        RowBox[{"sphi", "\[Rule]", "0.05"}], ",", " ", 
+        RowBox[{"dm", "\[Rule]", 
+         RowBox[{"ndata", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], " ", ",", 
+        RowBox[{"phi", "\[Rule]", "60.2"}]}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", 
+      RowBox[{"Length", "[", "ndata", "]"}]}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.577423961876461*^9, 3.57742396802*^9}, {
+  3.577424081126769*^9, 3.577424160802618*^9}, {3.577424195526349*^9, 
+  3.5774243012214937`*^9}, {3.577424370470579*^9, 3.577424410846059*^9}, {
+  3.577424700892314*^9, 3.577424702772007*^9}, {3.577424775336968*^9, 
+  3.57742480722764*^9}, {3.577424865053048*^9, 3.577424865390788*^9}, {
+  3.577424975115443*^9, 3.577424975272202*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pspec"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \[NoBreak]\\!\\(i\\)\[NoBreak] is \
+neither a machine-sized integer nor a list of machine-sized integers. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/pspec\\\", \
+ButtonNote -> \\\"Part::pspec\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5774252719619913`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.0008690197915284377", ",", "\[IndentingNewLine]", 
+   "0.0008722509451108822", ",", "\[IndentingNewLine]", 
+   "0.0008743541597141964", ",", "\[IndentingNewLine]", 
+   "0.0008751213653299249", ",", "\[IndentingNewLine]", 
+   "0.0008772377180546042", ",", "\[IndentingNewLine]", 
+   "0.0008828624002214211", ",", "\[IndentingNewLine]", 
+   "0.0008907249157772707", ",", "\[IndentingNewLine]", 
+   "0.0008972990048390617", ",", "\[IndentingNewLine]", 
+   "0.0008985025303387039"}], "}"}]], "Input",
+ CellChangeTimes->{{3.577425288204864*^9, 3.577425307752791*^9}}]
+},
+WindowSize->{851, 731},
+WindowMargins->{{94, Automatic}, {40, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
+   ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 597, 16, 33, "Input"],
+Cell[CellGroupData[{
+Cell[1179, 40, 709, 22, 33, "Input"],
+Cell[1891, 64, 1250, 36, 69, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3178, 105, 642, 13, 33, "Input"],
+Cell[3823, 120, 390, 6, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4250, 131, 1357, 31, 356, "Input"],
+Cell[5610, 164, 503, 10, 24, "Message"]
+}, Open  ]],
+Cell[6128, 177, 607, 12, 218, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)

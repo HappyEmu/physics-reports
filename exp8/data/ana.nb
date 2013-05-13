@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     10504,        308]
-NotebookOptionsPosition[      9264,        263]
-NotebookOutlinePosition[      9750,        280]
-CellTagsIndexPosition[      9707,        277]
+NotebookDataLength[     11101,        321]
+NotebookOptionsPosition[      9869,        276]
+NotebookOutlinePosition[     10355,        293]
+CellTagsIndexPosition[     10312,        290]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,7 +70,8 @@ Cell[BoxData[{
   3.577382663571961*^9}, {3.577382991970702*^9, 3.577383042212822*^9}, {
   3.5773830727003727`*^9, 3.5773831319703007`*^9}, {3.577383346676293*^9, 
   3.5773833852485*^9}, {3.5773836353504257`*^9, 3.57738368185235*^9}, {
-  3.5773837410025063`*^9, 3.5773837521845407`*^9}}],
+  3.5773837410025063`*^9, 3.5773837521845407`*^9}, {3.577422326798397*^9, 
+  3.5774223488531103`*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -78,7 +79,8 @@ Cell[BoxData[
    RowBox[{"c", "\[Rule]", "9347.296517228397`"}], ",", 
    RowBox[{"k", "\[Rule]", "1.5927550528249905`"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.577383636144833*^9, 3.577383684340877*^9}, {
-  3.5773837323567533`*^9, 3.5773837552619762`*^9}}]
+   3.5773837323567533`*^9, 3.5773837552619762`*^9}, 3.577420747099966*^9, {
+   3.5774223290489893`*^9, 3.577422351034348*^9}}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -182,6 +184,7 @@ Mjj1Yz9aU2/snrBZ1sWgo1Fi2HfU6ze80s1Qa7gPksyp/wOfCG0V
   Axes->True,
   AxesLabel->{None, None},
   AxesOrigin->{400., 1.612},
+  ImageSize->{544., Automatic},
   Method->{},
   PlotRange->All,
   PlotRangeClipping->True,
@@ -189,7 +192,8 @@ Mjj1Yz9aU2/snrBZ1sWgo1Fi2HfU6ze80s1Qa7gPksyp/wOfCG0V
     Scaled[0.02], 
     Scaled[0.02]}]], "Output",
  CellChangeTimes->{{3.5773836204666653`*^9, 3.577383684386829*^9}, {
-  3.5773837323992367`*^9, 3.577383755306814*^9}}]
+   3.5773837323992367`*^9, 3.577383755306814*^9}, 3.577420747657324*^9, {
+   3.57742232909116*^9, 3.577422351072626*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -203,7 +207,9 @@ Cell[BoxData[
   3.577383980736725*^9, 3.577383981949111*^9}}],
 
 Cell[BoxData["1.6206277431610787`"], "Output",
- CellChangeTimes->{3.577383987673853*^9}]
+ CellChangeTimes->{
+  3.577383987673853*^9, 3.577420747671599*^9, {3.577422329119005*^9, 
+   3.577422351080946*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -217,7 +223,9 @@ Cell[BoxData[
   3.577383966947191*^9, 3.577383984960019*^9}}],
 
 Cell[BoxData["1.620830998498778`"], "Output",
- CellChangeTimes->{3.57738398588957*^9}]
+ CellChangeTimes->{
+  3.57738398588957*^9, 3.577420747717801*^9, {3.5774223291397753`*^9, 
+   3.57742235110084*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -232,7 +240,8 @@ Cell[BoxData[
  RowBox[{"-", 
   FractionBox["18694.593034456793`", 
    SuperscriptBox["x", "3"]]}]], "Output",
- CellChangeTimes->{{3.577384005897838*^9, 3.577384023761406*^9}}]
+ CellChangeTimes->{{3.577384005897838*^9, 3.577384023761406*^9}, 
+   3.577420747731496*^9, {3.577422329161161*^9, 3.577422351119795*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -245,7 +254,9 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"-", "0.00009626209751714138`"}]], "Output",
- CellChangeTimes->{3.577384041491029*^9}]
+ CellChangeTimes->{
+  3.577384041491029*^9, 3.577420747788102*^9, {3.577422329183003*^9, 
+   3.577422351141015*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -258,11 +269,13 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"-", "0.00009731696940654244`"}]], "Output",
- CellChangeTimes->{3.5773840538032207`*^9}]
+ CellChangeTimes->{
+  3.5773840538032207`*^9, 3.5774207478526497`*^9, {3.577422329202139*^9, 
+   3.577422351160966*^9}}]
 }, Open  ]]
 },
 WindowSize->{740, 731},
-WindowMargins->{{Automatic, 35}, {Automatic, 45}},
+WindowMargins->{{Automatic, 34}, {Automatic, 18}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -281,34 +294,34 @@ CellTagsIndex->{}
 Notebook[{
 Cell[557, 20, 1217, 32, 264, "Input"],
 Cell[CellGroupData[{
-Cell[1799, 56, 758, 16, 57, "Input"],
-Cell[2560, 74, 287, 6, 33, "Output"]
+Cell[1799, 56, 809, 17, 57, "Input"],
+Cell[2611, 75, 362, 7, 33, "Output"]
 }, Open  ]],
-Cell[2862, 83, 419, 12, 57, "Input"],
-Cell[3284, 97, 355, 9, 33, "Input"],
+Cell[2988, 85, 419, 12, 57, "Input"],
+Cell[3410, 99, 355, 9, 33, "Input"],
 Cell[CellGroupData[{
-Cell[3664, 110, 203, 4, 33, "Input"],
-Cell[3870, 116, 3576, 75, 237, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[7483, 196, 254, 6, 33, "Input"],
-Cell[7740, 204, 88, 1, 33, "Output"]
+Cell[3790, 112, 203, 4, 33, "Input"],
+Cell[3996, 118, 3680, 77, 352, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7865, 210, 256, 6, 33, InheritFromParent],
-Cell[8124, 218, 86, 1, 33, "Output"]
+Cell[7713, 200, 254, 6, 33, "Input"],
+Cell[7970, 208, 163, 3, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8247, 224, 173, 4, 33, "Input"],
-Cell[8423, 230, 175, 4, 55, "Output"]
+Cell[8170, 216, 256, 6, 33, "Input"],
+Cell[8429, 224, 162, 3, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8635, 239, 174, 4, 33, "Input"],
-Cell[8812, 245, 109, 2, 33, "Output"]
+Cell[8628, 232, 173, 4, 33, "Input"],
+Cell[8804, 238, 247, 5, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8958, 252, 176, 4, 33, "Input"],
-Cell[9137, 258, 111, 2, 66, "Output"]
+Cell[9088, 248, 174, 4, 33, "Input"],
+Cell[9265, 254, 184, 4, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9486, 263, 176, 4, 33, "Input"],
+Cell[9665, 269, 188, 4, 66, "Output"]
 }, Open  ]]
 }
 ]
