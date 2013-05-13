@@ -13,6 +13,7 @@
 \usepackage{subcaption}
 \usepackage{mathtools}
 \usepackage{tikz}
+\usepackage{commath}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 \renewcommand{\phi}{\varphi}
@@ -39,10 +40,32 @@
 \section{Introduction}
 
 \subsection{Goal of the experiment}
-The goal of this experiment is to analyze the visible light spectrum of a mercury vapor lamp. To do this a spectrometer is first calibrated and then used to find the angles of refraction along the edge of a prism made of glass for a certain wavelength. In addition, we examine some physical properties of the prism.
+The goal of this experiment is to analyze the visible light spectrum of a mercury vapor lamp. To do this a spectrometer is first calibrated and then used to find the angles of refraction along the edge of a prism made of glass for a certain wavelength. In addition, we examine some physical properties of the spectrometer's prism.
  
 \subsection{Theory}
-A spectrometer is a device which is used to examine the spectral composition of light 
+\subsubsection{Spectrometer}
+A spectrometer is a device which is used to examine the spectral composition of light emitted my a certain material. It's functionality is based on the fact that the refractive index $n$ of a material is depending on the wavelength $\lambda$ of the incoming light beam. This effect is called \emph{dispersion relation} and is illustrated in figure \ref{fig:dispersion}.\\
+
+\begin{figure}[h]
+	\centering
+  \includegraphics[width=0.5\textwidth]{img/dispersion.png}
+	\caption{Dispersion along the edge of a glass prism}
+	\label{fig:dispersion}
+\end{figure}
+
+One goal of this experiment is to characterize the prism of such a spectrometer. Opposite to the functionality mentioned above, the spectrometer can also be used to find the refractive index of the incoming at a certain wavelength by measuring the angle of deflection of the beam after travelling through the prism. In order to do that, the minimum angle of deflection $\delta_m$ must be found for a given wavelength. This is the angle at which the spectrum reverses its direction, meaning that the spectrum is steady when the minimum angle of deflection is reached. At this angle, the following relation holds:
+
+\begin{equation}\label{eq:index}
+n = \frac{\sin\alpha_1}{\sin\beta_1} = \frac{sin{\frac{\delta_m+\phi}{2}}}{\sin{\frac{\phi}{2}}}
+\end{equation}
+
+where $\alpha_1$ is the angle of incidence, $\beta_1$ the angle of reflection and $\phi$ the prism's wedge angle. This relation will be used to calculate the refractive indices of the prism at different wavelengths.\\
+
+Additionally, if the prism's base length $a$ is known, the optical resolution $A$ of the prism can by found by using the derivative of the refractive index with respect to the wavelength $\frac{\dif n}{\dif \lambda}$:
+
+\begin{equation}
+A = a\cdot \frac{\dif n}{\dif \lambda}
+\end{equation} 
 
 \section{Experiment setup and execution}
 
