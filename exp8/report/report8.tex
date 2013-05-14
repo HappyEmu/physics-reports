@@ -111,6 +111,14 @@ and
 
 we are able to calculate afore-said minimal base length $a$. 
 
+\subsection{Error analysis}
+The most interesting and relevant part of the error analysis is the one for the refractive index $n$ (angles in degrees):
+
+\begin{equation}
+s_n^2 = \frac{-s_{\delta_m}^2 (1+\cos{(\delta_m + \phi))} + s_{\phi}^2 ((-1+\cos \delta_m) \csc^2(\phi / 2))}{4 (-1 + \cos \phi)}
+\end{equation}
+
+
 \section{Experiment setup and execution}
 
 \subsection{Used materials}
@@ -184,13 +192,50 @@ Our measurements for the wedge angle of the prism yielded the following:
 We think the footprint of the used prism is an equilateral triangle, although we have no coherent experimental proof -- apart from our impression during the experiment --  for our assumption.
 
 \subsection{Minimal Deflection}
+
+Our measurements yield the following results:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+Color & wave length $\lambda$ [nm] & $\delta_m$ [$^\circ$] & refractive index $n$\\
+\hline\hline
+dark red & 690.8 & $47.775 \pm 0.025$  & $1.613 \pm 0.000869$\\
+red & 623.4 & $48.2 \pm 0.05$ & $1.617 \pm 0.000872$\\
+yellow I & 579.1 & $48.475 \pm 0.025$ & $1.620 \pm 0.000874$\\
+yellow II & 577.0 & $48.575 \pm 0.025$ & $1.621 \pm 0.000875$\\
+green & 546.1 & $48.85 \pm 0.05$ & $1.624 \pm 0.000877$\\
+blue-green & 491.6 & $49.575 \pm 0.025$ & $1.631 \pm 0.000883$\\
+indigo & 435.8 & $0.575 \pm 0.025$ & $1.641 \pm 0.000891$\\\
+purple I & 407.8 & $51.4 \pm 0.05$ & $1.649 \pm 0.000897$\\
+purple II & 404.7 & $51.55 \pm 0.05$ & $1.651 \pm 0.000899$\\\hline
+\end{tabular}
+\caption{Refractive indices $n$ and minimum deflection angles $\delta_m$ at different wavelengths $\lambda$}
+\label{tab:n_results}
+\end{table}
+
+The variable refractive indices $n$ are plotted against the wavelength $\lambda$ in figure \ref{fig:meas_and_fit} including a fit for our data points.
+
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.9\textwidth]{diag/meas_and_fit.pdf}
-	\caption{Calculated refractive indices $n$ plotted against the wavelength $\lambda$ of the spectrum}
+	\caption{Calculated refractive indices $n$ plotted against the wavelength $\lambda$ of the spectrum with a fit (orange)}
 	\label{fig:meas_and_fit}
 \end{figure}
-As predicted by theory, the refractive index $n$ is higher for lower wavelengths and lower for higher wavelengths. Furthermore, the obtained values fall in line with values for different kinds of glass, which we think is a strong indication that our values are reasonable.
+As predicted by theory, the refractive Index $n$ is higher for lower wavelengths and lower for higher wavelengths. Furthermore, the obtained values fall in line with values for different kinds of glass, which we think is a strong indication that our values are reasonable.\\
+
+To be able to reasonably calculate the dispersion $\frac{\dif n}{\dif \lambda}$ we have created a mathematical model and let a computer find the best fit for our data and that particular model.
+
+We found the model 
+\begin{equation}
+n (\lambda) = \frac{C}{\lambda^2}+k
+\end{equation}
+to be a reasonable approximation of our data points. Using Mathematica we could pinpoint both $C$ and $k$ (using a least squares algorithm) and the final approximation is
+
+\begin{equation}\label{eq:approx}
+n (\lambda) = \frac{9347.3}{\lambda^2}+1.59276
+\end{equation} 
 
 \subsection{Minimal Base Length}
 \label{sec:base_length}
@@ -202,7 +247,7 @@ Using formula \ref{eq:slit} and the slit width $x$ determined in our measurement
 We decided to take this value with a grain of salt, as we could barely distinguish the yellow lines with our prism, which was distinctively larger. Then again, maybe a more powerful telescope would have helped.
 
 \subsection{Resolution}
-Using formula \ref{eq:resolution_calc} and using $\frac{\dif{n}}{\dif{\lambda}}$ of our fit at $\lambda = 578.05 \unit{nm}$, which is between the yellow spectral lines, we calculated the resolution of our prism:
+Using formula \ref{eq:resolution_calc} and using $\frac{\dif{n}}{\dif{\lambda}}$ of our fit \ref{eq:approx} at $\lambda = 578.05 \unit{nm}$, which is between the yellow spectral lines, we calculated the resolution of our prism:
 \begin{equation}
 	A_{\text{meas}} = 2622.944
 	\notag
