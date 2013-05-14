@@ -61,13 +61,13 @@ n = \frac{\sin\alpha_1}{\sin\beta_1} = \frac{\sin{\left(\frac{\delta_m+\phi}{2} 
 
 where $\alpha_1$ is the angle of incidence, $\beta_1$ the angle of reflection and $\phi$ the prism's wedge angle. This relation will be used to calculate the refractive indices of the prism at different wavelengths.\\
 
-Additionally, if the prism's base length $a$ is known, the optical resolution $A$ of the prism can be found by using the derivative of the refractive index with respect to the wavelength $\frac{\dif n}{\dif \lambda}$:
+Additionally, if the prism's base length $a$ is known, the resolution $A$ of the prism can be found by using the derivative of the refractive index with respect to the wavelength $\frac{\dif n}{\dif \lambda}$:
 
 \begin{equation}\label{eq:resolution_calc}
 A = a\cdot \frac{\dif n}{\dif \lambda}
 \end{equation}
 
-The minimal optical resolution to be able to distinguish two spectral lines can be found via 
+The minimal resolution to be able to distinguish two spectral lines can be found via 
 
 \begin{equation}\label{eq:resolution_theory}
 A_{\text{Theory}} = \frac{\lambda}{\Delta \lambda}
@@ -187,9 +187,20 @@ Using formula \ref{eq:slit} and the slit width $x$ determined in our measurement
 \begin{equation}
 	a = 2 \cdot x \cdot \frac{\sin(\frac{\phi}{2})}{\cos({\alpha_2})} = 1.31 \unit{mm}	
 \end{equation}
-We decided to take this value with a grain of salt, as we could barely distinguish the yellow lines with our prism, which was distinctively larger.
+We decided to take this value with a grain of salt, as we could barely distinguish the yellow lines with our prism, which was distinctively larger. Then again, maybe a more powerful telescope would have helped.
 
 \subsection{Resolution}
+Using formula \ref{eq:resolution_calc} and using $\frac{\dif{n}}{\dif{\lambda}}$ of our fit at $\lambda = 578.05 \unit{nm}$, which is between the yellow spectral lines, we calculated the resolution of our prism:
+\begin{equation}
+	A_{\text{meas}} = 2622.944
+	\notag
+\end{equation}
+If we compare that to the theoretically necessary resolution:
+\begin{equation}
+	A_{\text{theory}} = 275.262
+	\notag
+\end{equation}
+
 
 
 
