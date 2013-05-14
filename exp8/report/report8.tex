@@ -170,7 +170,7 @@ Our measurements for the wedge angle of the prism yielded the following:
 	\phi = \ang{60.2}
 \notag
 \end{equation}
-We think the footprint of the used prism is an equilateral triangle, although we have no coherent proof for our assumption.
+We think the footprint of the used prism is an equilateral triangle, although we have no coherent experimental proof -- apart from our impression during the experiment --  for our assumption.
 
 \subsection{Minimal Deflection}
 \begin{figure}[H]
@@ -182,6 +182,7 @@ We think the footprint of the used prism is an equilateral triangle, although we
 As predicted by theory, the refractive Index $n$ is higher for lower wavelengths and lower for higher wavelengths. Furthermore, the obtained values fall in line with values for different kinds of glass, which we think is a strong indication that our values are reasonable.
 
 \subsection{Minimal Base Length}
+\label{sec:base_length}
 
 Using formula \ref{eq:slit} and the slit width $x$ determined in our measurements we can determine the minimal base length of a prism:
 \begin{equation}
@@ -200,7 +201,12 @@ If we compare that to the theoretically necessary resolution:
 	A_{\text{theory}} = 275.262
 	\notag
 \end{equation}
-
+We see that our resolution is substantially larger than needed according to theory. This Result falls in line with the one obtained in \ref{sec:base_length} and indicates that a smaller prism would have sufficed to distinguish the yellow spectral lines. If we solve formula \ref{eq:resolution_calc} for $a$ we can get another value for the minimal base length and compare it to the one obtained in \ref{sec:base_length}.
+\begin{equation}
+	a_{res} = A_{theory} \cdot \left(\frac{\dif{n}}{\dif{\lambda}}\right)^{-1} = 2.844 \unit{mm}
+\notag
+\end{equation}
+Considering that we used the derivation of a numerical fit, the results support the validity of our calculations in \ref{sec:base_length}.
 
 
 
