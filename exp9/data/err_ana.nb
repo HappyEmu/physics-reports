@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3605,        128]
+NotebookOptionsPosition[      3003,        105]
+NotebookOutlinePosition[      3489,        122]
+CellTagsIndexPosition[      3446,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Moment", " ", "of", " ", "Inertia"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"J", "[", 
+     RowBox[{"w_", ",", "r_"}], "]"}], "=", 
+    RowBox[{
+     RowBox[{"2", "*", "m", "*", "g", "*", 
+      RowBox[{"h", "/", 
+       RowBox[{"w", "^", "2"}]}]}], "-", 
+     RowBox[{"m", "*", 
+      RowBox[{"r", "^", "2"}]}]}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.577597595332428*^9, 3.5775976384881973`*^9}, {
+  3.5775982883436003`*^9, 3.577598297471642*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sJ\.b2", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"J", "[", 
+         RowBox[{"w", ",", "r"}], "]"}], ",", "w"}], "]"}], "^", "2"}], "*", 
+     RowBox[{"sw", "^", "2"}]}], "+", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"J", "[", 
+         RowBox[{"w", ",", "r"}], "]"}], ",", "r"}], "]"}], "^", "2"}], "*", 
+     RowBox[{"sr", "^", "2"}]}]}], "//", "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.5775976779214478`*^9, 3.577597762347356*^9}, {
+  3.577597818062332*^9, 3.577597818077406*^9}, {3.5775978584266577`*^9, 
+  3.577597905293002*^9}}],
+
+Cell[BoxData[
+ RowBox[{"4", " ", 
+  SuperscriptBox["m", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["r", "2"], " ", 
+     SuperscriptBox["sr", "2"]}], "+", 
+    FractionBox[
+     RowBox[{"4", " ", 
+      SuperscriptBox["g", "2"], " ", 
+      SuperscriptBox["h", "2"], " ", 
+      SuperscriptBox["sw", "2"]}], 
+     SuperscriptBox["w", "6"]]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.577597859395274*^9, 3.577597905847056*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sqrt", "[", "sJ\.b2", "]"}], "//", "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.577598224071412*^9, 3.577598242959507*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["m", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["r", "2"], " ", 
+       SuperscriptBox["sr", "2"]}], "+", 
+      FractionBox[
+       RowBox[{"4", " ", 
+        SuperscriptBox["g", "2"], " ", 
+        SuperscriptBox["h", "2"], " ", 
+        SuperscriptBox["sw", "2"]}], 
+       SuperscriptBox["w", "6"]]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{{3.57759823660189*^9, 3.577598246395927*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 731},
+WindowMargins->{{Automatic, 63}, {50, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
+   ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 549, 16, 57, "Input"],
+Cell[CellGroupData[{
+Cell[1131, 40, 685, 20, 33, "Input"],
+Cell[1819, 62, 458, 14, 63, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2314, 81, 163, 3, 33, "Input"],
+Cell[2480, 86, 507, 16, 74, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

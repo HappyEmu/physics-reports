@@ -43,7 +43,27 @@
 The goal of this experiment is to analize and measure the properties of a spinning gyroscope. More precisely, we are first and foremost interested in the gyroscope's precession period when applying variable momenta at different angular frequencies.
  
 \subsection{Theory}
-\subsection{Error analysis}
+
+\subsubsection{Moment of Inertia}
+
+\begin{equation}
+\label{eq:inertia}
+J = \frac{2mgh}{\omega_0^2} - m R^2
+\end{equation}
+
+\subsubsection{Precession period $\Omega_P$}
+\begin{equation}
+\Omega_P = \frac{mg\cdot l}{J\cdot \omega}
+\end{equation}
+
+\subsubsection{Parenthesis: Preliminary Exercises}
+
+\subsubsection{Error analysis}
+\paragraph*{Moment of Inertia}
+
+\begin{equation}
+s_J^2 = 4 m^2 \left( r^2 s_r^2 + \frac{4 g^2 h^2 s_w^2}{\omega^6} \right)
+\end{equation}
 
 \section{Experiment setup and execution}
 
@@ -55,8 +75,33 @@ The materials used in this experiment are the following:
 
 \subsection{Assembly and Execution}
 
+\section{Experiment Results}
+
 \section{Analysis and Discussion}
 
+\subsection{Moment of inertia $J$}
+To calculate the moment of inertia $J$ of the spinning disk, we use formula \ref{eq:inertia} and our measured values for $\omega_0$:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|cccc|}
+\hline
+$h = 1\unit{m}$ & $ m = 0.2 \unit{kg}$ & $m = 0.46 \unit{kg}$ & $m = 1 \unit{kg}$ & $m = 2 \unit{kg}$\\
+\hline\hline
+$\omega_0$ [$\unit{rad/s}$] & $9.075 \pm 0.0631$ & $12.758 \pm 0.0374$ & $17.190 \pm 0.432$ & $21.546 \pm 0.159$\\ \hline
+$J$ [$\unit{kg\cdot m^2}$] & $0.0440 \pm 0.00331$  & $0.0471 \pm 0.00072$ & $0.0482 \pm 0.0033$ & $0.0481 \pm 0.00334$ \\ \hline
+\end{tabular}
+\label{tab:inertia_results}
+\caption{The resulting momenta of inertia $J$ for different values of $m$}
+\end{table}
+
+To calculate the effective moment of inertia $J$, we average all the momenta of inertia above, which yields
+
+\begin{equation}
+J = (0.0468	 \pm 0.000974) \unit{kg\cdot m^2}
+\end{equation}
+
+\subsection{Precession Period $\Omega_P$}
 \subsection{Sources of error}
 
 \section{Conclusion}
