@@ -14,6 +14,7 @@
 \usepackage{mathtools}
 \usepackage{tikz}
 \usepackage{commath}
+\usepackage{nameref}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 \renewcommand{\phi}{\varphi}
@@ -43,27 +44,53 @@
 The goal of this experiment is to analize and measure the properties of a spinning top. More precisely, we are first and foremost interested in the top's precession period when applying variable momenta at different angular frequencies.
  
 \subsection{Theory}
-A top consists of a rigid body which is free to rotate around a fixed point $0$. Generally said, the motion is a rotation around a momentary rotation axis with an arbitrary orientation.\\
-In this experiment, however, we use a much simpler variation of the general top, called a rotationally symmetric top, which makes the equations of motion much simpler.
+A top consists of a rigid body which is free to rotate around a fixed point $0$. Generally said, the motion is a rotation around a momentary rotation axis with an arbitrary orientation. In this experiment, however, we use a much simpler variation of the general top, called a rotationally symmetric top, which makes the equations of motion much simpler.\\
+
+In the experiment we investigate the behavior of a very fast spinning top under the influence of a torsional moment caused by gravity. Thereto a massive metal disk is linked to an electric motor via a shaft. Said shaft is hinged at its center of gravity so that no forces are applied in resting state. On the side where the motor is mounted, a weight can be attached to exert torque on the shaft and consequently the axis of rotation of the top which results in a precession motion.\\
+
+\paragraph*{Precession period $T_P$}
+From the equation of motion for the rotation of a rigid body 
+
+\begin{equation}
+\vec{M} = \frac{\dif \vec{L}}{\dif t}
+\end{equation}
+
+and
+
+\begin{equation}
+\vec{L} = J \cdot \vec{\omega}
+\end{equation}
+
+where $\vec{M}$ is the applied torsional moment, $\vec{L}$ the angular momentum, $J$ the body's moment of inertia and $\omega$ the angular velocity, one can show that the body's precession frequency is described by:
+
+\begin{equation}
+\Omega_P = \frac{|\vec{M}|}{|\vec{L}\cdot \sin \vartheta|}
+\end{equation}
+
+If we insert the moment of the weight attached to the shaft $\vec{M} = \vec{l} \times \vec{G} \Rightarrow M = m g \cdot l \cdot \sin \vartheta$ we get
+
+\begin{equation}
+\Omega_P = \frac{mg\cdot l}{J\cdot \omega}
+\end{equation}
+and therefore a procession period of
+\begin{equation}
+T_P = \frac{2\pi}{\Omega_P} = \frac{2\pi J \omega_0}{mgl}
+\end{equation}
 
 \subsubsection{Moment of Inertia}
+
+We find the moment of inertia $J$ of the top's spinning disk by dropping a weight with mass $m$ attached to the disk via a thread from a height $h$ and measuring the resulting angular frequency $\omega_0$. Using simple energy conservation laws, we get
 
 \begin{equation}
 \label{eq:inertia}
 J = \frac{2mgh}{\omega_0^2} - m R^2
 \end{equation}
 
-\subsubsection{Precession period $T_P$}
-
-\begin{equation}
-\Omega_P = \frac{mg\cdot l}{J\cdot \omega}
-\end{equation}
-
-\begin{equation}
-T_P = \frac{2\pi}{\Omega_P} = \frac{2\pi J \omega_0}{mgl}
-\end{equation}
+as proven in section ''\nameref{sec:preliminary_exercises}``
 
 \subsubsection{Parenthesis: Preliminary Exercises}
+\label{sec:preliminary_exercises}
+
 
 \subsubsection{Error analysis}
 \paragraph*{Moment of Inertia}
