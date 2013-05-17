@@ -74,7 +74,7 @@ If we insert the moment of the weight attached to the shaft $\vec{M} = \vec{l} \
 \end{equation}
 and therefore a procession period of
 \begin{equation}
-T_P = \frac{2\pi}{\Omega_P} = \frac{2\pi J \omega_0}{mgl}
+T_P = \frac{2\pi}{\Omega_P} = \frac{2\pi J \omega}{mgl}
 \end{equation}
 
 \subsubsection{Moment of Inertia}
@@ -185,6 +185,12 @@ Derivation for the moment of inertia $J$ of the top's spinning disk
 s_J^2 = 4 m^2 \left( r^2 s_r^2 + \frac{4 g^2 h^2 s_w^2}{\omega^6} \right)
 \end{equation}
 
+\paragraph*{Precession period}
+
+\begin{equation}
+s_{T_P} = 2 \pi \frac{s_J \omega_0}{g l m}
+\end{equation}
+
 \section{Experiment setup and execution}
 
 \subsection{Used materials}
@@ -253,6 +259,21 @@ J = (0.0468	 \pm 0.000974) \unit{kg\cdot m^2}
 This value seems reasonable enough to carry out calculations depending on it. However, while doing this part of the experiment, we noticed that our disk was slowing down and coming to a stop relatively fast, indicating a high amount of friction in the shaft and its bearings. Also, the weight could not be dropped from the exact same height every time which results in a large variance of the measurements.    
 
 \subsection{Precession Period $T_P$}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|ccc|}
+\hline
+$T_P$ [$\unit{s}$] & $f = 16.7 \unit{Hz}$ & $f = 19.6 \unit{Hz}$ & $f = 22.4 \unit{Hz}$\\ \hline\hline
+$m=0.2\unit{kg}, l=0.15\unit{m}$ & $90.8 \pm 1.82$ & $108.2 \pm 2.13$ & $121.6 \pm 2.44$\\
+$m=0.2\unit{kg}, l=0.2\unit{m}$ & $65.0 \pm 1.36$ & $75.2 \pm 1.60$ & $84.7 \pm 1.83$\\
+$m=0.46\unit{kg}, l=0.15\unit{m}$ & $39.2 \pm 0.87$ & $45.7 \pm 1.02$ & $52.2 \pm 1.17$\\
+$m=0.46\unit{kg}, l=0.2\unit{m}$ & $29.9 \pm 0.65$ & $33.8 \pm 0.77$ & $36.1 \pm 0.88$\\ \hline
+
+\end{tabular}
+\label{tab:period_results}
+\caption{Some of the resulting precession period $T_P$ at different frequencies $f$}
+\end{table}
 
 \begin{figure}[H]
 	\centering
