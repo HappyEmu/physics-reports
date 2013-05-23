@@ -1,0 +1,84 @@
+\documentclass{scrreprt}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{siunitx} %For unit handling%
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\usepackage{amssymb, amsmath, cancel, ulem, graphicx, float, tabularx, multirow, bm}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{commath}
+\usepackage{nameref}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\renewcommand{\phi}{\varphi}
+
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\author{Urs Gerber\\09-921-156 \and Gian-Luca Mateo\\11-113-545}
+\date{16th of May 2013}
+
+\title{e/m}
+\subtitle{Practical course report}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\chapter{Experiment: e/m}
+
+\section{Introduction}
+
+\subsection{Goal of the experiment}
+ 
+\subsection{Theory}
+
+\subsubsection{Error analysis}
+
+\section{Experiment setup and execution}
+
+\subsection{Used materials}
+The materials used in this experiment are the following:
+\begin{itemize}
+\item ...
+\end{itemize}
+
+\subsection{Assembly and Execution}
+
+\section{Measurements}
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.9\textwidth]{diag/measurements.pdf}
+	\caption{Measured radii $r$ for different values of $U$ and $I$}
+	\label{fig:measurements}
+\end{figure}
+
+\section{Analysis and Discussion}
+
+\subsection{Sources of error}
+\label{sec:error}
+
+\section{Conclusion}
+
+\begin{thebibliography}{9}
+
+\bibitem{physcript13}
+  Peter Wurz,
+  \emph{Anleitung zum Physikpraktikum}
+  FS2013
+
+\end{thebibliography}
+
+\end{document}
