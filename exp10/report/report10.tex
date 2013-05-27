@@ -43,6 +43,8 @@
 The goal of this experiment is to measure the ratio of electron charge to eletron mass $e/m$ which is often called the specific electron charge. This is achieved by deflecting an electron beam within a static magnetic field while changing various parameters that affect said deflection.
 
 \subsection{Theory}
+\subsubsection{Specific electron charge}
+
 The centripetal force $F_Z$ is quantified as 
 \begin{equation}
 F_Z = \frac{m v^2}{r}
@@ -54,12 +56,12 @@ whereas the Lorentz force is given by
 F_L = e v B
 \end{equation}
 
-When an electron of mass $m$ and charge $e$ is moving through a magnetic field $B$ at speed $v$ the electron is deflected due to the Lorentz force and will travel on a circle like track of radius $r$. Since the centripetal force must be equal to the Lorentz force, we deduct 
+When an electron of mass $m$ and charge $e$ is moving through a magnetic field $B$ at speed $v$ the electron is deflected due to the Lorentz force and will travel on a circle-like track with radius $r$. Since the centripetal force must be equal to the Lorentz force, we deduct 
 \begin{equation}
 F_Z \stackrel{!}{=} F_L \Longrightarrow \frac{e}{m} = \frac{v}{r B}
 \end{equation}
 
-Using simple energy conservation laws we find the speed $v$ of the electron when initially accelerated by moving through a voltage difference of $U$:
+Using simple energy conservation laws we find the speed $v$ of the electron when initially accelerated by moving through a voltage difference $U$:
 
 \begin{equation}
 e U = \frac{1}{2} m v^2 \Longrightarrow v = \sqrt{\frac{2 e U}{m}}
@@ -71,7 +73,17 @@ Thus, the final formula for the specific electron charge is given by:
 \boxed{\Longrightarrow \frac{e}{m} = \frac{2 U}{r^2 B^2}}
 \end{equation}
 
-The magnetic field at the center of the coils that cause the magnetic field is given by
+\subsubsection{Magnetic field $B$}
+When the two Helmholtz coils are traversed by a current $I$, a magnetic field $B$ is produced and has the following symmetries:
+
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.4\textwidth]{img/coils.png}
+	\caption{Magnetic field inside and outside of two Helmholtz coils}
+	\label{fig:coils}
+\end{figure}
+
+The magnetic field at the center of the coils is given by
 \begin{equation}
 B= B_z (0) = \left( \frac{4}{5}\right)^{\frac{3}{2}} \frac{\mu_0 N I}{R}
 \end{equation}
@@ -109,7 +121,8 @@ The materials used in this experiment are the following:
 \end{figure}
 For this experiment, the Teltron tube and the Helmholtz coils are connected to the power supplies and powered on. As soon as the electron beam is visible, the amperage of the Helmholtz coils is increased up to the point where the electron beam marks a circular trail. Using the hole (at distance L) and the mask (at distance l), the radius of the circle is measured. This procedure is then repeated for some acceleration voltages and different coil amperages.
 
-\section{Measurements}
+\newpage
+\section{Measurements}[H]
 All measurements were taken at a heating voltage of $U_h = (8 \pm 0.01) \unit{V}$. The focussing voltage $U_f$ was varied between $0 \unit{V}$ and $30 \unit{V}$.
 
 \begin{figure}[H]
@@ -120,8 +133,12 @@ All measurements were taken at a heating voltage of $U_h = (8 \pm 0.01) \unit{V}
 \end{figure}
 
 \section{Analysis and Discussion}
+Using the theorem of intersecting lines
+\begin{equation}
+\frac{r}{L	} = \frac{r_{\text{hole}}}{L-l} \Longrightarrow r = \frac{r_{\text{hole}}}{L-l} L
+\end{equation}
 
-Using all our measurements and error analysis formulae we can deduct the following values:
+and all the formula from the theory and error analysis, we deduct the folllowing values:
 
 \begin{table}[H]
 \center
@@ -166,7 +183,7 @@ Looking for sources of error, we found very few. Both the amperage and the volta
 The only relevant source of error lies in the measurement of the diameter of the electron beam. We always tried to see the whole beam through the mask, which probably accounts for too large radii. 
 \begin{figure}[H]
 	\centering
-  \includegraphics[width=0.9\textwidth]{diag/errors.pdf}
+  \includegraphics[width=1.0\textwidth]{diag/errors.pdf}
 	\caption{Deviation from Theoretical Values for Radii and Relative Error}
 	\label{fig:error}
 \end{figure}
