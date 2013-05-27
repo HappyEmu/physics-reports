@@ -40,7 +40,7 @@
 \section{Introduction}
 
 \subsection{Goal of the experiment}
-The goal of this experiment is to measure the ratio of electron charge to eletron mass $e/m$ which is often called the specific electron mass. This is achieved by deflecting an electron beam within a static magnetic field while changing various parameters that affect said deflection.
+The goal of this experiment is to measure the ratio of electron charge to eletron mass $e/m$ which is often called the specific electron charge. This is achieved by deflecting an electron beam within a static magnetic field while changing various parameters that affect said deflection.
 
 \subsection{Theory}
 The centripetal force $F_Z$ is quantified as 
@@ -65,17 +65,20 @@ Using simple energy conservation laws we find the speed $v$ of the electron when
 e U = \frac{1}{2} m v^2 \Longrightarrow v = \sqrt{\frac{2 e U}{m}}
 \end{equation}
 
+Thus, the final formula for the specific electron charge is given by:
 
 \begin{equation}
-\Longrightarrow \frac{e}{m} = \frac{2 U}{r^2 B^2}
+\boxed{\Longrightarrow \frac{e}{m} = \frac{2 U}{r^2 B^2}}
 \end{equation}
 
+The magnetic field at the center of the coils that cause the magnetic field is given by
 \begin{equation}
-B_z (0) = \left( \frac{4}{5}\right)^{\frac{3}{2}} \frac{\mu_0 N I}{R}
+B= B_z (0) = \left( \frac{4}{5}\right)^{\frac{3}{2}} \frac{\mu_0 N I}{R}
 \end{equation}
+where $N$ is the number of turns of the coil, $R$ the coil's radius and $I$ the net current running through the coils.
 
 \subsubsection{Error analysis}
-
+$l$: distance from electron beam to mask plate, $L$: distance from beam to eye plate
 \begin{equation}
 s_r^2 = \frac{r^2\cdot s_l^2}{(L-l)^4} + \frac{r^2\cdot s_L^2}{(L-l)^4}
 \end{equation}
@@ -134,11 +137,12 @@ $229.9$ & $2.80$ & $25.531 \pm 0.925$ & $24.566$ & $1.628 \pm 0.118$ & $-8.01 \%
 $229.9$ & $4.00$ & $18.389 \pm 0.489$ & $17.196$ & $1.538 \pm 0.080$ & $-14.35 \%$\\
 \hline
 \end{tabular}
+\caption{Experiment results with calculated quantities. $r$ and $e/m$ in dependance of $U$ and $I$}
 \end{table}
 
 In order to estimate the error of $l$ we measured this quantity twice at the same parameters and we found $s_l = 3 \unit{mm}$\\
 
-As one can see, the errors in the measurement of beam radius $r$ are relatively large and propagate to a large error in the $e/m$ calculation. We expected this to happen and we will discuss this in the "\nameref{sec:error}" section
+As one can see, the errors in the measurement of beam radius $r$ are relatively large and propagate to a large error in the $e/m$ calculation. We expected this to happen and we will discuss this in the ``\nameref{sec:error}'' section.
 
 Summing up, all measurements result in a value for $e/m$ of
 \begin{equation}
