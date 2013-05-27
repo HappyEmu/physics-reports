@@ -37,28 +37,34 @@
 \newpage
 
 \chapter{Experiment: e/m}
-
 \section{Introduction}
 
 \subsection{Goal of the experiment}
- 
-\subsection{Theory}
+The goal of this experiment is to measure the ratio of electron charge to eletron mass $e/m$ which is often called the specific electron mass. This is achieved by deflecting an electron beam within a static magnetic field while changing various parameters that affect said deflection.
 
+\subsection{Theory}
+The centripetal force $F_Z$ is quantified as 
 \begin{equation}
 F_Z = \frac{m v^2}{r}
 \end{equation}
+
+whereas the Lorentz force is given by 
 
 \begin{equation}
 F_L = e v B
 \end{equation}
 
+When an electron of mass $m$ and charge $e$ is moving through a magnetic field $B$ at speed $v$ the electron is deflected due to the Lorentz force and will travel on a circle like track of radius $r$. Since the centripetal force must be equal to the Lorentz force, we deduct 
 \begin{equation}
 F_Z \stackrel{!}{=} F_L \Longrightarrow \frac{e}{m} = \frac{v}{r B}
 \end{equation}
 
+Using simple energy conservation laws we find the speed $v$ of the electron when initially accelerated by moving through a voltage difference of $U$:
+
 \begin{equation}
 e U = \frac{1}{2} m v^2 \Longrightarrow v = \sqrt{\frac{2 e U}{m}}
 \end{equation}
+
 
 \begin{equation}
 \Longrightarrow \frac{e}{m} = \frac{2 U}{r^2 B^2}
@@ -110,7 +116,7 @@ Using all our measurements and error analysis formulae we can deduct the followi
 \center
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-$U$ [$\unit{V}$] & $I$ [$\unit{A}$] & $r$ [$\unit{mm}$] & $r_{\text{theo}}$[$\unit{mm}$] & $e/m \cdot 10^{11}$ & rel. $\Delta$\\ \hline\hline
+$U$ [$\unit{V}$] & $I$ [$\unit{A}$] & $r$ [$\unit{mm}$] & $r_{\text{theo}}$[$\unit{mm}$] & $e/m \cdot 10^{11} \unit{\frac{coul}{kg}}$ & rel. $\Delta$\\ \hline\hline
 $303.8$ & $2.90$ & $28.174 \pm 1.126$ & $27.266$ & $1.647 \pm 0.132$ & $-6.77 \%$\\
 $303.8$ & $2.90$ & $28.892 \pm 1.185$ & $27.266$ & $1.566 \pm 0.128$ & $-12.28 \%$\\
 $304.0$ & $1.69$ & $48.727 \pm 1.828$ & $46.804$ & $1.623 \pm 0.122$ & $-8.39 \%$\\
@@ -128,11 +134,19 @@ $229.9$ & $4.00$ & $18.389 \pm 0.489$ & $17.196$ & $1.538 \pm 0.080$ & $-14.35 \
 \end{tabular}
 \end{table}
 
-In order to estimate the error of $l$ we measured this quantity twice at the same parameters and we found $s_l = 3 \unit{mm}$
+In order to estimate the error of $l$ we measured this quantity twice at the same parameters and we found $s_l = 3 \unit{mm}$\\
 
+As one can see, the errors in the measurement of beam radius $r$ are relatively large and propagate to a large error in the $e/m$ calculation. We expected this to happen and we will discuss this in the "\nameref{sec:error}" section
+
+Summing up, all measurements result in a value for $e/m$ of
 \begin{equation}
 e/m = \left( 1.579 \pm 0.0161 \right)\cdot 10^{11} \unit{\frac{coul}{kg}}
 \end{equation}
+which differs from the actual value of 
+\begin{equation}
+(e/m)_{\text{actual}} = 1.759 \cdot 10^{11} \unit{\frac{coul}{kg}}
+\end{equation}
+by about $10.21\%$.
 
 \subsection{Sources of error}
 \label{sec:error}
