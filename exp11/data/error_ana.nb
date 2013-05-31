@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      2678,         99]
-NotebookOptionsPosition[      2184,         80]
-NotebookOutlinePosition[      2671,         97]
-CellTagsIndexPosition[      2628,         94]
+NotebookDataLength[      4858,        177]
+NotebookOptionsPosition[      4143,        150]
+NotebookOutlinePosition[      4629,        167]
+CellTagsIndexPosition[      4586,        164]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -75,11 +75,81 @@ Cell[BoxData[
     RowBox[{
      SuperscriptBox["w", "2"], "+", 
      SuperscriptBox["\[Lambda]", "2"]}]]}]]], "Output",
- CellChangeTimes->{3.578714872170718*^9}]
+ CellChangeTimes->{3.578714872170718*^9, 3.578981084822291*^9, 
+  3.578981120832656*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["T", "0"], ":=", 
+     RowBox[{"2", "*", 
+      RowBox[{"Pi", "/", 
+       SubscriptBox["\[Omega]", "0"]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    SubscriptBox["sT", "0"], "=", 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         SubscriptBox["T", "0"], ",", 
+         SubscriptBox["\[Omega]", "0"]}], "]"}], "^", "2"}], "*", 
+      RowBox[{
+       SubscriptBox["s\[Omega]", "0"], "^", "2"}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.578980932640349*^9, 3.578981118562875*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "\[Pi]", " ", 
+  SqrtBox[
+   FractionBox[
+    SubsuperscriptBox["s\[Omega]", "0", "2"], 
+    SubsuperscriptBox["\[Omega]", "0", "4"]]]}]], "Output",
+ CellChangeTimes->{{3.5789810498343687`*^9, 3.578981120837139*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"gamma", ":=", 
+   RowBox[{"4", "Pi", "*", "m", "*", 
+    RowBox[{"v0", "/", 
+     RowBox[{"(", 
+      RowBox[{"p0", "*", 
+       RowBox[{"A", "^", "2"}], "*", 
+       RowBox[{"T0", "^", "2"}]}], ")"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"sgamma", "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"D", "[", 
+      RowBox[{"gamma", ",", "T0"}], "]"}], "^", "2"}], "*", 
+    RowBox[{"sT0", "^", "2"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.578981190226997*^9, 3.578981289317787*^9}}],
+
+Cell[BoxData[
+ RowBox[{"8", " ", "\[Pi]", " ", 
+  SqrtBox[
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["m", "2"], " ", 
+     SuperscriptBox["sT0", "2"], " ", 
+     SuperscriptBox["v0", "2"]}], 
+    RowBox[{
+     SuperscriptBox["A", "4"], " ", 
+     SuperscriptBox["p0", "2"], " ", 
+     SuperscriptBox["T0", "6"]}]]]}]], "Output",
+ CellChangeTimes->{3.578981295741315*^9}]
 }, Open  ]]
 },
 WindowSize->{740, 731},
-WindowMargins->{{171, Automatic}, {Automatic, 50}},
+WindowMargins->{{65, Automatic}, {39, Automatic}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -99,11 +169,18 @@ Notebook[{
 Cell[557, 20, 385, 11, 33, "Input"],
 Cell[CellGroupData[{
 Cell[967, 35, 700, 23, 33, "Input"],
-Cell[1670, 60, 498, 17, 107, "Output"]
+Cell[1670, 60, 545, 18, 74, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2252, 83, 651, 20, 80, "Input"],
+Cell[2906, 105, 249, 6, 74, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3192, 116, 555, 17, 57, "Input"],
+Cell[3750, 135, 377, 12, 108, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
