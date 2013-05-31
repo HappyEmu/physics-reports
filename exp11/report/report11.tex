@@ -52,7 +52,14 @@ C_v = \left. \frac{\delta Q}{\dif{T}} \right\|_{V=const}
 ...
 \
 \subsubsection{Error analysis}
+\begin{equation}
+s_{\omega_0} = \sqrt{\frac{s_\omega^2 \omega^2 + s_\lambda^2 \lambda^2}{\omega^2+\lambda^2}}
+\end{equation}
+Since $\omega \gg \lambda$, $\lambda$ only has a limited effect on the value of $\omega_0$.\\
 
+\begin{equation}
+s_\gamma = 8 \pi \frac{m s_{T_0} V_0^2}{A^2 p_0 T_0^3}
+\end{equation} 
 
 \section{Experiment setup and execution}
 
@@ -108,27 +115,41 @@ In order to obtain the decay coefficient $\lambda$, the graphs \ref{fig:argon} t
 	\label{fig:argon_adjusted}
 \end{figure}
 
-We can now exponentially fit the graph and thus obtain the values for $\lambda$.
+We can now exponentially fit the graph with a model of the forml $C e^{-\lambda t} + b$ and thus obtain the values for $\lambda$ and use that to calculate the frequency of the undamped oscillation $\omega_0$ using
+
+\begin{equation}
+\omega_0^2=\omega^2+\lambda^2
+\end{equation}
 
 \begin{table}[H]
 \center
 \begin{tabular}{|l|ccc|}
 \hline
 	&	$Ar$ & $N_2$		&	$CO_2$\\ \hline\hline
-$T$ [$\unit{s}$] & $0.789 \pm 0.006$ & $0.869 \pm 0.006$  & $0.891 \pm 0.00571$\\\hline
+$T$ [$\unit{s}$] & $0.789 \pm 0.006$ & $0.869 \pm 0.006$  & $0.891 \pm 0.00571$\\\hline\hline
+$\omega$ [$\unit{Hz}$] & $7.970 \pm 0.0713$ & $7.238 \pm 0.0579$ & $7.0496 \pm 0.0443$\\\hline
 $\lambda$ & $0.257 \pm 0.0148$ & $0.231 \pm 0.129$ & $0.376 \pm 0.0212$\\ \hline
+$\omega_0$[$\unit{Hz}$] & $7.974 \pm 0.0712$ & $7.245 \pm 0.0582$ & $7.0596 \pm 0.0443$ \\ \hline
 
 \end{tabular}
-\caption{Oscillation period $T$ and oscillation amplitude decay coefficient $\lambda$ for the different gases}
+\caption{Oscillation period $T$, oscillation amplitude decay coefficient $\lambda$, and oscillation frequencies $\omega$ (damped) and $\omega_0$ (undamped) for the different gases.}
 \end{table}
+
+To find $\gamma$ we use 
+
+\begin{equation}
+\gamma = \frac{4 \pi m V_0}{p_0 A^2 T_0^2}
+\end{equation}
+
+which yields
 
 \begin{table}[H]
 \center
 \begin{tabular}{|l|ccc|}
 \hline
 	&	$Ar$ & $N_2$		&	$CO_2$\\ \hline\hline
-$\gamma$ measured & $1.474$ & $1.215$  & $1.156$\\\hline
-$\gamma$ expected & $1.650$ & $1.400$ & $1.29$\\ \hline
+$\gamma$ measured & $1.474 \pm 0.00838$ & $1.215 \pm 0.00621$  & $1.156 \pm 0.00461$\\\hline
+$\gamma$ expected & $1.650$ & $1.400$ & $1.290$\\ \hline
 rel. $\Delta$ & $-10.63\%$ & $-13.19\%$ & $-10.41\%$\\ \hline
 
 \end{tabular}

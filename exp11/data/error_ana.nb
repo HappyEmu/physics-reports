@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      4858,        177]
-NotebookOptionsPosition[      4143,        150]
-NotebookOutlinePosition[      4629,        167]
-CellTagsIndexPosition[      4586,        164]
+NotebookDataLength[      5201,        184]
+NotebookOptionsPosition[      4486,        157]
+NotebookOutlinePosition[      4972,        174]
+CellTagsIndexPosition[      4929,        171]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,47 +36,47 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
   SubscriptBox["sw", "0"], "=", 
-  RowBox[{"Sqrt", "[", 
-   RowBox[{
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
     RowBox[{
      RowBox[{
-      RowBox[{"D", "[", 
-       RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
         RowBox[{
-         SubscriptBox["w", "0"], "[", 
-         RowBox[{"w", ",", "\[Lambda]"}], "]"}], ",", "w"}], "]"}], "^", 
-      "2"}], "*", 
-     RowBox[{"sw", "^", "2"}]}], "+", 
-    RowBox[{
+         RowBox[{
+          SubscriptBox["w", "0"], "[", 
+          RowBox[{"w", ",", "\[Lambda]"}], "]"}], ",", "w"}], "]"}], "^", 
+       "2"}], "*", 
+      RowBox[{"sw", "^", "2"}]}], "+", 
      RowBox[{
-      RowBox[{"D", "[", 
-       RowBox[{
+      RowBox[{
+       RowBox[{"D", "[", 
         RowBox[{
-         SubscriptBox["w", "0"], "[", 
-         RowBox[{"w", ",", "\[Lambda]"}], "]"}], ",", "\[Lambda]"}], "]"}], 
-      "^", "2"}], "*", 
-     RowBox[{"s\[Lambda]", "^", "2"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.578714774010214*^9, 3.57871486896992*^9}}],
+         RowBox[{
+          SubscriptBox["w", "0"], "[", 
+          RowBox[{"w", ",", "\[Lambda]"}], "]"}], ",", "\[Lambda]"}], "]"}], 
+       "^", "2"}], "*", 
+      RowBox[{"s\[Lambda]", "^", "2"}]}]}], "]"}], "//", 
+   "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.578714774010214*^9, 3.57871486896992*^9}, {
+  3.5789864610305*^9, 3.5789864634630213`*^9}}],
 
 Cell[BoxData[
  SqrtBox[
-  RowBox[{
-   FractionBox[
+  FractionBox[
+   RowBox[{
     RowBox[{
      SuperscriptBox["sw", "2"], " ", 
-     SuperscriptBox["w", "2"]}], 
-    RowBox[{
-     SuperscriptBox["w", "2"], "+", 
-     SuperscriptBox["\[Lambda]", "2"]}]], "+", 
-   FractionBox[
+     SuperscriptBox["w", "2"]}], "+", 
     RowBox[{
      SuperscriptBox["s\[Lambda]", "2"], " ", 
-     SuperscriptBox["\[Lambda]", "2"]}], 
-    RowBox[{
-     SuperscriptBox["w", "2"], "+", 
-     SuperscriptBox["\[Lambda]", "2"]}]]}]]], "Output",
- CellChangeTimes->{3.578714872170718*^9, 3.578981084822291*^9, 
-  3.578981120832656*^9}]
+     SuperscriptBox["\[Lambda]", "2"]}]}], 
+   RowBox[{
+    SuperscriptBox["w", "2"], "+", 
+    SuperscriptBox["\[Lambda]", "2"]}]]]], "Output",
+ CellChangeTimes->{
+  3.578714872170718*^9, 3.578981084822291*^9, 3.578981120832656*^9, {
+   3.5789864646256866`*^9, 3.5789864897374573`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -92,16 +92,19 @@ Cell[BoxData[
        SubscriptBox["\[Omega]", "0"]}]}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     SubscriptBox["sT", "0"], "=", 
-    RowBox[{"Sqrt", "[", 
-     RowBox[{
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
       RowBox[{
-       RowBox[{"D", "[", 
-        RowBox[{
-         SubscriptBox["T", "0"], ",", 
-         SubscriptBox["\[Omega]", "0"]}], "]"}], "^", "2"}], "*", 
-      RowBox[{
-       SubscriptBox["s\[Omega]", "0"], "^", "2"}]}], "]"}]}]}]}]], "Input",
- CellChangeTimes->{{3.578980932640349*^9, 3.578981118562875*^9}}],
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          SubscriptBox["T", "0"], ",", 
+          SubscriptBox["\[Omega]", "0"]}], "]"}], "^", "2"}], "*", 
+       RowBox[{
+        SubscriptBox["s\[Omega]", "0"], "^", "2"}]}], "]"}], "//", 
+     "FullSimplify"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.578980932640349*^9, 3.578981118562875*^9}, {
+  3.578986477433013*^9, 3.578986479491839*^9}}],
 
 Cell[BoxData[
  RowBox[{"2", " ", "\[Pi]", " ", 
@@ -109,7 +112,8 @@ Cell[BoxData[
    FractionBox[
     SubsuperscriptBox["s\[Omega]", "0", "2"], 
     SubsuperscriptBox["\[Omega]", "0", "4"]]]}]], "Output",
- CellChangeTimes->{{3.5789810498343687`*^9, 3.578981120837139*^9}}]
+ CellChangeTimes->{{3.5789810498343687`*^9, 3.578981120837139*^9}, {
+  3.578986469030532*^9, 3.578986489768589*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -125,13 +129,15 @@ Cell[BoxData[{
        RowBox[{"T0", "^", "2"}]}], ")"}]}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{"sgamma", "=", 
-  RowBox[{"Sqrt", "[", 
-   RowBox[{
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
     RowBox[{
-     RowBox[{"D", "[", 
-      RowBox[{"gamma", ",", "T0"}], "]"}], "^", "2"}], "*", 
-    RowBox[{"sT0", "^", "2"}]}], "]"}]}]}], "Input",
- CellChangeTimes->{{3.578981190226997*^9, 3.578981289317787*^9}}],
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{"gamma", ",", "T0"}], "]"}], "^", "2"}], "*", 
+     RowBox[{"sT0", "^", "2"}]}], "]"}], "//", "FullSimplify"}]}]}], "Input",
+ CellChangeTimes->{{3.578981190226997*^9, 3.578981289317787*^9}, {
+  3.5789864854640713`*^9, 3.578986487333074*^9}}],
 
 Cell[BoxData[
  RowBox[{"8", " ", "\[Pi]", " ", 
@@ -145,11 +151,12 @@ Cell[BoxData[
      SuperscriptBox["A", "4"], " ", 
      SuperscriptBox["p0", "2"], " ", 
      SuperscriptBox["T0", "6"]}]]]}]], "Output",
- CellChangeTimes->{3.578981295741315*^9}]
+ CellChangeTimes->{
+  3.578981295741315*^9, {3.578986469054943*^9, 3.5789864897955647`*^9}}]
 }, Open  ]]
 },
-WindowSize->{740, 731},
-WindowMargins->{{65, Automatic}, {39, Automatic}},
+WindowSize->{740, 726},
+WindowMargins->{{Automatic, 69}, {26, Automatic}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (November 20, 2012)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "home", "gerberur", 
    ".Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, "Bla2.nb", 
@@ -168,16 +175,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[557, 20, 385, 11, 33, "Input"],
 Cell[CellGroupData[{
-Cell[967, 35, 700, 23, 33, "Input"],
-Cell[1670, 60, 545, 18, 74, "Output"]
+Cell[967, 35, 808, 26, 57, "Input"],
+Cell[1778, 63, 487, 15, 75, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2252, 83, 651, 20, 80, "Input"],
-Cell[2906, 105, 249, 6, 74, "Output"]
+Cell[2302, 83, 752, 23, 80, "Input"],
+Cell[3057, 108, 298, 7, 74, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3192, 116, 555, 17, 57, "Input"],
-Cell[3750, 135, 377, 12, 108, "Output"]
+Cell[3392, 120, 647, 19, 57, "Input"],
+Cell[4042, 141, 428, 13, 107, "Output"]
 }, Open  ]]
 }
 ]
