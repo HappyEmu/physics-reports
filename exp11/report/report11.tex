@@ -66,7 +66,7 @@ s_\gamma = 8 \pi \frac{m s_{T_0} V_0^2}{A^2 p_0 T_0^3}
 \subsection{Used materials}
 The materials used in this experiment are the following:
 \begin{itemize}
-\item A gas tank made of glass, $V = 5633 \unit{cm^3}$
+\item A gas tank made of glass, $V_0 = 5633 \unit{cm^3}$
 \item A tube attached vertically to the glass, $L \approx 45\unit{cm}$, $R = 16 \unit{mm}$
 \item A small metal ball, $m = 17 \unit{g}$
 \item 3 gas bottles, containing $N_2$, $CO_2$ and $Ar$ respectively
@@ -93,7 +93,7 @@ For our measurements, the tank is filled with one of the three gases. After prop
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.7\textwidth]{diag/nitrogen.pdf}
-	\caption{Measured Oscillations of the Ball with Nitrogen in the Tank}
+	\caption{Measured Oscillations of the Ball with Nitrogen in the Tank. The effects of friction in the tube are clearly visible for the first data series}
 	\label{fig:nitrogen}
 \end{figure}
 
@@ -115,7 +115,7 @@ In order to obtain the decay coefficient $\lambda$, the graphs \ref{fig:argon} t
 	\label{fig:argon_adjusted}
 \end{figure}
 
-We can now exponentially fit the graph with a model of the forml $C e^{-\lambda t} + b$ and thus obtain the values for $\lambda$ and use that to calculate the frequency of the undamped oscillation $\omega_0$ using
+We can now exponentially fit the graph with a model of the form $C e^{-\lambda t} + b$ and thus obtain the values for $\lambda$ and use that to calculate the frequency of the undamped oscillation $\omega_0$ using
 
 \begin{equation}
 \omega_0^2=\omega^2+\lambda^2
@@ -140,6 +140,7 @@ To find $\gamma$ we use
 \begin{equation}
 \gamma = \frac{4 \pi m V_0}{p_0 A^2 T_0^2}
 \end{equation}
+with $A = L \cdot R^2\pi$ and $p_0 = p_a + \frac{m g}{A}$
 
 which yields
 
